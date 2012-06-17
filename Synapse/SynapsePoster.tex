@@ -1,0 +1,138 @@
+% -*- TeX -*- -*- UK -*- -*- BMR -*- -*- PST -*-
+% ----------------------------------------------------------------
+% Beamer  Poster presentation ************************************************
+%
+% Subhaneil Lahiri's template
+%
+% To compile:
+%   Ctrl-Shift-P
+%
+% **** -----------------------------------------------------------
+\documentclass[final,hyperref={pdfpagelabels=false}]{beamer}
+%\documentclass{beamer}
+\usetheme{Subhy}
+\usepackage[orientation=Landscape,size=a0,scale=1.4,debug]{beamerposter}
+
+%---------Packages-------------------------------------------------------
+
+% For double screen:
+%\usepackage{pgfpages}
+%\setbeameroption{show notes on second screen=right}
+%
+% For finding documentation:
+%\usepackage[centertags]{amsmath}
+%\usepackage{amssymb}
+%\usepackage{xcolor}
+%\usepackage{pgf}
+%\usepackage{graphicx}
+%
+%\usepackage{ifpdf}
+\ifpdf
+\else
+\DeclareGraphicsRule{.png}{eps}{.bb}{}
+\fi
+\usepackage{epstopdf}
+\epstopdfsetup{update,suffix=-generated}
+%---------Colours---------------------------------------------------------
+
+% \newrgbcolor{LemonChiffon}{1. 0.98 0.8}
+% \newrgbcolor{myellow}{.9 .8 .1}
+% \newrgbcolor{myblue}{.2 .36 .77}
+% \newrgbcolor{orange}{0.8 0.7 0.2}
+% \newrgbcolor{myred}{0.95 0.0 0.0}
+\definecolor{darkgrey}{rgb}{.5 .5 .5}
+\definecolor{darkblue}{rgb}{0.27843137 0.27058824 0.5372549}
+\definecolor{darkred}{rgb}{0.5372549 0.27843137 0.27058824}
+
+%---------Commands-------------------------------------------------------
+
+\newcommand{\rref}[1]{\hfill \small{\color{darkgrey} [#1]}}
+\newcommand{\rrref}[1]{ {\color{darkgrey} #1}}
+\newcommand{\citerr}[1]{\hfill {\footnotesize{\color{darkgrey}\cite{#1}}}}
+
+\input{mydefs.tex}
+\input{slidesymb.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%---------Title-----------------------------------------------------------
+
+\title{Learning and memory with complex synapses}
+%
+%\subtitle{\small{based on \texttt{arXiv: [hep-th]} with }}
+%
+\author{Subhaneil Lahiri and Surya Ganguli}
+%
+\institute[Stanford]{%
+Department of Applied Physics, Stanford University, Stanford CA
+}
+\date[6/27/12]{June 27, 2012}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%---------Setup--------------------------------------------------------
+
+\begin{document}
+
+\begin{frame}{}
+
+\begin{columns}[t]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------Beginning--------------------------------------------------------
+
+%-------------Column--------------------------------------------------------
+\begin{column}{0.33\linewidth}
+
+%-------------Box--------------------------------------------------------
+
+\begin{block}{Background}
+%
+ Hopfield
+ \begin{itemize}
+   \item
+   \item
+   \item
+ \end{itemize}
+%
+\end{block}
+
+
+\end{column}
+
+%-------------Column--------------------------------------------------------
+\begin{column}{0.33\linewidth}
+
+\end{column}
+
+%-------------Column--------------------------------------------------------
+\begin{column}{0.33\linewidth}
+
+
+
+
+%-------------Box--------------------------------------------------------
+
+\begin{block}{References}
+%
+ {\small
+ \bibliographystyle{unsrt_slides}
+ \bibliography{neuro,maths}
+ }
+%
+\end{block}
+
+
+\end{column}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-----End----------------------------------------------------------------
+
+\end{columns}
+
+\end{frame}
+
+\end{document}
