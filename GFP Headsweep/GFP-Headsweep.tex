@@ -16,8 +16,8 @@
 \AtBeginSection[]{\frame{\sectionpage}}
 
 % For double screen:
-%\usepackage{pgfpages}
-%\setbeameroption{show notes on second screen=right}
+\usepackage{pgfpages}
+\setbeameroption{show notes on second screen=right}
 %
 % For finding documentation:
 %\usepackage[centertags]{amsmath}
@@ -86,7 +86,8 @@
 
 \title[Muscle usage in \hs s]{The motor programs underlying navigation in \emph{Drosophila} larva}
 %
-%\subtitle{\small{based on \texttt{arXiv: [hep-th]} with  Konlin Shen; Mason Klein; Anji Tang; Elizabeth Kane; Marc Gershow; Paul Garrity; Aravinthan Samuel}}
+\subtitle{\small{based on \href{http://dx.doi.org/10.1371/journal.pone.0023180}{\emph{PLoS
+  ONE}, 6:\penalty0e23180, 2011}, with  K.~Shen, M.~Klein, A.~Tang, E.~Kane, M.~Gershow, P.~Garrity, and A.D.T.~Samuel}\nocite{Lahiri2011}}
 %
 \author{Subhaneil Lahiri%\inst{1}
 }
@@ -116,7 +117,7 @@ Harvard University
 %
  We will look at the motor behaviour of the \emph{Drosophila} larva during navigational motion, paying attention to which segments are used, in which order, etc.
 
- \vp We want to get some insight into the circuits that control this behaviour and the role of sensory feedback by quantifying the motor output at high resolution.
+ \vp We want to get some insight into the circuits that control this behaviour and the role of sensory feedback by quantifying the motor output at high resolution.\note[item]{future: interfere, now: just look at normal behaviour}
 
 %
 \end{frame}
@@ -131,11 +132,11 @@ Harvard University
    \rref{Hertweck (1931)}
  }
  \parbox{6cm}{
-   $\sim10^4$ neurons.
+   $\sim10^4$ neurons.\note[item]{factor of 10 < adult}
 
-   \vp Has CNS, spiking neurons,\ldots
+   \vp Has CNS, spiking neurons,\ldots\note[item]{unlike c. elegans}
 
-   \vp Many genetic tools.
+   \vp Many genetic tools.\note[item]{sequenced genome, GAL4/UAS system - target cell types}
 
    \vp Transparent $\implies$ optogenetics.
  }
@@ -148,8 +149,12 @@ Harvard University
 %
  %
  \begin{center}
-   \includegraphics[width=10cm]{Figs/behaviour.eps}
+   \includegraphics[width=8cm]{Figs/behaviour.eps}
  \end{center}
+
+ \vp Relevant sensory inputs can be controlled  easily.\note[item]{Temperature, odour, light}
+
+ \vp Large scale motor output can be measured easily. \note[item]{path travelled, turning decisions}
  %
 %
 \end{frame}
@@ -159,6 +164,10 @@ Harvard University
 \begin{frame}{Outline}
 %
  \tableofcontents[hideallsubsections]
+ \note[item]{review how D.larvae navigate, what's known about locomotion circuits}
+ \note[item]{how larvae with fluorescent muscles will help us, how we use them}
+ \note[item]{results of this analysis}
+ \note[item]{conclusions and future directions}
 %
 \end{frame}
 
@@ -173,11 +182,11 @@ Harvard University
 %
  %
  \parbox{5cm}{   \includegraphics[width=7cm]{Figs/CSandMHCGFPcenteredtracks2.eps} }
- \parbox{6cm}{Alternating runs and reorientations.
+ \parbox{6cm}{Alternating runs and reorientations.\note[item]{longer runs in good directions}
 
- \vp Like \emph{E.\ coli} and \emph{C.\ elegans}.
+ \vp Similar to  \emph{E.\ coli} and \emph{C.\ elegans}.\note[item]{can do more}
 
- \vp Effectively point-like sensor.}
+ \vp Effectively point-like sensor.\note[item]{has to move sensor to measure gradients}}
 %
 \end{frame}
 
@@ -186,7 +195,12 @@ Harvard University
 \begin{frame}{\Hs s}
 %
  \begin{center}
- \movie[width=174px,height=130px,showcontrols=true,loop,poster,autostart]{}{Vids/hsa.avi}
+ \movie[width=131px,height=98px,showcontrols=true,loop]
+ {\includegraphics[width=131px,height=98px]{Firstframe/hsa.png}}
+ {Vids/hsa.avi}\note[item]{accepted}
+ \movie[width=131px,height=98px,showcontrols=true,loop]
+ {\includegraphics[width=131px,height=98px]{Firstframe/hsr.png}}
+ {Vids/hsr.avi}\note[item]{rejected}
  \end{center}
  Moves head from side-to-side to sample environment and pick a direction to travel.
 %
@@ -198,9 +212,9 @@ Harvard University
 %
  For thermo-/chemo-/photo-taxis, larva modulates:
  \begin{itemize}
-   \item \hs\ frequency
-   \item \hs\ size
-   \item \hs\ acceptance probability
+   \item \hs\ frequency \note[item]{turns more when things are getting worse}
+   \item \hs\ size  \note[item]{larger turns when things are getting worse}
+   \item \hs\ acceptance probability \note[item]{more likely to accept when better}
  \end{itemize}
  Depending on whether conditions are improving/worsening.
 
@@ -212,21 +226,28 @@ Harvard University
 
 \begin{frame}[label=fr_loco]{Locomotion and sensory feedback}
 %
- Several types of Multidendritic (md) neurons:
- \begin{itemize}
-  \item tracheal dendrite (td),
-  \item bipolar dendrite (bd)
-  \item class I-IV dendritic arborisation (da).
- \end{itemize}
- Possibly used for proprioception/pathfinding. \\ \citerr{Bodmer1987s,Grueber12050135}
+ Crawl using peristaltic waves from posterior to anterior that lift and push the body forwards.
+
+ \vp Several types of Multidendritic (md) sensory neurons.%:
+% \begin{itemize}
+%  \item tracheal dendrite (td),
+%  \item bipolar dendrite (bd)
+%  \item class I-IV dendritic arborisation (da).
+% \end{itemize}
+
+ Repeated in each segment.
+
+ Possibly used for proprioception. \\ \citerr{Bodmer1987s,Grueber12050135}
 
  \vp md neurons are used for locomotion:
  \begin{itemize}
    \item Turn off all types $\to$ no locomotion \citerr{Song17360325}
-   \item Turn off bd and class I da $\to$ disrupt pattern \hyperlink{fr_toothpaste<1>}{(toothpasting)}\\ \citerr{Hughes17498969}%,\citerr{Cheng20696376}
+   \item Turn off %bd and class I da
+   certain subsets
+   $\to$ disrupt pattern \hyperlink{fr_toothpaste<1>}{(toothpasting)}\\ \citerr{Hughes17498969}%,\citerr{Cheng20696376}
  \end{itemize}
 
- \vp For finer analysis: quantify patterns of muscle use.
+ \vp For finer analysis: quantify patterns of muscle use.\note[item]{in future: interfere}
 %
 \end{frame}
 
@@ -238,16 +259,17 @@ Harvard University
  \begin{itemize}
     \item Different circuits?
     \item When is decision made? With what info?
-    \item Mechano-sensory input?
+    \item Mechano-sensory feedback?
   \end{itemize}
 
   \vp Look for differences in mechanics of different types of \hs.
+  \note[item]{difference in initiation $\to$ makes decision before}
 %
 \end{frame}
 
 %-------------Section--------------------------------------------------------
 
-\section{Fluorescent muscles}
+\section{Imaging and analysis of fluorescent muscles}
 
 %-------------Slide--------------------------------------------------------
 
@@ -256,10 +278,12 @@ Harvard University
  \begin{center}
  Mutant: $w^-; \frac{mhc-GFP^{0110}}{CyO}$ \citerr{Hughes17498969}
 
- \includegraphics[width=12cm]{Figs/LarvaStitchPNG.png}
+ \includegraphics[width=12cm]{Figs/LarvaStitchScaled.png}
  \end{center}
+ \note[item]{we see 11 segments, some people talk about A9 (terminal, too small), mouth segment (involute during early development)}
 
  \vp Can see segment boundaries $\to$ measure length $\to$ which segment contracts.
+ \note[item]{can't automate this yet.}
 %
 \end{frame}
 
@@ -269,11 +293,13 @@ Harvard University
 %
  \begin{center}
  % divide width/height by 8.
- \movie[width=162px,height=162px,showcontrols=true,loop,poster,autostart]{}{Vids/Peristalsis_scaled.avi}
+ \movie[width=162px,height=162px,showcontrols=true,loop]
+ {\includegraphics[width=162px,height=162px]{Firstframe/Peristalsis_scaled.png}}
+ {Vids/Peristalsis_scaled.avi}
  \end{center}
 
  Muscles contract $\rightarrow$ same GFP in smaller volume $\rightarrow$ increase
- concentration $\rightarrow$ increase brightness.
+ concentration $\rightarrow$ increase brightness.\note[item]{another measure of contraction. less noisy}
 
 %
 \end{frame}
@@ -315,42 +341,45 @@ Harvard University
 %
 %-------------Section--------------------------------------------------------
 
-\section{Imaging and analysis}
 
 
-%%-------------Slide--------------------------------------------------------
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Apparatus}
 %
-%\begin{frame}{Apparatus}
-%%
-% \parbox{6cm}{
-%  \includegraphics[height=4cm]{LocomotionApparatus.eps}
-% }
-% \parbox{5cm}{
-%  \begin{itemize}
-%    \item Temperature varied from $14-16\dC$ with period $300\s$ to trigger many \hs s.
-%    \item Movable stage keeps larva in camera frame.
-%  \end{itemize}
-% }
-%%
-%\end{frame}
+ \parbox{6cm}{
+  \includegraphics[height=4cm]{Figs/LocomotionApparatus.eps}
+ }
+ \parbox{5cm}{
+  \begin{itemize}
+    \item Temperature varied from $14-16\dC$ with period $300\s$.
+    \note[item]{triggers many \hs s}
+    \note[item]{allows comparison of \hs in warming/cooling}
+    \item Movable stage keeps larva in camera frame.
+  \end{itemize}
+ }
 %
+\end{frame}
+
 %-------------Slide--------------------------------------------------------
 
 \begin{frame}{Image analysis}
 %
  \begin{center}
  \parbox{3cm}{
-  \only<1>{\includegraphics[height=4cm]{Figs/headtail.eps}}
+%  \only<1>{\includegraphics[height=4cm]{Figs/headtail.eps}}
+  \only<1>{\includegraphics[height=4cm]{Figs/cln.eps}}
   \only<2>{\includegraphics[height=4cm]{Figs/nodes.eps}}
   \only<3>{\includegraphics[height=4cm]{Figs/segs.eps}}
   \only<4>{\includegraphics[height=4cm]{Figs/quads.eps}}}
  \end{center}
 
  \vp
- \only<1>{Find boundary, head and tail automatically}
- \only<2>{User clicks on segment boundaries}
- \only<3>{Map to boundary. Find segment lengths.}
- \only<4>{Split segment into quadrants. Mean pixel value $\to$ intensity.}
+% \only<1>{Find boundary, head and tail automatically}
+ \only<1>{Find boundary, head, tail and bend angle automatically}\note[item]{allows us to flag interesting bits}
+ \only<2>{User clicks on segment boundaries}\note[item]{slowest part}
+ \only<3>{Map to boundary. Find segment lengths.}\note[item]{automatic again}
+ \only<4>{Split segment into quadrants. Mean pixel value $\to$ intensity.}\note[item]{less noisy}
 %
 \end{frame}
 
@@ -370,11 +399,18 @@ Harvard University
 
 \begin{frame}{Coordinate system}
 %
+ \note{this slide just to explain how to read graphs. Interpret later.\par}
+ \note{\vp thorax -3 to 3, rest abdomen}
  \parbox{5cm}{\includegraphics[height=5cm]{Figs/coords.eps}}
  \parbox{5cm}{\only<1>{\includegraphics[height=5cm]
                         {Figs/warm_large_left_IntContrIm.eps}}
+ \note[item]{Head in middle, left above, right below. \par
+ Bright spots: contraction. See peristalsis go from tail to head}
               \only<2>{\includegraphics[height=5cm]
                         {Figs/warm_large_left_LenRatioIm.eps}}}
+ \note[item]{Head at bottom, tail at top. Remove peristalsis, just see bend.\par
+ Bright: left bend, dark: right bend.}
+ 
 %
 \end{frame}
 
@@ -387,11 +423,13 @@ Harvard University
 \begin{frame}{Forward motion}
 %
  \begin{center}
-   \movie[width=315px,height=188px,showcontrols=true,loop,poster,autostart]{}
+   \movie[width=315px,height=188px,showcontrols=true,loop]
+   {\includegraphics[width=315px,height=188px]{Firstframe/Peristalsis_video.png}}
    {Vids/Peristalsis_video.avi}
  \end{center}
  Pulse travels from tail to head.
  New pulse starts after previous reaches head.
+ \note[item]{Mouth hooks drown out all else (ratio) in T1,T2.}
 %
 \end{frame}
 
@@ -400,12 +438,14 @@ Harvard University
 \begin{frame}{Small accepted \hs}
 %
  \begin{center}
-   \movie[width=315px,height=188px,showcontrols=true,loop,poster,autostart]{}
+   \movie[width=315px,height=188px,showcontrols=true,loop]
+   {\includegraphics[width=315px,height=188px]{Firstframe/warm_small_left_video.png}}
    {Vids/warm_small_left_video.avi}
  \end{center}
 
  Basic pattern: Kink starts around (T3,A1,A2) and propagates back.
  Subsequent peristalsis starts before kink reaches tail.
+ \note[item]{Completes \hs with peristalsis, not unbending.}
 %
 \end{frame}
 
@@ -414,12 +454,13 @@ Harvard University
 \begin{frame}{Large accepted \hs}
 %
  \begin{center}
-   \movie[width=315px,height=188px,showcontrols=true,loop,poster,autostart]{}
+   \movie[width=315px,height=188px,showcontrols=true,loop]
+   {\includegraphics[width=315px,height=188px]{Firstframe/cool_large_right_video.png}}
    {Vids/cool_large_right_video.avi}
  \end{center}
 
- Basic pattern: Kink starts around (T3,A1,A2) and propagates back.
- Subsequent peristalsis starts from kink, not tail.
+ Basic pattern: Kink starts around (T3,A1,A2) and propagates back.\note[item]{same as small, statistics later}
+ Subsequent peristalsis starts from kink, \alert{not} tail.
 %
 \end{frame}
 
@@ -428,10 +469,11 @@ Harvard University
 \begin{frame}{Rejected \hs}
 %
  \begin{center}
-   \movie[width=315px,height=188px,showcontrols=true,loop,poster]{}
+   \movie[width=315px,height=188px,showcontrols=true,loop]
+   {\includegraphics[width=315px,height=188px]{Firstframe/rejected_video.png}}
    {Vids/rejected_video.avi}
  \end{center}
- Rejected \hs\ not undone until next one.
+ Rejected \hs\ not undone until next one.\note[item]{no unbending program}
 %
 \end{frame}
 
@@ -520,6 +562,7 @@ Harvard University
  \begin{center}
    \includegraphics[height=6cm]{Figs/KinkStart.eps}
  \end{center}
+ \note[item]{error bars ar std dev, not std err.}
 
  Little dependence on size or temperature.
 %
@@ -556,13 +599,18 @@ Harvard University
    \item Neural circuit?
 
    Stretch-sensors involved in locomotion pattern. If one side is already contracted, segment just anterior to kink might think peristaltic pulse has already reached it
+   \vp
+
+   \item Central pattern generator?
+
+   Body re-coupling in mid-cycle -- dependence on \hs size?
  \end{itemize}
 %
 \end{frame}
 
 %-------------Section--------------------------------------------------------
 
-\section{Conclusions and remaining issues}
+\section{Conclusions and future directions}
 
 %%-------------Slide--------------------------------------------------------
 %
@@ -597,11 +645,27 @@ Harvard University
 
 \begin{frame}{Conclusions}
 %
- Navigation results from combining two basic motor programs: peristalsis and asymmetric contraction.
+ Navigation results from combining two basic motor programs: peristalsis and asymmetric contraction. Pathway from sensory input $\to$ motor output simpler than previously thought.
 
  \vp All \hs s start at the same segments. Same circuits? Decision on size of \hs\ made later?
 
  \vp Large \hs s: subsequent peristalsis starts at kink. Shows that peristalsis can start anywhere. Implications for circuits that control forward motion.
+%
+\end{frame}
+
+
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Future directions}
+%
+ Interfere with motor patterns (optogenetically).\note[item]{requires next point}
+ 
+ \vp Fully automate image analysis. \note[item]{machine learning - training data}
+ 
+ \vp Other stimuli. 
+ \note[item]{we did temperature, could do odour. light difficult. Unlikely to be any difference.}
+ 
+ \vp Reverse crawling, hunching, and rolling.\note[item]{nociceptive and rapid avoidance responses}
 %
 \end{frame}
 
@@ -625,6 +689,7 @@ Harvard University
    \item Aravi Samuel
    \item Garrity lab
  \end{itemize}
+ \note[item]{Last slide!}
 %
 \end{frame}
 
@@ -647,7 +712,8 @@ Harvard University
  %
  \begin{center}
    %\hypertarget{fr:toothpaste}{
-   \movie[width=180px,height=180px,showcontrols=true,loop,poster]{}
+   \movie[width=180px,height=180px,showcontrols=true,loop]
+   {\includegraphics[width=180px,height=180px]{Firstframe/toothpaste.png}}
    {Vids/toothpaste.avi}
    %}
  \end{center}
