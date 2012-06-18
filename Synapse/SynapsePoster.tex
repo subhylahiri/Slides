@@ -11,6 +11,9 @@
 \documentclass[final,hyperref={pdfpagelabels=false}]{beamer}
 %\documentclass{beamer}
 \usetheme{Subhy}
+  \usepackage{times}
+%  \usepackage{amsmath,amsthm, amssymb, latexsym}
+%  \boldmath
 \usepackage[orientation=Landscape,size=a0,scale=1.4,debug]{beamerposter}
 
 %---------Packages-------------------------------------------------------
@@ -20,6 +23,7 @@
 %\setbeameroption{show notes on second screen=right}
 %
 % For finding documentation:
+%\usepackage{ams}
 %\usepackage[centertags]{amsmath}
 %\usepackage{amssymb}
 %\usepackage{xcolor}
@@ -53,6 +57,11 @@
 \input{mydefs.tex}
 \input{slidesymb.tex}
 
+\DeclareMathOperator{\SNR}{SNR}
+\DeclareMathOperator{\snr}{SNR}
+\newcommand{\net}{molecular network}
+\newcommand{\Net}{Molecular network}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %---------Title-----------------------------------------------------------
@@ -82,17 +91,16 @@ Department of Applied Physics, Stanford University, Stanford CA
 %-------------Beginning--------------------------------------------------------
 
 %-------------Column--------------------------------------------------------
-\begin{column}{0.33\linewidth}
+\begin{column}{0.32\linewidth}
 
 %-------------Box--------------------------------------------------------
-
-\begin{block}{Background}
+\section{Background}
+\begin{block}{Storage capacity of Hopfield networks}
 %
- Hopfield
  \begin{itemize}
-   \item
-   \item
-   \item
+   \item Hopfield capacity $\propto N$ requires unbounded synaptic strengths.
+   \item Bounded synapses $\implies$ capacity $\propto\log N$.
+   \item Can be ameliorated by using complex synapses
  \end{itemize}
 %
 \end{block}
@@ -101,12 +109,49 @@ Department of Applied Physics, Stanford University, Stanford CA
 \end{column}
 
 %-------------Column--------------------------------------------------------
-\begin{column}{0.33\linewidth}
+\begin{column}{0.32\linewidth}
+
+
+%-------------Box--------------------------------------------------------
+
+\begin{block}{Area bound}
+%
+ We can show that the area under the SNR curve is bounded:
+ %
+ \begin{equation*}
+   A \leq \sqrt{N}(n-1).
+ \end{equation*}
+ %
+ This leads to a bound on the lifetime of a memory:
+ %
+ \begin{equation*}
+   \SNR(\text{lifetime})=1
+   \qquad
+   A \geq \text{lifetime}.
+ \end{equation*}
+ %
+ This is saturated by a \net with the multistate topology.
+%
+\end{block}
+
+%-------------Box--------------------------------------------------------
+
+\begin{block}{Ordering the states}
+%
+ Let 
+%
+\end{block}
+
+
+
+
+
+
 
 \end{column}
 
 %-------------Column--------------------------------------------------------
-\begin{column}{0.33\linewidth}
+\begin{column}{0.32\linewidth}
 
 
 
