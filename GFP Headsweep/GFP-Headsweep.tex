@@ -84,10 +84,11 @@
 
 %---------Title-----------------------------------------------------------
 
-\title[Muscle usage in \hs s]{The motor programs underlying navigation in \emph{Drosophila} larva}
+\title[Motor programs in Drosophila larvae]{The motor programs underlying navigation in \emph{Drosophila} larva}
 %
 \subtitle{\small{based on \href{http://dx.doi.org/10.1371/journal.pone.0023180}{\emph{PLoS
-  ONE}, 6:\penalty0e23180, 2011}, with  K.~Shen, M.~Klein, A.~Tang, E.~Kane, M.~Gershow, P.~Garrity, and A.D.T.~Samuel}\nocite{Lahiri2011}}
+  ONE}, 6:\penalty0e23180 (2011)},
+  with  K.~Shen, M.~Klein, A.~Tang, E.~Kane, M.~Gershow, P.~Garrity, and A.D.T.~Samuel}\nocite{Lahiri2011}}
 %
 \author{Subhaneil Lahiri%\inst{1}
 }
@@ -116,8 +117,10 @@ Harvard University
 \begin{frame}{Introduction}
 %
  We will look at the motor behaviour of the \emph{Drosophila} larva during navigational motion, paying attention to which segments are used, in which order, etc.
+ \note[item]{Ultimately: trace out full pathway sensory $to$ decision $to$ motor}
 
- \vp We want to get some insight into the circuits that control this behaviour and the role of sensory feedback by quantifying the motor output at high resolution.\note[item]{future: interfere, now: just look at normal behaviour}
+ \vp We want to get some insight into the circuits that control this behaviour and the role of sensory feedback by quantifying the motor output at high resolution.
+ \note[item]{future: interfere, now: just look at normal behaviour}
 
 %
 \end{frame}
@@ -132,7 +135,7 @@ Harvard University
    \rref{Hertweck (1931)}
  }
  \parbox{6cm}{
-   $\sim10^4$ neurons.\note[item]{factor of 10 < adult}
+   $\sim10^4$ neurons.\note[item]{factor of 10 $<$ adult}
 
    \vp Has CNS, spiking neurons,\ldots\note[item]{unlike c. elegans}
 
@@ -143,22 +146,22 @@ Harvard University
 %
 \end{frame}
 
-%-------------Slide--------------------------------------------------------
-
-\begin{frame}{Navigation}
+%%-------------Slide--------------------------------------------------------
 %
- %
- \begin{center}
-   \includegraphics[width=8cm]{Figs/behaviour.eps}
- \end{center}
-
- \vp Relevant sensory inputs can be controlled  easily.\note[item]{Temperature, odour, light}
-
- \vp Large scale motor output can be measured easily. \note[item]{path travelled, turning decisions}
- %
+%\begin{frame}{Navigation}
+%%
+% %
+% \begin{center}
+%   \includegraphics[width=8cm]{Figs/behaviour.eps}
+% \end{center}
 %
-\end{frame}
-
+% \vp Relevant sensory inputs can be controlled  easily.\note[item]{Temperature, odour, light}
+%
+% \vp Large scale motor output can be measured easily. \note[item]{path travelled, turning decisions}
+% %
+%%
+%\end{frame}
+%
 %-------------Slide--------------------------------------------------------
 
 \begin{frame}{Outline}
@@ -184,9 +187,11 @@ Harvard University
  \parbox{5cm}{   \includegraphics[width=7cm]{Figs/CSandMHCGFPcenteredtracks2.eps} }
  \parbox{6cm}{Alternating runs and reorientations.\note[item]{longer runs in good directions}
 
- \vp Similar to  \emph{E.\ coli} and \emph{C.\ elegans}.\note[item]{can do more}
+ \vp Effectively point-like sensor.\note[item]{has to move sensor to measure gradients}
 
- \vp Effectively point-like sensor.\note[item]{has to move sensor to measure gradients}}
+ \vp Similar to  \emph{E.\ coli} and \emph{C.\ elegans}.\note[item]{can do more}}
+
+ \note[item]{the thing that allows D.larvae to do more...}
 %
 \end{frame}
 
@@ -224,35 +229,6 @@ Harvard University
 
 %-------------Slide--------------------------------------------------------
 
-\begin{frame}[label=fr_loco]{Locomotion and sensory feedback}
-%
- Crawl using peristaltic waves from posterior to anterior that lift and push the body forwards.
-
- \vp Several types of Multidendritic (md) sensory neurons.%:
-% \begin{itemize}
-%  \item tracheal dendrite (td),
-%  \item bipolar dendrite (bd)
-%  \item class I-IV dendritic arborisation (da).
-% \end{itemize}
-
- Repeated in each segment.
-
- Possibly used for proprioception. \\ \citerr{Bodmer1987s,Grueber12050135}
-
- \vp md neurons are used for locomotion:
- \begin{itemize}
-   \item Turn off all types $\to$ no locomotion \citerr{Song17360325}
-   \item Turn off %bd and class I da
-   certain subsets
-   $\to$ disrupt pattern \hyperlink{fr_toothpaste<1>}{(toothpasting)}\\ \citerr{Hughes17498969}%,\citerr{Cheng20696376}
- \end{itemize}
-
- \vp For finer analysis: quantify patterns of muscle use.\note[item]{in future: interfere}
-%
-\end{frame}
-
-%-------------Slide--------------------------------------------------------
-
 \begin{frame}{Questions}
 %
  Different types of \hs:
@@ -264,6 +240,37 @@ Harvard University
 
   \vp Look for differences in mechanics of different types of \hs.
   \note[item]{difference in initiation $\to$ makes decision before}
+%
+\end{frame}
+
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Locomotion and sensory feedback}\label{fr_loco}%[label=fr_loco]
+%
+ Crawl using peristaltic waves from posterior to anterior that lift and push the body forwards.
+ \note[item]{We'll see lots of videos of this later.}
+
+ \vp Several types of Multidendritic (md) sensory neurons.%:
+% \begin{itemize}
+%  \item tracheal dendrite (td),
+%  \item bipolar dendrite (bd)
+%  \item class I-IV dendritic arborisation (da).
+% \end{itemize}
+
+ Repeated in each segment.
+ Possibly used for proprioception. \\ \citerr{Bodmer1987s,Grueber12050135}
+
+ \vp md neurons are used for locomotion:
+ \begin{itemize}
+   \item Turn off all types $\to$ no locomotion \citerr{Song17360325}
+   \item Turn off %bd and class I da
+   certain subsets
+   $\to$ disrupt pattern \hyperlink{fr_toothpaste<1>}{(toothpasting)}\\ \citerr{Hughes17498969}%,\citerr{Cheng20696376}
+ \end{itemize}
+ \note[item]{each segments waits for posterior segment to contract.}
+
+ %\vp For finer analysis: quantify patterns of muscle use.
+ \note[item]{in future: interfere}
 %
 \end{frame}
 
@@ -378,7 +385,7 @@ Harvard University
 % \only<1>{Find boundary, head and tail automatically}
  \only<1>{Find boundary, head, tail and bend angle automatically}\note[item]{allows us to flag interesting bits}
  \only<2>{User clicks on segment boundaries}\note[item]{slowest part}
- \only<3>{Map to boundary. Find segment lengths.}\note[item]{automatic again}
+ \only<3>{Map to boundary. Find segment lengths.}\note[item]{automatic again. look for asymmetry}
  \only<4>{Split segment into quadrants. Mean pixel value $\to$ intensity.}\note[item]{less noisy}
 %
 \end{frame}
@@ -410,7 +417,7 @@ Harvard University
                         {Figs/warm_large_left_LenRatioIm.eps}}}
  \note[item]{Head at bottom, tail at top. Remove peristalsis, just see bend.\par
  Bright: left bend, dark: right bend.}
- 
+
 %
 \end{frame}
 
@@ -430,6 +437,7 @@ Harvard University
  Pulse travels from tail to head.
  New pulse starts after previous reaches head.
  \note[item]{Mouth hooks drown out all else (ratio) in T1,T2.}
+ \note[item]{If we interfere with sensory feedback, could use this to measure effects.}
 %
 \end{frame}
 
@@ -445,7 +453,8 @@ Harvard University
 
  Basic pattern: Kink starts around (T3,A1,A2) and propagates back.
  Subsequent peristalsis starts before kink reaches tail.
- \note[item]{Completes \hs with peristalsis, not unbending.}
+ \note[item]{Completes \hs\ with peristalsis, not unbending.}
+ \note[item]{non-overlapping}
 %
 \end{frame}
 
@@ -603,7 +612,7 @@ Harvard University
 
    \item Central pattern generator?
 
-   Body re-coupling in mid-cycle -- dependence on \hs size?
+   Body re-coupling in mid-cycle -- dependence on \hs\ size?
  \end{itemize}
 %
 \end{frame}
@@ -645,11 +654,17 @@ Harvard University
 
 \begin{frame}{Conclusions}
 %
- Navigation results from combining two basic motor programs: peristalsis and asymmetric contraction. Pathway from sensory input $\to$ motor output simpler than previously thought.
+ All \hs s start at the same segments. Same circuits? Decision on size of \hs\ made later?
+ \note[item]{need to interfere with sensory input during \hs\ optogenetically.}
 
- \vp All \hs s start at the same segments. Same circuits? Decision on size of \hs\ made later?
+ \vp Navigation results from combining two basic motor programs: peristalsis and asymmetric contraction. Pathway from sensory input $\to$ motor output simpler than previously thought.
+ \note[item]{only need to decide when to switch programs}
+
+ \vp No ``unbending'' motor program. \note[item]{can only reject by going other way.}
 
  \vp Large \hs s: subsequent peristalsis starts at kink. Shows that peristalsis can start anywhere. Implications for circuits that control forward motion.
+ \note[item]{peristalsis initiator not localised}
+
 %
 \end{frame}
 
@@ -659,12 +674,12 @@ Harvard University
 \begin{frame}{Future directions}
 %
  Interfere with motor patterns (optogenetically).\note[item]{requires next point}
- 
+
  \vp Fully automate image analysis. \note[item]{machine learning - training data}
- 
- \vp Other stimuli. 
+
+ \vp Other stimuli.
  \note[item]{we did temperature, could do odour. light difficult. Unlikely to be any difference.}
- 
+
  \vp Reverse crawling, hunching, and rolling.\note[item]{nociceptive and rapid avoidance responses}
 %
 \end{frame}
