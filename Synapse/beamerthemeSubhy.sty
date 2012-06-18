@@ -46,7 +46,7 @@
 
 %\setbeamercolor*{normal text}{fg=tachameleon, bg=ta3gray}
 %\setbeamercolor*{block body}{bg=ta3aluminium,fg=black}
-%\setbeamercolor*{block title}{fg=taorange,bg=ta2gray}
+\setbeamercolor{block title}{use=structure,fg=white,bg=structure.fg!75!black}
 \setbeamerfont{block title}{size=\large,series=\bfseries}
 \setbeamercolor{upper separation line head}{fg=white}
 
@@ -58,6 +58,10 @@
 
 %\setbeamercolor{example text}{fg=taorange}
 %\setbeamercolor{structure}{fg=structure.fg!75!black}
+
+\setbeamercolor{section title}{parent=block body}
+\setbeamercolor{section title}{use=struture,fg=structure.fg!75!black}
+\setbeamerfont{section title}{size=\large,series=\bfseries,family=\sffamily}
 
 %\setbeamertemplate{itemize items}[triangle]
 \setbeamertemplate{navigation symbols}{}  % no navigation on a poster
@@ -157,6 +161,16 @@
     \rule{0pt}{2pt}
   \end{beamercolorbox}
 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{section title block}{
+   \vskip.75ex
+ \begin{beamercolorbox}[rounded=true,shadow=true,leftskip=1cm,colsep*=.75ex]{section title}%
+    \centering
+    \usebeamerfont{section title}\insertsection
+  \end{beamercolorbox}
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Display a grid to help align images ... and it looks nice with this color scheme

@@ -15,6 +15,7 @@
 %  \usepackage{amsmath,amsthm, amssymb, latexsym}
 %  \boldmath
 \usepackage[orientation=Landscape,size=a0,scale=1.4,debug]{beamerposter}
+\AtBeginSection[]{\usebeamertemplate{section title block}}
 
 %---------Packages-------------------------------------------------------
 
@@ -27,6 +28,7 @@
 %\usepackage[centertags]{amsmath}
 %\usepackage{amssymb}
 %\usepackage{xcolor}
+%\usepackage{color}
 %\usepackage{pgf}
 %\usepackage{graphicx}
 %
@@ -61,6 +63,41 @@
 \DeclareMathOperator{\snr}{SNR}
 \newcommand{\net}{molecular network}
 \newcommand{\Net}{Molecular network}
+%logic
+\newcommand{\means}{\Longleftrightarrow}
+\newcommand{\requires}{\Longleftarrow}
+%matrices
+\newcommand{\inv}{^{-1}}
+\newcommand{\dg}{^\mathrm{dg}}
+\newcommand{\trans}{^\mathrm{T}}
+\newcommand{\I}{\mathbf{I}}
+%vec of ones
+\newcommand{\onev}{\mathbf{e}}
+%mat of ones
+\newcommand{\onem}{\mathbf{E}}
+%Markov matrix
+\newcommand{\MM}{\mathbf{Q}}
+%equilibrium distribution
+\newcommand{\eq}{\mathbf{p}^\infty}
+%first passage times
+\newcommand{\fpt}{\mathbf{T}}
+%off-diag first passage times
+\newcommand{\fptb}{\overline{\fpt}}
+%fundamental matrix
+\newcommand{\fund}{\mathbf{Z}}
+%other symbols
+\newcommand{\Pb}{\mathbf{P}}
+\newcommand{\D}{\mathbf{D}}
+\newcommand{\pib}{\boldsymbol{\pi}}
+\newcommand{\Lb}{\boldsymbol{\Lambda}}
+\newcommand{\w}{\mathbf{w}}
+\newcommand{\W}{\mathbf{W}}
+\newcommand{\M}{\mathbf{M}}
+\newcommand{\F}{\boldsymbol{\Phi}}
+\newcommand{\CS}{\mathcal{S}}
+\newcommand{\CA}{\mathcal{A}}
+\newcommand{\CB}{\mathcal{B}}
+\newcommand{\comp}{^\mathrm{c}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -93,15 +130,56 @@ Department of Applied Physics, Stanford University, Stanford CA
 %-------------Column--------------------------------------------------------
 \begin{column}{0.32\linewidth}
 
-%-------------Box--------------------------------------------------------
 \section{Background}
+
+%-------------Box--------------------------------------------------------
+
 \begin{block}{Storage capacity of Hopfield networks}
 %
  \begin{itemize}
    \item Hopfield capacity $\propto N$ requires unbounded synaptic strengths.
    \item Bounded synapses $\implies$ capacity $\propto\log N$.
-   \item Can be ameliorated by using complex synapses
+   \item Trade-off between learning \& remembering.
+   \item Can be ameliorated by using metaplasticity in complex synapses
  \end{itemize}
+%
+\end{block}
+
+%-------------Box--------------------------------------------------------
+
+\begin{block}{Complex synapses}
+%
+ Not just a synaptic weight.
+ 
+ \vp Take into account state of \net.
+%
+\end{block}
+
+%-------------Box--------------------------------------------------------
+
+\begin{block}{Cascade and multistate models}
+%
+ Two models of metaplasticity in complex synapses
+%
+\end{block}
+
+
+
+\section{Framework}
+
+%-------------Box--------------------------------------------------------
+
+\begin{block}{Markov processes}
+%
+ We have two Markov processes describing transition probabilities for potentiation and depression.
+%
+\end{block}
+
+%-------------Box--------------------------------------------------------
+
+\begin{block}{Memory curve}
+%
+ Reconstruction error.
 %
 \end{block}
 
@@ -111,6 +189,7 @@ Department of Applied Physics, Stanford University, Stanford CA
 %-------------Column--------------------------------------------------------
 \begin{column}{0.32\linewidth}
 
+\section{Upper bounds on performance}
 
 %-------------Box--------------------------------------------------------
 
@@ -127,6 +206,8 @@ Department of Applied Physics, Stanford University, Stanford CA
  \begin{equation*}
    \SNR(\text{lifetime})=1
    \qquad
+   \implies
+   \qquad
    A \geq \text{lifetime}.
  \end{equation*}
  %
@@ -138,7 +219,24 @@ Department of Applied Physics, Stanford University, Stanford CA
 
 \begin{block}{Ordering the states}
 %
- Let 
+ Let $\fpt_{ij}$ be the mean first passage time from sate $i$ to state $j$. Kemeney's constant
+ %
+ \begin{equation*}
+   \eta = \sum_j \fpt_{ij} \eq_j,
+ \end{equation*}
+ %
+ is independent of the initial state $i$. \citerr{kemeny1960finite}
+ 
+ \vp We define:
+ %
+ \begin{equation*}
+   \eta^+_i = \eta = \sum_{j\in\text{strong}} \fpt_{ij} \eq_j,
+   \qquad
+   \eta^-_i = \eta = \sum_{j\in\text{weak}} \fpt_{ij} \eq_j.
+ \end{equation*}
+ %
+ These measure ``distance'' to the srong/weak states. 
+ They can be used to put the states in order (increasing $\eta^-$ or decreasing $\eta^+$).
 %
 \end{block}
 
@@ -153,7 +251,7 @@ Department of Applied Physics, Stanford University, Stanford CA
 %-------------Column--------------------------------------------------------
 \begin{column}{0.32\linewidth}
 
-
+\section{Envelope memory curve}
 
 
 %-------------Box--------------------------------------------------------
@@ -161,7 +259,7 @@ Department of Applied Physics, Stanford University, Stanford CA
 \begin{block}{References}
 %
  {\small
- \bibliographystyle{unsrt_slides}
+ \bibliographystyle{unsrt_poster}
  \bibliography{neuro,maths}
  }
 %
