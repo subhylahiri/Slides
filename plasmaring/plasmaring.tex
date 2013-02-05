@@ -1,0 +1,1968 @@
+% -*- TeX -*- -*- UK -*-
+% ----------------------------------------------------------------
+% arXiv Paper ************************************************
+%
+% Subhaneil Lahiri's template
+%
+% Before submitting:
+%    Comment out hyperref
+%    Comment out showkeys
+%    Replace \input{mydefs.tex} with its contents
+%    Replace \input{newsymb.tex} with its contents
+%    Put this file and the .bbl file in a zip/tar file
+%
+% **** -----------------------------------------------------------
+\documentclass[12pt,a4paper]{article}
+% Preamble:
+\usepackage{a4wide}
+\usepackage[centertags]{amsmath}
+\usepackage{amssymb}
+%\usepackage[sort&compress,numbers]{natbib}
+\usepackage{cite}
+\usepackage{ifpdf}
+\usepackage{color}
+\usepackage{pgf}
+\usepackage{graphicx}
+%
+\ifpdf
+\usepackage[pdftex,bookmarks]{hyperref}
+\else
+% For making PDF:
+%\usepackage[dvipdfm,bookmarks]{hyperref}
+% For making DVI:
+\usepackage[hypertex]{hyperref}
+\fi
+%
+% >> Only for drafts! <<
+%\usepackage[notref,notcite]{showkeys}
+% ----------------------------------------------------------------
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+%\numberwithin{equation}{section}
+%\renewcommand{\baselinestretch}{1.5}
+% ----------------------------------------------------------------
+% New commands etc.
+%\input{mydefs.tex}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\lr}{\leftrightarrow}
+\newcommand{\cdt}{\!\cdot\!}
+\newcommand{\vp}{\vspace{0.5cm}}
+%
+% brackets etc.
+\newcommand{\prn}[1]{\left ( #1 \right )}
+\newcommand{\brc}[1]{\left\{ #1 \right\}}
+\newcommand{\brk}[1]{\left [ #1 \right ]}
+\newcommand{\abs}[1]{\left | #1 \right |}
+%\newcommand{\av}[1]{\left\langle #1 \right\rangle}
+%
+%
+% Derivatives, etc. First argument is optional.
+\newcommand{\diff}[3][\rule{0mm}{0mm}]{\frac{\mathrm{d}^{#1} #2}{\mathrm{d}{#3}^{#1}}}
+\newcommand{\pdiff}[3][\rule{0mm}{0mm}]{\frac{\partial^{#1} #2}{\partial {#3}^{#1}}}
+\newcommand{\pdiffc}[3][\rule{0mm}{0mm}]{\left (\frac{\partial #2}{\partial {#3}}\right )_{\!\!#1}}
+%
+% Un-italicised letters
+\newcommand{\dr}{\mathrm{d}}
+\newcommand{\e}{\mathrm{e}}
+%
+% Put the preprint numbers in the top right corner of the page.
+% Use after \maketitle.
+% First argument: How high it needs to be raised,
+% Second argument: Width of the box,
+% Third argument: The preprint numbers.
+\newcommand{\preprintno}[3]{\hfill\raisebox{#1}[0cm][0cm]{
+\begin{minipage}[t]{#2}\begin{flushright} #3 \end{flushright}\end{minipage}}
+\vspace*{-\baselinestretch\baselineskip}}
+%
+% If you have changed the line spacing, e.g. with 
+% \renewcommand{\baselinestretch}{1.5},
+% the command \sgap produces a line break with the normal spacing.
+%\newlength{\lingap}
+%\setlength{\lingap}{\baselinestretch\baselineskip}
+%\addtolength{\lingap}{-\baselineskip}
+%\newcommand{\sgap}{\\[-\lingap]}
+%\input{newsymb.tex}
+\newcommand{\CO}{\mathcal{O}}
+\newcommand{\CN}{\mathcal{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\half}{\frac{1}{2}}
+\newcommand{\p}{\partial}
+\newcommand{\apm}{{\alpha^{\prime}}}
+\newcommand{\rz}{\rho_0}
+\newcommand{\tA}{\hat{\mathrm{A}}}
+\newcommand{\tB}{\hat{\mathrm{B}}}
+\newcommand{\tC}{\hat{\mathrm{C}}}
+\newcommand{\tOr}{\hat{\mathrm{O}}}
+\newcommand{\tE}{\widetilde{E}}
+\newcommand{\tL}{\widetilde{L}}
+\newcommand{\tS}{\widetilde{S}}
+\newcommand{\tT}{\widetilde{T}}
+\newcommand{\tO}{\widetilde{\Omega}}
+\newcommand{\tc}{\mathcal{T_\mathrm{c}}}
+\newcommand{\tloc}{\mathcal{T}}
+\newcommand{\floc}{\mathcal{F}}
+\newcommand{\eloc}{\mathcal{E}}
+\newcommand{\sloc}{\mathcal{S}}
+\newcommand{\ploc}{\mathcal{P}}
+\newcommand{\ri}{r_\mathrm{i}}
+\newcommand{\ro}{r_\mathrm{o}}
+\newcommand{\vi}{v_\mathrm{i}}
+\newcommand{\vo}{v_\mathrm{o}}
+\newcommand{\z}{\tilde{r}}
+\newcommand{\zi}{\z_\mathrm{i}}
+\newcommand{\zo}{\z_\mathrm{o}}
+\newcommand{\tw}{\widetilde{\omega}}
+\newcommand{\g}{\tilde h}
+\newcommand{\vot}{\tilde{v}_\mathrm{o}}
+\newcommand{\vit}{\tilde{v}_\mathrm{i}}
+\newcommand{\vm}{v_\mathrm{m}}
+\newcommand{\Red}[1]{{\color{red} #1}}
+\newcommand{\Green}[1]{{\color{green} #1}}
+\newcommand{\Blue}[1]{{\color{blue} #1}}
+
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title info:
+\title{Plasmarings as dual black rings}
+%
+% Author List:
+%
+\author{Subhaneil Lahiri$^{(a,b)}$ and
+        Shiraz Minwalla$^{(a)}$
+\\
+%
+% Addresses:
+%
+\small{\emph{$^{(a)}$Department of Theoretical Physics,
+                   Tata Institute of Fundamental Research,}}\\
+\small{\emph{Homi Bhabha Rd, Mumbai 400005, India}}\\
+%
+\small{\emph{$^{(b)}$Jefferson Physical Laboratory,
+                   Harvard University, Cambridge MA 02138, USA}}
+%
+}
+
+\begin{document}
+
+\maketitle
+
+% Preprint numbers, etc.
+\preprintno{8cm}{6cm}{
+    \texttt{arXiv:yymm.nnnn [hep-th]}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{abstract}
+We construct solutions to the relativistic Navier-Stokes equations
+that describe the long wavelength collective dynamics of the
+deconfined plasma phase of $\CN=4$ Yang Mills theory compactified
+down to $d=3$ on a Scherk-Schwarz circle and higher dimensional generalisations. Our solutions are stationary, axially symmetric spinning balls and rings of plasma. These solutions, which are dual to (yet to be constructed) rotating black holes and black rings in Scherk-Schwarz compactified AdS$_5$ and AdS$_6$, and have properties that are qualitatively similar to those of black holes and black rings in flat five dimensional supergravty.
+\end{abstract}
+
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beginning of Article:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{intro.tex}
+
+
+\section{Fluid dynamics}\label{sec:stress}
+
+
+
+In this paper we study aspects of the dynamics of the deconfined
+plasma described in the previous section. A full accounting for the
+dynamics of the `gluon plasma' is a very complicated problem.
+However, when the thermodynamic potentials and velocities vary over
+length scales large compared to the quasiparticle (`gluon') mean
+free path admit an effective description in terms of the equations
+of fluid dynamics. The variables in this description are the local
+values of the plasma or fluid velocity $u^\mu(x)$ and the plasma
+density $\rho(x)$ (the equation of state, as discussed in appendix
+\ref{app:eqstate}, may be used to trade the density for the pressure
+or the temperature). The equations of fluid dynamics are simply a
+statement of the conservation of the stress tensor
+%
+\begin{equation}\label{Epconsv:eq}
+  \nabla_\mu T^{\mu\nu} = \p_\mu T^{\mu\nu}
+                        + \Gamma^\mu_{\mu\lambda} T^{\lambda\nu}
+                        + \Gamma^\nu_{\mu\lambda} T^{\mu\lambda}
+                        = 0\,.
+\end{equation}
+%
+All input of the dynamical nature of the fluid that undergoes this
+flow appears in the specification of the stress tensor in terms of
+the velocity and density of the fluid, and from the thermodynamic
+equation of state (which determines the pressure and temperature as
+a function of density). In the rest of this brief subsection we
+describe the functional form of the fluid dynamical stress tensor
+for our plasma fluid  in detail.
+
+The stress tensor can be split into three parts:
+%
+\begin{equation*}
+  T^{\mu\nu} = T^{\mu\nu}_\mathrm{perfect} +
+          T^{\mu\nu}_\mathrm{dissipative} +
+          T^{\mu\nu}_\mathrm{surface}.
+\end{equation*}
+%
+The first part, $T^{\mu\nu}_\mathrm{perfect}$, is the stress tensor
+for a perfect fluid with no dissipative forces. It is a function
+only of fluid velocity and thermodynamic quantities in the rest
+frame, and not of their space time derivatives.
+
+The second part, $T^{\mu\nu}_\mathrm{dissipative}$, receives
+contributions from viscosity and heat flow. In the long wavelength
+limit this piece is linear in the first derivatives of the velocity
+and temperature.
+
+The third part, $T^{\mu\nu}_\mathrm{surface}$, represents surface
+contributions to the stress tensor, and requires more explanation.
+Any fluid configuration with a surface has large variations in (for
+instance) the fluid density over the scale of the mean free path, in
+directions normal to the surface (see for instance
+\cite{Aharony:2005bm}). As a consequence it is impermissable to use
+the Navier-Stokes equations for the fluid in the neighbourhood of
+the surface. When the deviations of the surface from a straight line
+are small over length scale of the mean free path, however, all
+effects of the surface may approximately be captured by a delta
+function localised `surface tension' contribution,
+$T^{\mu\nu}_\mathrm{surface}$, to the stress tensor. In the long
+wavelength approximation, this term depends only on the gradients of
+the surface and not its curvature.
+
+
+
+\subsection{Perfect fluid stress tensor}\label{sec:blkstr}
+
+%The most general ultralocal stress tensor one can build out of the
+%fluid velocity is
+%%
+%\begin{equation*}
+%  T^{\mu\nu}_\mathrm{perfect} = A u^\mu u^\nu + B g^{\mu\nu}\,.
+%\end{equation*}
+%%
+%$A,B$ may be physically interpreted by specialising the above
+%equation to a fluid at rest, $u^\mu = (1,0,0,\ldots)$. In that case
+%%
+%\begin{equation*}
+%  T^{\mu\nu}_\mathrm{perfect} =
+%  \begin{pmatrix}
+%    A-B & 0 & 0   \\
+%    0   & B & 0   \\
+%    0   & 0 & B   \\
+%  \end{pmatrix}
+%  =
+%  \begin{pmatrix}
+%    \rho & 0 & 0   \\
+%    0    & P & 0   \\
+%    0    & 0 & P   \\
+%  \end{pmatrix}
+%\end{equation*}
+%%
+%allowing us to identify $B$ with the fluid pressure and $A-B$ with
+%its density. Thus
+
+The most general ultralocal stress tensor one can build out of the
+fluid velocity and thermodynamic quantities that reduces to what is
+expected for a fluid at rest is
+\cite[ch.22]{Misner+ThorneETAL-Grav:73}
+%
+\begin{equation}\label{blkstr:eq}
+  T^{\mu\nu}_\mathrm{perfect} = (\rho+P) u^\mu u^\nu + P g^{\mu\nu}\,.
+\end{equation}
+%
+
+
+\subsection{Dissipative part}\label{sec:visc}
+
+Realistic fluids have a dissipative component to their stress tensor
+in addition to the perfect fluid piece. In the long wavelength
+limit, this stress tensor is a function of  the acceleration,
+expansion, projection, and shear tensors (see e.g. \cite[Exercise
+22.6-7]{Misner+ThorneETAL-Grav:73} and references therein),
+%Realistic fluids
+%have a dissipative component to their stress tensor in addition to
+%the perfect fluid piece. In the long wavelength limit, this stress
+%tensor is a function of  the acceleration, expansion, projection,
+%shear and rotation tensors (see e.g. \cite[Exercise
+%22.6-7]{Misner+ThorneETAL-Grav:73}),
+%
+\begin{equation}\label{fluidtensors:eq}
+\begin{split}
+  a^\mu &= u^\nu \nabla_\nu u^\mu, \\
+  \theta &= \nabla_\mu u^\mu, \\
+  P^{\mu\nu} &= g^{\mu\nu} + u^\nu u^\mu, \\
+  \sigma^{\mu\nu} &= \half \prn{P^{\mu\lambda} \nabla_\lambda u^\nu
+                   + P^{\nu\lambda} \nabla_\lambda u^\mu}
+                   - \frac{1}{d-1} \theta P^{\mu\nu}.%, \\
+%  \omega^{\mu\nu} &= \half \prn{P^{\mu\lambda} \nabla_\lambda u^\nu
+%                   - P^{\nu\lambda} \nabla_\lambda u^\mu}.
+\end{split}
+\end{equation}
+%
+In terms of these quantities and the heat flow vector $q^\mu$ (see
+immediately below)
+%
+\begin{equation}\label{extraTvisc:eq}
+  T^{\mu\nu}_\mathrm{dissipative} = -\zeta \theta P^{\mu\nu} -
+  2\eta\sigma^{\mu\nu} + q^\mu u^\nu + u^\mu q^\nu\,,
+\end{equation}
+%
+where $\zeta$ is the bulk viscosity, $\eta$ is the shear viscosity.
+The heat flux vector,
+%
+\begin{equation}\label{heatcond:eq}
+  q^\mu = -\kappa P^{\mu\nu} (\p_\nu\tloc + a_\nu\tloc)\,.
+\end{equation}
+%
+is the  relativistic generalisation of $\vec{q} = -\kappa
+\vec{\nabla} \tloc$ (here $\kappa$ is the thermal conductivity); the
+extra term in \eqref{heatcond:eq} is related to the inertia of
+flowing heat.
+
+
+
+
+\subsection{Surface contribution}\label{sec:srfstr}
+
+We will use a simple model of surface tension where the energy
+stored in the surface and the force per unit length are both given
+by $\sigma$, which we take to be the surface tension at the critical
+temperature computed in \cite{Aharony:2005bm}. We will ignore any
+dependance $\sigma$ could have on the fluid temperature. This
+approximation is valid when the fluid temperature at the surface
+does not deviate substantially from $\tc$.
+
+Consider a localised lump of fluid whose surface in space is given
+by the equation $f(x)=0$. The surface contribution to the stress
+tensor will be proportional to $\sigma\delta(f)$. In the long
+wavelength limit it will only depend on the first derivatives of
+$f$. The most general stress tensor we can build is
+%
+\begin{equation*}
+  T^{\mu\nu}_\mathrm{surface} = \brk{\alpha\, \p^\mu\! f\, \p^\nu\! f
+                   +\beta\, u^\mu u^\nu
+                   +\gamma\, (u^\mu\p^\nu\! f + \p^\mu\! fu^\nu)
+                   +\delta\, g^{\mu\nu}}\sigma\delta(f)\,.
+\end{equation*}
+%
+As $u^2=-1$ and $u^\mu\p_\mu f = 0$ (the surface moves with the
+fluid), the only invariant quantity that
+$\alpha,\beta,\gamma,\delta$ can depend on is $(\p^\mu\! f\, \p_\mu
+f)$. We can fix this dependence by demanding invariance under
+reparameterisations of the surface\footnote{However, we should
+choose a parametrisation such that $\p_\mu f$ is well behaved at the
+surface, e.g.\ $f=x$, but not $f=x^2$ or $f=\sqrt{x}$.} (e.g.
+$f(x)\ra g(x)f(x)$, so that $\p f\ra g\p f + f\p g = g\p f$ at the
+surface). Defining $f_\mu = \frac{\p_\mu f}{\sqrt{\p f\cdt\p f}}$:
+%
+\begin{equation*}
+    T^{\mu\nu}_\mathrm{surface} = \brk{A f^\mu f^\nu
+                   +B u^\mu u^\nu
+                   +C \prn{u^\mu f^\nu + f^\mu u^\nu}
+                   +D g^{\mu\nu}}\sigma\sqrt{\p f\cdt\p f}\delta(f)\,.
+\end{equation*}
+%
+We can fix $A,B,C,D$ by looking at a fluid at rest, $u^\mu =
+(1,0,0,\ldots)$, with a surface $f(x)=x$
+%
+\begin{equation*}
+  T^{\mu\nu}_\mathrm{surface} =
+  \begin{pmatrix}
+    B-D & C   & 0  \\
+    C   & A+D & 0  \\
+    0   & 0   & D  \\
+  \end{pmatrix}
+     \sigma\delta(x)=
+  \begin{pmatrix}
+    1 & 0 &  0   \\
+    0 & 0 &  0   \\
+    0 & 0 & -1   \\
+  \end{pmatrix}
+     \sigma\delta(x).
+\end{equation*}
+%
+This gives
+%
+\begin{equation}\label{srfStr:eq}
+  T^{\mu\nu}_\mathrm{surface} = \sigma\brk{f^\mu f^\nu - g^{\mu\nu}}
+               \sqrt{\p f\cdt\p f}\delta(f)\,.
+\end{equation}
+%
+
+
+
+
+\section{Rigidly rotating configurations}\label{sec:eqmot}
+
+In this section, we study stationary, axially symmetric rotating
+fluid configurations, whose equation of state is  presented in
+various forms in appendix \ref{app:eqstate}. We choose the axis of
+rotation as our origin in polar coordinates; in these coordinates
+the fluid density is a function only of the radial coordinate $r$,
+and the $(t,r,\phi)$ components of the velocity are given by $u^\mu
+= \gamma(1,0,\omega)$ with $\gamma=\prn{1-\omega^2r^2}^{-1/2}$.  We
+will find two distinct kinds of solutions; rotating plasmaballs with
+the topology of a two dimensional disk, and plasmarings with the
+topology of a two dimensional annulus. The configurations we find
+are exact solutions to the equations of relativistic fluid dynamics;
+in \S\S\ref{sec:validity} we will demonstrate that these equations
+accurately represent plasma dynamics for large enough plasmaballs
+and plasmarings.
+
+\subsection{Equations of motion}
+
+Our fluid propagates in flat 2+1 dimensional space. In polar
+coordinates
+%
+\begin{equation}\label{metric:eq}
+  \dr s^2 = -\dr t^2 + \dr r^2 + r^2 \dr \phi^2\,.
+\end{equation}
+%
+This gives the following non-zero Christoffel symbols:
+%
+\begin{equation}\label{chrst:eq}
+  \Gamma^r_{\phi\phi} = -r \qquad
+  \Gamma^\phi_{r\phi} = \Gamma^\phi_{\phi r} =
+  \frac{1}{r}\,.
+\end{equation}
+%
+
+For the  stationary, axially symmetric configurations under
+consideration, $\p_t T^{\mu \nu}= \p_\phi T^{\mu \nu} = 0$. Using
+\eqref{chrst:eq}, \eqref{Epconsv:eq} becomes
+%
+\begin{align}\label{tEpconsv:eq}
+    0 &= \nabla_\mu T^{\mu t}
+       = \p_r T^{rt} + \frac{1}{r}T^{rt}, \\ \label{rEpconsv:eq}
+    0 &= \nabla_\mu T^{\mu r}
+       = \p_r T^{rr} + \frac{1}{r}T^{rr} - r T^{\phi\phi}, \\ \label{fEpconsv:eq}
+    0 &= \nabla_\mu T^{\mu \phi}
+       = \p_r T^{r\phi} + \frac{3}{r}T^{r\phi}.
+\end{align}
+%
+
+The boundaries are $f_n = r-r_n$, with $n$ labelling the different
+boundaries (outer for the disk, outer and inner for the annulus).
+The `perfect fluid part' of the stress tensor is
+%
+\begin{equation}\label{blkstrour:eq}
+  T^{\mu\nu}_\mathrm{perfect} =
+   \begin{pmatrix}
+     \gamma^2(\rho+\omega^2r^2P) & 0 & \gamma^2\omega(\rho+P) \\
+     0                           & P & 0 \\
+     \gamma^2\omega(\rho+P)      & 0 & \frac{\gamma^2}{r^2}(\omega^2r^2\rho+P) \\
+   \end{pmatrix}
+\end{equation}
+%
+and the surface stress tensor
+%
+\begin{equation}\label{srfstrour:eq}
+  T^{\mu\nu}_\mathrm{surface} =
+    \sigma \sum_n \delta(r-r_n)
+  \begin{pmatrix}
+    1 & 0 & 0 \\
+    0 & 0 & 0 \\
+    0 & 0 & -\frac{1}{r^2} \\
+  \end{pmatrix}
+\end{equation}
+%
+For the dissipative part of the stress tensor, we find
+$\theta=\sigma^{\mu\nu}=0$ and
+%
+%\begin{equation}\label{ourfluidtensors:eq}
+%\begin{split}
+%  a_\mu &= (0,-\gamma^2\omega^2r,0)\,, \\
+%  P^{\mu\nu} &= \begin{pmatrix}
+%                  \gamma^2\omega^2r^2 & 0 & \gamma^2\omega \\
+%                  0                   & 1 & 0 \\
+%                  \gamma^2\omega      & 0 & \frac{\gamma^2}{r^2} \\
+%                \end{pmatrix},\\
+%  \omega_{\mu\nu} &= \gamma^3\omega r \begin{pmatrix}
+%                                        0       & \omega & 0 \\
+%                                        -\omega & 0      & 1 \\
+%                                        0       & 1      & 0 \\
+%                                      \end{pmatrix}.
+%\end{split}
+%\end{equation}
+%%
+%We also find
+%
+\begin{equation}\label{ourheatcond:eq}
+  \p_\nu\tloc + a_\nu\tloc = \prn{0, \gamma
+  \diff{}{r}\brk{\frac{\tloc}{\gamma}},0}\,,
+\end{equation}
+%
+so that
+%
+\begin{equation}\label{dissT:eq}
+  T^{\mu\nu}_\mathrm{dissipative} =
+   -\kappa\gamma^2\diff{}{r}\brk{\frac{\tloc}{\gamma}}
+   \begin{pmatrix}
+     0 & 1      & 0      \\
+     1 & 0      & \omega \\
+     0 & \omega & 0      \\
+   \end{pmatrix}
+\end{equation}
+%
+
+We will now write the equations of motion $\nabla_\mu T^{\mu \nu}=0$
+temporarily ignoring the contribution from  this heat flow,
+$T^{\mu\nu}_\mathrm{dissipative}$; it will turn out (we see this
+immediately below) that $T^{\mu\nu}_\mathrm{dissipative}$ actually
+vanishes on our solutions, justifying this procedure.
+
+The only non-trivial equation of motion, \eqref{rEpconsv:eq}, can be
+written as
+%
+\begin{equation}\label{eom:eq}
+  \diff{P}{r} = \frac{\omega^2r}{1-\omega^2r^2}\,(\rho+P)
+              - \sum_n \frac{\sigma}{r}\, \delta(r-r_n)\,.
+\end{equation}
+%
+For these fluids (with no chemical potentials for any conserved
+charges), $P=-f$ is a function only of $\tloc$, so $P+\rho = s\tloc$
+and $\diff{P}{\tloc} = s$. So, away from the boundaries,
+\eqref{eom:eq} becomes
+%
+\begin{equation}\label{tempr:eq}
+\begin{split}
+  s \diff{\tloc}{r} &= s \tloc \diff{\ln\gamma}{r} \\ \implies
+  \diff{}{r}\brk{\frac{\tloc}{\gamma}} &= 0
+\end{split}
+\end{equation}
+%
+It follows that $T^{\mu \nu}_\mathrm{dissipative}$  vanishes for
+rigid rotation, justifying our neglect of heat flow.
+
+Our discussion has not assumed a specific form of the equation of
+state. Using this particular equation of state of our plasma
+\eqref{therm3d:eq}, we can rewrite \eqref{tempr:eq} in the fluid
+interior as
+%
+\begin{equation}\label{eombulk:eq}
+  \prn{\rho(r)-\rz}\prn{1-\omega^2r^2}^2 = \text{constant}.
+\end{equation}
+%
+Integrating \eqref{eom:eq} across a surface gives
+%
+\begin{equation}\label{bcndgen:eq}
+  P_>-P_< = -\frac{\sigma}{r}\,.
+\end{equation}
+%
+where $P_>$ and $P_<$ are the pressures at infinitesimally greater
+and smaller radii than the location of the surface.
+
+
+
+\subsection{Spinning ball}\label{sec:ballsol}
+
+Let us first study a fluid configuration with a single outer surface
+at $r=\ro$ with $P_>=0$. Using the equation of state
+\eqref{therm3d:eq}, the boundary condition \eqref{bcndgen:eq} can be
+written as
+%
+\begin{equation}\label{bcout:eq}
+  \rho(\ro) = 4\rz + \frac{3\sigma}{\ro}\,.
+\end{equation}
+%
+
+If we define dimensionless variables
+%
+\begin{equation}\label{newvars:eq}
+    \tw = \frac{\sigma\omega}{\rz} \,,   \qquad
+    \z = \frac{\rz r}{\sigma} \,,   \qquad
+    v = \omega r = \tw \z \,,
+\end{equation}
+%
+then \eqref{eombulk:eq} can be written as
+%
+\begin{equation}\label{ballsol:eq}
+  \prn{\frac{\rho(v)-\rz}{3\rz}}\prn{1-v^2}^{2}
+       = \prn{1+\frac{\tw}{\vo}}\prn{1-\vo^2}^{2}
+       \equiv g_+(\vo).
+\end{equation}
+%
+
+Note that the range of $v$ is $[0,1]$ and $\rho(v)-\rz$ is always
+positive for this solution, as is required for the last equation of
+\eqref{therm3d:eq} to make sense.
+
+We can also compute the local plasma temperature using
+\eqref{therm3d:eq}
+%
+\begin{equation}\label{temploc:eq}
+  \tloc = \gamma\prn{\frac{\rz g_+(\vo)}{\lambda}}^{1/4}.
+\end{equation}
+%
+
+\subsection{Spinning ring}\label{sec:ringsol}
+
+We now turn to solutions that have an inner surface well an outer
+surface. In addition to the boundary condition at the outer radius
+\eqref{bcout:eq} we now have
+%
+\begin{equation}\label{bcin:eq}
+  \rho(\ri) = 4\rz - \frac{3\sigma}{\ri}\,.
+\end{equation}
+%
+
+
+So the full solution is
+%
+\begin{equation}\label{ringsol:eq}
+ \begin{split}
+  \prn{\frac{\rho(v)-\rz}{3\rz}}\prn{1-v^2}^{2}
+       = \prn{1+\frac{\tw}{\vo}}\prn{1-\vo^2}^{2}
+       &\equiv g_+(\vo)\\
+       = \prn{1-\frac{\tw}{\vi}}\prn{1-\vi^2}^{2}
+       &\equiv g_-(\vi).
+ \end{split}
+\end{equation}
+%
+
+Note that $\rho(v)-\rz\geq 0$ provided that $\vi \geq \tw$.
+
+%The relation between $\vo$ and $\vi$ can be written as
+%%
+%\begin{equation}\label{vovi:eq}
+%  \begin{split}
+%    0 =&\, U(\vo,\vi,\tw)
+%         \equiv \frac{\vo\vi}{\vo+\vi}(g_+(\vo)-g_-(\vi)) \\
+%      =&\, \tw - 2 \tw \vi \vo + 2 \vi^2 \vo + \tw \vi^3 \vo - \vi^4 \vo -
+%    2 \vi \vo^2 - \tw \vi^2 \vo^2 + \vi^3 \vo^2 \\ &+ \tw \vi \vo^3 -
+%    \vi^2 \vo^3 + \vi \vo^4.
+%  \end{split}
+%\end{equation}
+%%
+%This can be used to eliminate $\tw$ using
+%%
+%\begin{equation}\label{aelim:eq}
+%  \tw = \frac{ \vo  \vi (\vo - \vi)(2 - \vo^2 - \vi^2)}
+%  {1 - \vo \vi (2 - \vo^2 + \vo \vi - \vi^2)}\,,
+%\end{equation}
+%%
+%however, this can make the distinction between different solutions
+%difficult to see. We could also use \eqref{vovi:eq} to eliminate
+%$\vo$ or $\vi$. The expressions for these two are too complicated to
+%write here.
+
+Again, we can compute the local plasma temperature using
+\eqref{therm3d:eq}
+%
+\begin{equation}\label{temploc2:eq}
+  \tloc = \gamma\prn{\frac{\rz g_+(\vo)}{\lambda}}^{1/4}
+        = \gamma\prn{\frac{\rz g_-(\vi)}{\lambda}}^{1/4}.
+\end{equation}
+%
+
+
+\begin{figure}
+%
+  \begin{center}
+    %\includegraphics[width=6cm]{z_gpm.eps}
+    \input{gpm.tpx}
+  \caption{Graph of $g_\pm(v)$ showing possible values of $v_{o,i}$}\label{gpm:fig}
+  \end{center}
+\end{figure}
+
+%As shown in fig.\ref{gpm:fig}, we define $\vi^*$ to be the maximum
+%of $g_-$:
+%%
+%\begin{equation}\label{vis:eq}
+%  g_-'(\vi^*)=0\,.
+%\end{equation}
+%%
+%Then we can also define $g^*$ and $\vo^*$ by
+%%
+%\begin{equation}\label{vos:eq}
+%    g^* = g_-(\vi^*)\,, \qquad
+%    g_+(\vo^*) = g^*\,.
+%\end{equation}
+%%
+The two functions, $g_\pm(v)$ are schematically plotted in
+fig.\ref{gpm:fig} for some value of $\tw$, where we have labelled
+special velocities $\vi^*$ and $\vo^*$. As $\vi<1$, it is necessary
+that $\tw<1$.
+
+We can see that there are no solutions to $g_+(\vo)=g_-(\vi)$ for
+$\vo<\vo^*$ and two solutions for $\vo>\vo^*$. One of these has
+$\vi<\vi^*$ (the thick ring) and one has $\vi>\vi^*$ (the thin
+ring). The distinction between `thin' and `thick' rings will not
+prove physically important. In \S\S\ref{sec:exist} we will find it
+physically useful to distinguish between distinct ring solutions (we
+will call these large and small rings) at the same values of
+conserved charges (energy and angular momentum), rather than the
+parameters $\vo$ and $\tw$.
+
+
+
+
+
+
+\section{Thermodynamic Potentials}\label{sec:charges}
+
+In this section, we compute the thermodynamic potentials (energy,
+angular momentum, entropy, etc.) for the spinning plasmaball and
+plasmarings themselves, rather than their constituent plasma. This
+includes contributions from the kinetic energy of the plasma as well
+as its internal energy.
+
+The constitutive relations we find  are predictions for, e.g.,
+entropy as a function of mass and angular momentum of the dual
+gravity solutions.
+
+\subsection{Densities}\label{sec:chdens}
+
+In this subsection we list formulae for energy density, angular
+momentum density and entropy density. In the next subsection we will
+integrate these expressions to find explicit formulae for the
+energy, angular momentum and entropy of spinning plasmaballs and
+plasmarings.
+
+The energy density is given by
+%
+\begin{equation}\label{Edens:eq}
+\begin{split}
+  T^{tt} &= \gamma^2 \prn{\rho+\omega^2r^2P}
+              + \sum_n \sigma\, \delta(r-r_n) \\
+     &= \rz \brk{1+g_+(\vo)\frac{3+v^2}{\prn{1-v^2}^{3}}
+                + \sum_n 2\tw v \,\delta(v^2-v^2_n)}.
+\end{split}
+\end{equation}
+%
+
+The angular momentum density is given by
+%
+\begin{equation}\label{Ldens:eq}
+  r^2 T^{t\phi} = \gamma^2\omega r^2 (\rho+P) =
+    4\sigma\frac{g_+(\vo)}{\tw}\frac{v^2}{\prn{1-v^2}^{3}}\,.
+\end{equation}
+%
+
+
+The entropy density is given by
+%
+\begin{equation}\label{Sdens:eq}
+  \gamma s =
+  \frac{4\lambda^{1/4}}{3^{3/4}}\frac{(\rho-\rz)^{3/4}}{\sqrt{1-v^2}} =
+  4(\lambda\rz^3)^{1/4}\frac{g_+(\vo)^{3/4}}{(1-v^2)^{2}}
+\end{equation}
+%
+
+\subsection{Integrals}\label{sec:ints}
+%
+%The integration measure is
+%%
+%\begin{equation*}
+%  \int r\dr r \dr\phi = \frac{\pi\sigma^2}{\rz^2\tw^2}
+%                          \int \dr (v^2)
+%\end{equation*}
+%%
+
+We can define some dimensionless variables
+%
+\begin{equation}\label{redch:eq}
+  \tE = \frac{\rz E}{\pi\sigma^2} \,,\quad
+  \tL = \frac{\rz^2 L}{\pi\sigma^3} \,,\quad
+  \tS = \frac{\rz^{5/4}S}{\pi\lambda^{1/4}\sigma^2} \,,\quad
+  \tT = T\prn{\frac{\lambda}{\rz}}^{1/4},\quad
+  \tO = \frac{\sigma\Omega}{\rz}\,.
+\end{equation}
+%
+The last of these ensure that $\tT = \pdiffc[\tL]{\tE}{\tS}$ and
+$\tO = \pdiffc[\tS]{\tE}{\tL}$ follow from $T = \pdiffc[L]{E}{S}$
+and $\Omega = \pdiffc[S]{E}{L}$
+
+
+\subsubsection{Spinning ball}\label{sec:ballch}
+
+Energy
+%
+\begin{equation}\label{ballE:eq}
+  \tE = \frac{4\vo^2-\vo^4+5\tw \vo-\tw \vo^3}{\tw^2}
+%    = (4\zo^2+3\zo) - \tw^2 (\zo^4+\zo^3)\,.
+\end{equation}
+%
+Angular momentum
+%
+\begin{equation}\label{ballL:eq}
+  \tL = \frac{2\vo^4+2\tw \vo^3}{\tw^3}
+%    = 2\tw (\zo^4+\zo^3)\,.
+\end{equation}
+%
+Entropy
+%
+\begin{equation}\label{ballS:eq}
+  \tS = \frac{4\vo^2}{\tw^2}\sqrt{1-\vo^2}
+         \prn{1+\frac{\tw}{\vo}}^{3/4}
+%    = 4\zo^2\sqrt{1-\tw^2\zo^2}
+%         \prn{1+\frac{1}{\zo}}^{3/4}.
+\end{equation}
+%
+
+\subsubsection{Spinning ring}\label{sec:ringch}
+
+Energy
+%
+\begin{equation}\label{ringE:eq}
+\begin{split}
+    \tE &= \frac{4(\vo^2-\vi^2) - (\vo^4-\vi^4)
+                 + 5\tw (\vo+\vi) - \tw (\vo^3+\vi^3)}
+             {\tw^2}
+%    \\
+%    &= \brk{4(\zo^2-\zi^2) + 5(\zo+\zi)}
+%     - \tw^2 \brk{(\zo^4-\zi^4) + (\zo^3+\zi^3)}
+\end{split}
+\end{equation}
+%
+Angular momentum
+%
+\begin{equation}\label{ringL:eq}
+\begin{split}
+  \tL &= \frac{2(\vo^4-\vi^4)+2\tw (\vo^3+\vi^3)}{\tw^3}
+%  \\
+%    &= 2\tw\brk{(\zo^4-\zi^4) + (\zo^3+\zi^3)}.
+\end{split}
+\end{equation}
+%
+Entropy
+%
+\begin{equation}\label{ringS:eq}
+\begin{split}
+  \tS &= \frac{4}{\tw^2}
+        \brk{\sqrt{1-\vo^2}\prn{1+\frac{\tw}{\vo}}^{3/4}
+            -\sqrt{1-\vi^2}\prn{1-\frac{\tw}{\vi}}^{3/4}}
+%   \\
+%    &= \frac{4}{\tw^2}
+%       \brk{\sqrt{1-\tw^2\zo^2}\prn{1+\frac{1}{\zo}}^{3/4}
+%            -\sqrt{1-\tw^2\zi^2}\prn{1-\frac{1}{\zi}}^{3/4}}.
+\end{split}
+\end{equation}
+%
+
+
+\subsection{Temperature and angular velocity}\label{sec:temp}
+
+In this subsection we determine the temperature and angular velocity
+of spinning plasmaballs and plasmarings using
+%
+\begin{equation}\label{tempdef:eq}
+  \tT = \pdiffc[\tL]{\tE}{\tS}, \qquad   \tO = \pdiffc[\tS]{\tE}{\tL}.
+\end{equation}
+
+
+%
+Note that the temperature defined above is different from the local
+plasma temperature, $\tloc$ (which varies across our solutions), in
+(\ref{therm:eq}-\ref{therm3d:eq}); the angular velocity defined
+above will turn out to be $\omega$ on all our solutions, although it
+is apparently a priori different.
+
+It may be verified that the temperature and angular velocity of
+plasmaballs is given by
+%
+\begin{equation}\label{temp:eq}
+  \tT = [g_+(\vo)]^{1/4}, \qquad \tO = \tw\,.
+\end{equation}
+%
+The corresponding expressions  for the rings are identical
+%
+\begin{equation}\label{temp2:eq}
+  \tT = [g_+(\vo)]^{1/4} = [g_-(\vi)]^{1/4}, \qquad \tO = \tw\,.
+\end{equation}
+%
+
+Thus, local temperatures, $\tc$, and angular velocities, $\omega$,
+for both the ball and the ring, are given simply in terms of $T$ and
+$\Omega$
+%
+\begin{equation*}
+  \tloc = \frac{T}{\sqrt{1-v^2}}\,, \qquad \omega=\Omega\,.
+\end{equation*}
+%
+
+
+\section{Solutions at fixed energy and angular
+momentum}\label{sec:enang}
+
+\subsection{Existence}\label{sec:exist}
+
+\begin{figure}
+%
+\begin{center}
+%\small{\Green{Green} - ball, \Red{Red} - thin ring, \Blue{Blue} - thick ring.} \\
+  %\small{(a)}%\includegraphics[width=4.7cm]{z_ballexist.eps}
+  \input{ballexist.tpx}
+  %\small{(b)}%\includegraphics[width=4.7cm]{z_ringexist.eps}
+  \hspace{2.5cm}
+  \input{ringexist.tpx}
+  %\small{(c)}%\includegraphics[width=4.7cm]{z_allexist.eps}
+%  \input{allexist.tpx}
+% \\ \small{\Green{Green} - ball, \Red{Red} - thin ring, \Blue{Blue} -
+%thick ring.}
+  \caption{Scatter plots of energy and angular momentum of (a)
+spinning balls and (b) rings.}\label{exist_scat:fig}
+\end{center}
+\end{figure}
+
+In fig.\ref{exist_scat:fig}, we display scatter plots for the energy
+and angular momentum of ball and ring solutions over the full range
+of solution parameters.\footnote{In order to generate these plots
+for the ball, a range of vales of $(\vo,\tw)$ were chosen and
+$(E,L)$ were computed using (\ref{ballE:eq},\ref{ballL:eq}). For the
+ring, a range of vales of $(\vi,\tw)$ were chosen, $\vo$ was
+computed using \eqref{ringsol:eq}, and $(E,L)$ were computed using
+(\ref{ringE:eq},\ref{ringL:eq}).} The various regions of existence
+of the plasmaball, thin plasmaring and thick plasmaring in the $E-L$
+plane are drawn schematically in fig.\ref{exist_prelim:fig}.
+
+\begin{figure}
+%
+ \begin{center}
+ \small{O - no solutions, A - 1 ring, B - 2 rings, C - 1 ball.}\\
+  (a)%\includegraphics[width=4cm]{ballreg.eps}
+  \input{ballreg.tpx}
+  \hspace{2.5cm}
+  (b)%\includegraphics[width=4cm]{ringreg.eps}
+  \input{ringreg.tpx}
+ \caption{Regions where (a) ball and (b) ring solutions
+exist.}\label{exist_prelim:fig}
+ \end{center}
+\end{figure}
+
+
+The ball solution exists over a region C in the $E-L$ plane. At the
+boundary of the region C the ball solution $\vo$ attains its maximum
+value of unity. Using (\ref{ballE:eq},\ref{ballL:eq}) we find an
+analytic expression for the boundary of C:
+%
+\begin{equation}\label{ballexist:eq}
+  \tL = \frac{2}{27}\brk{(3\tE+4)^{3/2}-9\tE-8}
+     \sim \frac{2\tE^{3/2}}{3^{3/2}}
+     \quad\text{for large }\tE\,.
+\end{equation}
+%
+From \eqref{temp:eq}, we see that balls on this boundary saturate
+the extremality bound (i.e.\ have zero temperature).
+
+Like the balls, rings of a fixed energy have a maximum value of
+angular momentum. Rings at the edge of this bound (the boundary
+between O and A in fig.\ref{exist_prelim:fig}b) have $\vo=\vi=1$ and
+so are extremal (see \eqref{temp2:eq}) and of zero width. Using
+(\ref{ringE:eq},\ref{ringL:eq}) the O-A boundary is given by
+%
+\begin{equation}\label{thinexist:eq}
+  \tL = \frac{\tE^2}{16}\,,
+\end{equation}
+%
+(this expression is valid only for $\tE>8$, $\tL>2$; at lower
+energies $\tw$ exceeds unity).
+
+As we lower angular momentum of the solution, this ring moves away
+from extremality and increases in width. At a particular angular
+momentum (the boundary between region A and region B) a new ring
+solution comes into existence. The corresponding solution has
+$\vo=1$, $\vi=\tw$ and so is extremal (see \eqref{temp2:eq}. Using
+(\ref{ringE:eq},\ref{ringL:eq}), the analytic expression for the A-B
+boundary is given by
+%
+\begin{equation}\label{thickexist:eq}
+  \tL = \frac{2}{27}\brk{(3\tE+1)^{3/2}-9\tE+1}
+     \sim \frac{2\tE^{3/2}}{3^{3/2}}
+     \quad\text{for large }\tE\,,
+\end{equation}
+%
+(for $\tE>8$, $\tL>2$ as above). In the high energy limit  $\tE \gg
+1$ the ratio of angular momentum for the new extremal rings (at the
+A-B boundary) and extremal plasmaball tends to unity, (even though
+the the difference between angular momenta does not go to zero).
+Consequently the leading high energy behaviour of
+\eqref{thickexist:eq} and \eqref{ballexist:eq} is the same in this
+limit,  as is also clear from fig.\ref{exist_final:fig}. We
+emphasise that, for our solutions, the extremal ball and extremal
+thick ring are not quite identical (as is the case for black holes
+and small black rings \cite{Emparan:2001wn} in flat space) as the
+inner radius of our extremal thick rings does not vanish. However,
+the inner radius of the extremal thick ring is always (for all
+values of energy) of the same order as the thickness of the domain
+wall. As the fluid dynamics approximations fail precisely under
+these conditions, it could well be that the new extremal plasmaring
+and extremal plasmaball are actually identical configurations.
+
+As we further lower angular momentum, the new ring solution moves
+away from extremality; this new solution always has a smaller outer
+radius than the `original' ring solution (the solutions that also
+exists in region A), as shown in fig.\ref{outer:fig}. As a
+consequence, we refer to these two ring solutions as small and large
+respectively.
+
+\begin{figure}
+%
+ \begin{center}
+  %\small{ Red - thin ring, Blue - thick ring.} \\
+   %\includegraphics[width=6cm]{outer.eps}
+   \input{outer.tpx}
+ \caption{Outer radius of large and small rings as a function of
+angular momentum, $\tL$, at fixed energy,
+$\tE=40$.}\label{outer:fig}
+ \end{center}
+\end{figure}
+
+
+Further lowering angular momentum, we hit the boundary between
+regions B and O where the two ring solutions merge into each other.
+At still lower angular momentum, we have no ring solutions. The C-O
+boundary may thus be obtained by minimising $\tL$ at fixed $\tE$. If
+one uses \eqref{ringsol:eq} to eliminate $\tw$, this amounts to
+%
+\begin{equation*}
+  \pdiffc[\vi]{\tE}{\vo}\pdiffc[\vo]{\tL}{\vi}
+  -\pdiffc[\vo]{\tE}{\vi}\pdiffc[\vi]{\tL}{\vo}
+    =0.
+\end{equation*}
+%
+
+The existence of plasmaball and plasmaring solutions in the E-L
+plane may thus be summarised as in fig.\ref{exist_final:fig}.
+
+
+
+
+%We have so far differentiated between `thin' and `thick' ring
+%solutions based on the $(\vo,\tw)$ parameterisation. While this
+%distinction was useful for the formal purposes, we now see that
+%there exists a more physical distinction between ring solutions.
+%While a single thin ring exists in the region A of
+%fig.\ref{exist_prelim:fig}, two ring solutions exist in regions B
+%and C. Let us denote the union of the regions B and C by $\tB$. In
+%the rest of this paper we will refer to the ring in region A, and
+%the ring with larger outer radius in $\tB$ as the \emph{large ring}.
+%The smaller ring in $\tB$ will be called the \emph{small ring}. Note
+%that small rings are always thick, while large rings could be either
+%thin (regions A and B) or thick (region C) - however the distinction
+%between thin and thick large rings is physically unimportant; we
+%will not find it necessary to distinguish between the regions B and
+%C in the rest of this paper. The existence of plasmaball and
+%plasmaring solutions in the E-L plane may thus be summarised as in
+%fig.\ref{exist_final:fig}.
+%
+
+
+\begin{figure}
+%
+ \begin{center}
+  \small{$\tOr$ - no solutions, $\tA$ - large ring, $\tB$ - large ring, small ring
+  and ball, $\tC$ - ball.}\\
+  %\small{Green - ball, Red - large ring, Blue - small ring.} \\
+   %\includegraphics[width=4cm]{allreg.eps}
+   \input{allreg.tpx}
+   \hspace{2.5cm}
+   %\includegraphics[width=6cm]{allexist2.eps}
+   \input{allexist2.tpx}
+ \caption{Regions where ball and ring solutions exist.}
+\label{exist_final:fig}
+ \end{center}
+\end{figure}
+
+
+
+
+\subsection{Validity}\label{sec:validity}
+
+As we have described above,  plasmaballs and plasmarings are exact
+solutions to the relativistic Navier-Stokes equations (supplemented
+by sharp surface boundary conditions). However these equations of
+fluid dynamics accurately capture the dynamics of the fluid plasma
+only under certain conditions. In our discussion we have assigned a
+well defined pressure and temperature to the fluid at each point in
+space. Clearly this procedure is valid only when the variation of
+these thermodynamic quantities is small over the length scale of the
+mean free path of the quasiparticles (roughly gluons) of our system.
+The mean free path is of the same order as the mass gap of the
+theory, which in turn is similar to the deconfinement
+temperature.\footnote{It was argued in \cite{Aharony:2005bm} that
+the mean free path does not scale with $N$. According to
+quasiparticle kinetic theory, the mean free path is approximately
+the ratio of the shear viscosity and the energy density. The
+computations reviewed in \cite{Son:2007vk} show that this quantity
+is of order $1/\tc$ in the limit of the 't~Hooft coupling
+$\lambda\ra\infty$.}
+
+Second, we have treated the surface of the plasma as sharp; in
+reality this surface has a thickness of order $\tc^{-1}$.
+Consequently, our treatment of the surface is valid only when its
+deviation from a straight line occurs on scales large compared to
+$\tc^{-1}$ (higher derivative contributions to the surface stress
+tensor, which we have ignored in our treatment, would become
+important if this were not the case); further we must also require
+that only a small fraction of the fluid should reside in surfaces.
+
+Thirdly, we have ignored the fact that the surface tension is a
+function of the fluid temperature at the surface, and simply set
+$\sigma=\sigma(\tc)$. This is valid provided that $\tloc/\tc \approx
+1$ at all surfaces.
+
+Finally, the fluid evolution equations, by their very nature, track mean
+velocities and energy densities, ignoring fluctuations. In our context this
+approximation is justified by large $N$; fluctuations are suppressed by powers of $1/N^2$,
+dual to the suppression of quantum metric fluctuations in the bulk.
+
+Recall that
+%
+\begin{equation*}
+  \rz \sim N^2\tc^3, \qquad \sigma \sim  N^2\tc^2,
+  \qquad \text{so}\quad \frac{1}{\tc} \sim \frac{\sigma}{\rz}
+\end{equation*}
+%
+(for the domain wall solution of \cite{Aharony:2005bm},
+$\frac{\sigma}{\rz}=2.0\times \frac{4}{\tc}$ and the thickness is
+$6\times \frac{1}{2\pi \tc}$).
+
+As an estimate of the scale over which thermodynamic quantities
+vary, we compute the fractional change in the fluid temperature over
+the distance of a mean free path. As the temperature is proportional
+to $\gamma$, we should look at
+%
+\begin{equation*}
+  \frac{1}{\tc}\diff{}{r}\ln\gamma \sim
+   \frac{\sigma}{\rz} \frac{\omega^2 r}{1-\omega^2r^2} =
+   \frac{\tw v}{1-v^2}\,.
+\end{equation*}
+%
+As this takes its maximum value at the outer surface, the condition
+for the validity of the equations of fluid dynamics  may be
+estimated to be
+%
+\begin{equation}\label{validity2:eq}
+  \Delta u \equiv \frac{\tw \vo}{1-\vo^2} \ll 1\,.
+\end{equation}
+%
+
+Our treatment of the surface as a zero-thickness object is valid if
+%
+\begin{equation*}
+  \{\ro,\ri,\ro-\ri\} \gg \frac{1}{\tc} \sim
+  \frac{\sigma}{\rz}
+\end{equation*}
+%
+(for the ring, the $\ro$ inequality in the equation above follows
+automatically from the either of the other two inequalities). This
+condition can be rewritten in terms of our dimensionless variables
+as
+%
+\begin{equation}\label{validity:eq}
+\begin{aligned}
+  \vo &\gg \tw
+      &\quad&\text{or}\quad&
+   \zo &\gg 1
+      &\quad \text{for the ball,}\\
+  \{\vi,\vo-\vi\} &\gg \tw
+      &\quad&\text{or}\quad&
+   \{\zi,\zo-\zi\} &\gg 1
+      &\quad \text{for the ring.}
+\end{aligned}
+\end{equation}
+%
+
+
+
+
+In fig.\ref{validity:fig}, we have plotted $\ln(1/\Delta u)$,
+$\ln(\zi)$, $\ln(\zo-\zi)$ and $\ln(\zo)$ for the thin ring, thick
+ring and ball. From the figure we observe that these quantities are
+large (and so the fluid dynamics approximations of this paper are
+accurate) when our rings and balls have large energy and we stay
+away from the extremality bounds.
+
+\begin{figure}
+%
+ \begin{center}
+   %(a)i)\includegraphics[width=4cm]{valthindu.eps}
+   \input{valthindu.tpx}
+   %\hspace{0.3cm}
+   %ii)\includegraphics[width=4cm]{valthinzi.eps}
+   \input{valthinzi.tpx}
+   %\hspace{0.3cm}
+   %iii)\includegraphics[width=4cm]{valthinzozi.eps}\\
+   \input{valthinzozi.tpx}\\
+   %(b)i)\includegraphics[width=4cm]{valthickdu.eps}
+   \input{valthickdu.tpx}
+   %\hspace{0.3cm}
+   %ii)\includegraphics[width=4cm]{valthickzi.eps}
+   \input{valthickzi.tpx}
+   %\hspace{0.3cm}
+   %iii)\includegraphics[width=4cm]{valthickzozi.eps}\\
+   \input{valthickzozi.tpx}\\
+   %(c)i)\includegraphics[width=4cm]{valballdu.eps}
+   \input{valballdu.tpx}
+   %\hspace{0.3cm}
+   %iv)\includegraphics[width=4cm]{valball.eps}
+   \input{valballzo.tpx}
+ \end{center}
+ \caption{Plots of i) $\ln(1/\Delta u)$ ii) $\ln(\zi)$, iii) $\ln(\zo-\zi)$,
+iv) $\ln(\zo)$ for (a) large rings, (b) small rings and (c) balls.}
+\label{validity:fig}
+\end{figure}
+
+
+
+
+
+\begin{figure}
+%
+ \begin{center}
+   \input{linvalballzero.tpx}
+   \input{linvalthickvi.tpx}
+   \input{linvalthinvi.tpx}\\
+   \input{linvalballvo.tpx}
+   \input{linvalthickvo.tpx}
+   \input{linvalthinvo.tpx}
+ \end{center}
+ \caption{Plots of (a) $\ln(\tloc_{min}/\tc)$ (b)
+$\ln(\tloc_{max}/\tc)$ for i) balls, ii) small rings, iii) large
+rings.} \label{linvalidity:fig}
+\end{figure}
+
+Finally,  validity of our approximation of the surface tension as
+a constant (independent of temperature) requires that the maximum
+and minimum values of $\ln(\tloc/\tc)$ (which occur at the outer and
+inner surfaces respectively) are both small. We have plotted these
+quantities in fig.\ref{linvalidity:fig}. It is clear from these
+figures that this condition is fulfilled for large energy and
+angular momentum provided that we are not near extremality.
+
+
+
+
+\subsection{Global stability and phase diagram}\label{sec:globstab}
+
+Recall that (see fig.\ref{exist_final:fig}) at fixed values of
+energy and angular momentum, we have either 0, 1 or 3 plasmaball /
+plasmaring solutions. At those values of charges for which multiple
+solutions exist, it is natural to inquire which of these solutions
+is entropically favoured. In fig.\ref{ent:fig} we have plotted the
+entropy of plasma ball and plasmaring solutions as a function of
+angular momentum at fixed energy.
+
+Note that, when it exists, the small ring always carries lower
+entropy than both the big ring and the plasmaball. At low enough
+angular momentum the plasmaball is the only solution. This solution
+continues to be entropically dominant (upon raising the angular
+momentum) over an interval, even after the new ring solutions are
+nucleated. At a critical angular momentum, however, the entropy of
+the large ring equals and then exceeds the entropy of the plasmaball
+(all three ring solutions continue to exist in a neighbourhood about
+this point). The large ring is the entropically dominant solution at
+all larger angular momenta.
+
+
+\begin{figure}
+%
+ \begin{center}
+  \small{Green - ball, Red - large ring, Blue - small ring.} \\
+  %\includegraphics[width=7cm]{ent.eps}
+  \input{ent.tpx}
+ \caption{Entropy, $\tS$, as a function of angular momentum, $\tL$
+for fixed energy, $\tE=40$.}\label{ent:fig}
+ \end{center}
+\end{figure}
+
+
+The phase boundary can be seen in fig.\ref{phase:fig}.
+
+
+\begin{figure}
+%
+ \begin{center}
+%  \small{Black - phase boundary, Green - OD, Red - OA, Blue - AB, Purple - OC boundary.} \\
+%  \includegraphics[width=7cm]{bndph.eps}
+   \input{bndph.tpx}
+ \caption{Phase boundary with existence boundaries.}\label{phase:fig}
+ \end{center}
+\end{figure}
+
+
+
+
+
+
+
+\subsection{Comparison with black rings in flat 5D space}\label{sec:existcomp}
+
+As we have explained in the introduction, the plasmaball and
+plasmaring solutions of this paper are dual to black holes and black
+rings in the background \eqref{deconfmet:eq}. Unfortunately the
+corresponding gravitational solutions have not yet been constructed;
+however exact Black ring solutions to the vacuum Einstein equations
+in 5 dimensions, were obtained in \cite{Emparan:2001wn} (see
+\cite{Emparan:2006mm} for a review). These solutions were further
+studied in \cite{Elvang:2006dd}. In this subsection we compare the
+properties these black rings and black holes with our plasmaballs
+and plasmarings, and find broad qualitative agreement between the
+two. \footnote{While we expect the properties of plasmaballs and
+plasmarings to match quantitatively with those of black holes and
+black rings in the background \eqref{deconfmet:eq}, we could not
+hope to find better than qualitative agreement with the properties
+of the same objects in flat space.}
+
+In fig.\ref{brphase:fig} we have presented a schematic plot for the
+existence of black hole and black ring solutions in 5 dimensional
+flat space. This figure looks fairly similar to
+figs.\ref{exist_final:fig},\ref{phase:fig}. The major qualitative
+difference is the absence of the analogue of the region O (see fig.
+\ref{exist_final:fig}) in fig. \ref{brphase:fig}. Thus unlike thin
+black rings in flat 5 dimensional space, plasmarings (and so black
+rings in Scherk-Schwarz AdS$_5$) have an upper bound to their
+angular momentum at fixed energy.
+
+It is interesting to pursue the comparison between these solutions
+in more detail. The gravitational analogue of fig.\ref{ent:fig}
+(presented as \cite[fig.3]{Emparan:2001wn}) looks fairly similar to
+our figure. The main qualitative differences are: unlike for
+plasmarings, the entropy of the large flat space black ring doesn't
+go to zero at a finite angular momentum (it asymptotes to zero at
+infinity) and the entropy of the small flat space black ring and
+black hole go to zero at exactly the same point instead of the
+slightly different values that we see. We expect that first of these
+differences reflects a physical difference between black rings in
+flat space and Scherk-Schwarz compactified AdS$_5$, the second
+difference is an artefact of the breakdown of the fluid dynamics
+approximation for extremal small rings (whose inner radius is always
+of order the mean free path).
+
+\begin{figure}
+\begin{center}
+  \small{A' - thin black ring, B' - thin black ring, thick black ring
+  and black hole, C' - black hole.}\\
+  \input{br.tpx}
+  \caption{Existence regions and phase boundary for black holes /
+rings.}\label{brphase:fig}
+\end{center}
+\end{figure}
+
+In even greater detail, we could quantitatively compare the
+boundaries between regions O, A, B and C (see
+fig.\ref{exist_prelim:fig}). These curves, as well as the phase
+boundary, may be parameterised by $L=xE^y$ at large energies.
+
+For black holes and black rings in flat space
+$y_{AB}=y_{OC}=y_{BO}=y_{phase}=\frac{3}{2}$. For our plasmaballs
+and plasmarings, as one can see in fig.\ref{logboundary:fig} (or
+from (\ref{ballexist:eq}-\ref{thickexist:eq}) for the first three),
+for large energy, we get $y_{OA}=2$, $y_{AB}=y_{OC}=\frac{3}{2}$,
+$y_{BO}=1.25$ and $y_{phase}=1.25$ (see table \ref{bndscale:tab}).
+
+It is meaningless to compare the $x$'s directly, as they are
+dimensionful quantities. However, when two $y$'s have the same
+value, the ratio of the corresponding $x$'s is dimensionless and may
+be compared. For black rings $x_{AB}=\sqrt{32G/27\pi}$,
+$x_{BO}=\sqrt{G/\pi}$ and $x_{phase}=\sqrt{256G/243\pi}$, so
+$x_{AB}/x_{OC}=1$, $x_{OC}/x_{BO}=\sqrt{32/27}$ and
+$x_{BO}/x_{phase}=9\sqrt{3}/16$. For plasmaballs and plasmarings, if
+we used the dimensionless quantities \eqref{redch:eq}, we find
+$x_{OA}=\frac{1}{16}$, $x_{AB}=x_{OC}=2/3^{3/2}$, $x_{BO}\approx
+0.60$ and $x_{phase}\approx 0.67$. Therefore $x_{AB}/x_{OC}=1$ and
+$x_{BO}/x_{phase}\approx 0.91$.
+
+
+\begin{figure}
+%
+ \begin{center}
+%  \small{Green - OD, Red - OA, Blue - AB, Purple - OC boundary.} \\
+%  (a) \includegraphics[width=4cm]{lglg.eps}
+%   \hspace{0.5cm}
+   \input{lglg.tpx}
+%  (b)\includegraphics[width=4cm]{grlg.eps}
+%   \hspace{0.5cm}
+   \input{grlg.tpx}
+%  (c)\includegraphics[width=4cm]{xf.eps}
+   \input{xf.tpx}
+ \caption{(a) log-log plots of the boundaries, (b) gradients of
+log-log plots, (c) $\tL/\tE^y \ra x$.}\label{logboundary:fig}
+ \end{center}
+\end{figure}
+
+%\begin{figure}
+%% \begin{center}
+%  (a) \includegraphics[width=4cm]{lglgph.eps}
+%   \hspace{0.5cm}
+%  (b)\includegraphics[width=4cm]{grlgph.eps}
+%   \hspace{0.5cm}
+%  (c)\includegraphics[width=4cm]{xph.eps}
+% \end{center}
+% \caption{(a) log-log plot of the phase boundary, (b) gradient of
+%log-log plot, (c) $\tL/\tE^y \ra x$.}\label{logphase:fig}
+%\end{figure}
+
+
+
+This is summarised in table \ref{bndscale:tab}. Note that the
+extremality boundaries, OA, AB and OC, occur precisely where at
+least one of the approximations discussed in \S\S\ref{sec:validity}
+breaks down. Therefore, nothing quantitative about these boundaries
+should be trusted.
+
+
+\begin{table}
+  \centering
+  \begin{tabular}{|c|c|c|}
+    \hline
+    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    Quantity & Black rings & Plasmarings \\
+    \hline
+    $y_{OA}$ & N/A & 2 \\
+    $y_{AB}$ & 3/2 & 3/2 \\
+    $y_{OC}$ & 3/2 & 3/2 \\
+    $y_{BO}$ & 3/2 & 1.25 \\
+    $y_{phase}$ & 3/2 & 1.25 \\
+    \hline
+    $x_{AB}/x_{OC}$ & 1 & 1 \\
+    $x_{OC}/x_{BO}$ & $\sqrt{32/27}$ & N/A \\
+    $x_{BO}/x_{phase}$ & $9\sqrt{3}/16 \approx 0.97$ & 0.91 \\
+    \hline
+  \end{tabular}
+  \caption{Comparison of scalings of boundaries for black rings and
+plasmarings.}\label{bndscale:tab}
+\end{table}
+
+
+%The gradient of the log-log plot for the CO boundary was found using
+%the usual tricks: first define
+%%
+%\begin{equation*}
+%\begin{split}
+%  X &= \begin{pmatrix}
+%         \pdiff{\tL}{\vo} & \pdiff{\tL}{\vi} & \pdiff{\tL}{\tw} \\
+%       \end{pmatrix},
+%   \\
+%  M &= \begin{pmatrix}
+%         \pdiff{\tE}{\vo} & \pdiff{\tE}{\vi} & \pdiff{\tE}{\tw} \\
+%         \pdiff{U}{\vo} & \pdiff{U}{\vi} & \pdiff{U}{\tw} \\
+%         \pdiff{V}{\vo} & \pdiff{V}{\vi} & \pdiff{V}{\tw} \\
+%       \end{pmatrix}.
+%\end{split}
+%\end{equation*}
+%%
+%Then we have
+%%
+%\begin{equation*}
+%\begin{split}
+%  \dr\tL &= X \cdot \begin{pmatrix}
+%                      \dr\vo \\
+%                      \dr\vi \\
+%                      \dr\tw \\
+%                   \end{pmatrix},
+%   \\
+%  \begin{pmatrix}
+%    \dr\tE \\
+%    0 \\
+%    0 \\
+%  \end{pmatrix}
+%   &= M \cdot \begin{pmatrix}
+%                      \dr\vo \\
+%                      \dr\vi \\
+%                      \dr\tw \\
+%                   \end{pmatrix},
+%\end{split}
+%\end{equation*}
+%%
+%therefore
+%%
+%\begin{equation*}
+%  \dr\tL = X \cdot M^{-1} \cdot   \begin{pmatrix}
+%                                    \dr\tE \\
+%                                    0 \\
+%                                    0 \\
+%                                  \end{pmatrix}.
+%\end{equation*}
+%%
+
+
+
+
+
+\subsection{Turning point stability}\label{sec:turn}
+
+We have seen in \S\S\ref{sec:globstab} that the spinning plasma
+solution of maximal entropy is the plasmaball (at low angular
+momentum) or the large plasmaring (at high angular momentum). The
+`phase transition' between these two solutions may be thought of as
+being of first order (in the sense that the two competing solutions
+are different at the phase transition point). The small plasmaring
+is entropically subdominant to both the plasmaball and the large
+plasmaring whenever it exists.
+
+This situation appears to lend itself to a description in terms of a
+Landau diagram, with the entropy given by a function of the
+(unidentified) order parameter that has two maxima (the plasmaball
+and the large plasmaring) separated by a single minimum (the small
+plasmaring). This analogy suggests - and we conjecture that - the
+small plasmaring is always dynamically unstable, while the
+plasmaball and large plasmarings are dynamically stable with respect
+to axisymmetric fluctuations.
+
+An honest verification of our conjecture would require a study of
+the spectrum of linear fluctuations about our plasmaball and
+plasmaring solutions, an analysis that we have not carried out. In
+this subsection, however, we present some evidence for our
+conjecture, using the `turning point' stability analysis of
+\cite{Poincare-lequdunemassflui:85} (see \cite{Arcioni:2004ww} for
+discussion and references).
+
+Consider a (not necessarily stable) equilibrium configuration that
+changes from being stable to unstable under continuous variation.
+The configurations we apply these considerations to are plasmarings;
+according to our conjecture these rings are stable to axisymmetric
+fluctuations when large but become unstable to the same modes when
+small. At the boundary of stability, the matrix of second
+derivatives of the entropy with respect to off shell variations (or
+`order parameters') of the configuration under question develops a
+zero eigenvalue. In the neighbourhood of this special point, a small
+change in the thermodynamic potentials of the solution give rise to
+a large change in the order parameter along the zero eigenvalue
+direction (as such a change is entropically inexpensive). As argued
+in \cite{1978MNRAS.183..765K, 1979MNRAS.189..817K, Sorkin:1981jc,
+Sorkin:1982ut}, this results in a divergent contribution to the
+second derivative of the equilibrium entropy as a function of
+equilibrium thermodynamic quantities (for instance the angular
+momentum at fixed energy) proportional to the negative inverse of
+the small eigenvalue.
+
+It follows that a configuration that changes stability has divergent
+second derivatives of entropy with respect to - say - angular
+momentum. Moreover the sign of this second derivative is positive in
+the `more stable' phase and negative in the `less stable' phase.
+Note that the turning point method gives information about the
+change in the number of unstable directions about a solution, but
+does not yield information about the absolute number of
+instabilities.\footnote{Moreover, this method only links vertical
+tangents - and not vertical asymptotes - in the graph of the first
+derivative of entropy with respect to (say) angular momentum vs.\
+angular momentum (a conjugacy diagram) to instabilities, as vertical
+asymptotes occur at boundaries of equilibrium solution space instead
+of separating solutions of differing degrees of stability.}
+
+The turning point method is useful because it yields information
+about stability properties, with respect to off shell fluctuations,
+of phases, using information only about on shell variations. It is
+especially useful in the study of nonextensive systems like black
+holes, for which negative specific heats do not necessarily imply
+dynamical instability. This method has been used to study the
+stability of black rings in 5 dimensions \cite{Arcioni:2004ww,
+Arcioni:2005fm}; it suggests that small black rings are always
+unstable, while large black rings are more stable in that context.
+This result corroborates the explicit linear fluctuation analysis
+about the flat space black rings \cite{Elvang:2006dd}.
+%(Note,
+%however, there are some suggestions that this might only be
+%sensitive to axisymmetric fluctuations).
+
+We now proceed to apply the turning point method to our plasmarings.
+Define
+%
+\begin{align}
+\label{betadef:eq}
+  \beta &= \pdiffc[\tL]{\tS}{\tE} = \frac{1}{\tT} =
+  \frac{1}{[g_+(\vo,\tw)]^{1/4}}\,,\\
+\label{psidef:eq}
+  \psi &= \pdiffc[\tE]{\tS}{\tL} = -\frac{\tO}{\tT} =
+  -\frac{\tw}{[g_+(\vo,\tw)]^{1/4}}\,.
+\end{align}
+%
+
+In fig.\ref{turn:fig} we have plotted $\psi$ against angular
+momentum at fixed energy for our ring solutions. This graph has a
+single turning point, precisely at the point at which the large ring
+turns into a small ring. The slope of the curve turns from positive
+(for the large ring) to negative (for the small ring) in upon
+passing through the turning point, consistent with our conjecture
+about the stability properties of plasmarings. More generally,
+fig.\ref{turn:fig} is qualitatively similar to the equivalent graph
+of \cite[fig.6(b)]{Arcioni:2004ww} for black hole and black rings in
+flat 5 dimensional space, except that the large black ring curves
+back down as we increase $\tL$. This difference has no impact on
+stability analysis, as the turning point method links instabilities
+to vertical tangents rather than horizontal tangents (even though a
+heat capacity/susceptibility changes sign as one crosses a
+horizontal tangent).
+
+\begin{figure}
+%
+ \begin{center}
+  %\small{Green - ball, Red - large ring, Blue - small ring.} \\
+  %\includegraphics[width=7cm]{turnpsi.eps}
+  \input{turnpsi.tpx}
+ \caption{Conjugacy diagram: $\psi$ as a function of angular momentum, $\tL$
+for fixed energy, $\tE=40$.}\label{turn:fig}
+ \end{center}
+\end{figure}
+
+In conclusion, the turning point method indicates that the small
+ring has an additional instability as compared to the large ring.
+Note that it is perfectly possible that both the large and the small
+ring are unstable, for example to fluctuations that break rotational
+symmetry.
+
+
+\input{higherdim.tex}
+
+
+%
+%
+%
+%\section{To do list}
+%
+%
+%\begin{itemize}
+%  \item Analytic calculation of scaling parameters in
+%  \S\S\ref{sec:existcomp}?
+%  \item Do plots as function of E at fixed L for:
+%  \begin{itemize}
+%    \item outer radius in \S\S\ref{sec:exist}
+%    \item entropy \S\S\ref{sec:globstab}
+%    \item beta in \S\S\ref{sec:turn}, i.e.\ the other
+%    conjugacy diagram
+%  \end{itemize}
+%  \item Look at Ruppeiner curvature
+%  \item Look at critical exponents (if Ruppeiner curvature
+%   behaves like black rings) like \cite{Arcioni:2004ww, Arcioni:2005fm}
+%  \item Look at stability under small fluctuations like
+%   \cite{Elvang:2006dd}?
+%  \item Canonical ensemble?
+%  \item Higher dimensional generalisation: Find allowed
+%   ranges for solution parameters
+%\end{itemize}
+
+
+\section{Discussion}\label{sec:discuss}
+
+In this paper we have emphasised that the AdS/CFT correspondence
+implies a duality between nonsingular classical gravitational
+solutions with horizons, and solutions to the boundary equations of
+fluid dynamics. This connection has previously been utilised by
+several authors to obtain gravitational predictions for various
+fluid viscosities and conductivities (see, for instance,
+\cite{Son:2007vk} and references therein). The new element in our
+work is the incorporation of boundaries separating the fluid from
+the vacuum into the Navier-Stokes equations. This feature (which
+relies on the explicit gravitational construction of the domain wall
+in \cite{Aharony:2005bm}) allowed us to study stationary
+\emph{finite energy} lumps of plasma, which are dual to localised
+black holes and black rings in the bulk.
+
+All our work (and easily imagined generalisations) apply to
+confining field theories. Stationary black holes in such backgrounds
+sit at the IR ends of the geometry; the boundary shadow of such
+black holes is a lump of deconfined fluid of size $R + \CO
+(\Lambda^{-1}_\mathrm{gap})$. The fluid dynamic equations accurately
+describe such lumps only when $R  \gg \Lambda_\mathrm{gap}^{-1}$, in
+the same limit the fluid yields an approximately local
+representation of the horizon. Consequently, the AdS/CFT
+correspondence provides an approximately local fluid description of
+horizon dynamics in the long wavelength limit. This result is strongly
+reminiscent of the Membrane paradigm of black hole physics
+\cite{Thorne+MacDonaldETAL-BlacHole:86, Parikh:1997ma,
+Cardoso:2007ka}, and may constitute the precise version of this
+conjecture in the context of asymptotically AdS spaces.
+
+All the specific results of this paper are based on the equations of
+state \eqref{thermint:eq}, which are valid for the high temperature
+phase of Scherk-Schwarz compactified conformal field theories (dual
+to gravity in Scherk-Schwarz compactified AdS space). However the
+only qualitative feature of this equation of state that was
+important for the existence of the solutions of this paper is that
+the fluid pressure vanishes at finite energy density. In
+fig.\ref{linvalidity:fig} we have plotted the logarithm of the
+maximum and minimum values of $\ln \tloc/\tc$ in our solutions,  as a function of
+energy and angular momentum. Note that at large values of charges
+(and away from extremality bounds) each of these quantities tends to
+zero. This demonstrates that over large classes of our solutions,
+the fluid temperature is always close to the phase transition
+temperature. As a consequence such solutions `sample' only the fluid
+equation of state only in the neighbourhood around the zero pressure
+point, and so would exist in any fluid whose pressure vanishes at finite energy density.
+
+
+Our results suggest several directions for future research. It would
+be interesting to analyse the stability of small fluctuations about
+the solutions presented in this paper. As we have mentioned in
+\S\S\ref{sec:turn}, we expect the small ring to be unstable to
+axisymmetric fluid fluctuations, while we expect the ball and the
+large ring to be stable to such fluctuations. However, it is quite
+possible that such an analysis would reveal that the large ring
+solutions of this paper have a Rayleigh-Taylor type instability that
+maps to Gregory-Laflamme instabilities (see also
+\cite{Cardoso:2006ks})\footnote{We thank T. Wiseman for suggesting
+this.} of the dual bulk solutions.
+
+Although we have not mentioned this in the text, there exists a
+scaling limit in which the thin plasmarings solutions simplify
+greatly.\footnote{We thank T. Wiseman again for pointing this out to
+us.} In this limit ($\tw \ra 0$ with $\vi$ fixed), the 3D plasmaring
+reduces to a straight strip of moving fluid. The fluid
+pressure vanishes on this strip, and the fluid velocity is constant
+across the strip (more precisely $\vo = \vi +
+\frac{1-\vi^2}{2\vi^2}\tw + \CO(\tw^2)$ so that $\zo-\zi =
+\frac{1-\vi^2}{2\vi^2} + \CO(\tw)$). Similarly, there should exist
+scaling limit under which the 4 dimensional plasmaring reduces to an
+infinite stationary cylinder, with fluid flow along the axis.
+Various dynamical properties of large rings (e.g. the potential
+Gregory-Laflamme type instability alluded to in the previous
+paragraph) will probably prove easiest to study in this scaling
+limit.
+
+It should also be relatively straightforward, and rather
+interesting, to more fully analyse the thermodynamics of the 4
+dimensional solutions presented in this paper. This thermodynamics may
+have interesting features; for  example, it has
+been suggested that ultra-spinning black holes in 6 dimensional flat
+space are unstable \cite{Emparan:2003sy} and it would be interesting
+to see if the same is true of our (pinched?) plasmaballs.
+
+An extension of our work to obtain the moduli space of 5 and higher
+dimensional fluid configurations - and so 7 and higher dimensional
+gravitational black solutions should also be possible (though
+analytic solutions may be harder to obtain in higher dimensions).
+Such an extension would yield interesting information about horizon
+topologies in higher dimensional gravitational theories. An obvious
+conjecture based on intuition from fluid flows would be that the
+full set of stationary fluid solutions in 5 dimensions appear in
+three distinct topological classes; solutions whose bulk dual
+topologies would be $S^5$, $S^4\times S^1$ and $S^3\times S^1\times
+S^1$. The reason one might expect the last solution is that in 5
+(but no lower) dimensions, it is possible to have solutions that
+rotate about two independent axes; these two rotations should be
+able to create their own distinct centrifugal `holes', resulting in the
+above topology. It would be
+very interesting to check whether this conjecture is borne out.
+
+
+%All known black ring solutions have one rotational isometry in the
+%$S^1$ direction and one on the $S^2$ of their horizons. While the
+%first one of these is required on general grounds, the second does
+%not seem necessary. In our setup, this extra isometry maps onto
+%motion around the Scherk-Schwarz circle. As the existence of black
+%rings without this isometry is still an open question, it would be
+%interesting to see if there are fluid configurations that break this
+%symmetry. However, the size of this circle is of the same order as
+%the mean free path of the gluons, so our approximations would not be
+%valid for such configurations.
+%
+
+
+\section*{Acknowledgements}
+
+We would like to thank I.~Bena, K.~Damle,  R.~Gopakumar, R.~Jena,
+S.~Raju and S.~Wadia for useful conversations. We would especially
+like to thank O.~Aharony and T.~Wiseman for useful comments. The
+work of S.M.\ was supported in part by a Swarnajayanti Fellowship.
+We must also acknowledge our debt to the steady and generous support
+of the people of India for research in basic sciences.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Appendices}
+\appendix
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Equations of state}\label{app:eqstate}
+
+In this appendix we discuss the free energy, temperature etc.\ of
+the plasma at rest. This is different from the free energy,
+temperature etc.\ of the plasmaball/plasmaring. %Most of the notation
+%in this section is therefore different from the rest of these notes.
+
+For a conformal theory in $d$ dimensions with no conserved charges,
+dimensional analysis and extensivity determine
+%
+\begin{equation}\label{freecnfrm:eq}
+  \floc = -\lambda V \tloc^d,
+\end{equation}
+%
+with $\lambda$ an arbitrary constant. In our situation, the plasma
+is dual to the black brane, so it doesn't know about any capping off
+in the IR except that the energy is measured with respect to a
+different zero. Before reducing on the Scherk-Schwarz circle, it
+behaves like a conformal theory in $d+1$ dimensions plus a vacuum
+energy density. After dimensional reduction\footnote{Strictly
+speaking, it is not a dimensional reduction as we will have plasma
+temperature of the same order as the Kaluza-Klein scale. Rather, we
+are restricting attention to classical solutions that do not vary in
+this compact dimension.}, we have
+%
+\begin{equation}\label{freecnfng:eq}
+  \floc = V\prn{\rz - \lambda \tloc^{d+1}}.
+\end{equation}
+%
+This gives
+%
+\begin{equation}\label{therm:eq}
+  \begin{split}
+    P &= -\pdiffc[\tloc]{\floc}{V} = \lambda \tloc^{d+1} - \rz \,,\\
+    \sloc &= -\pdiffc[V]{\floc}{\tloc} = (d+1)\lambda V \tloc^{d} \,,\\
+    \eloc &= \floc+\tloc\sloc = V\prn{\rz + d\lambda \tloc^{d+1}}\,.
+  \end{split}
+\end{equation}
+%
+In terms of intensive quantities, we have
+%
+\begin{equation}\label{thermint:eq}
+  \begin{aligned}
+    P &= \frac{\rho-(d+1)\rz}{d} \,,&\qquad
+    P+\rho &= \prn{\frac{d+1}{d}}(\rho-\rz) \,,\\
+    s  &=
+    (d+1)\lambda^{1/(d+1)}\prn{\frac{\rho-\rz}{d}}^{d/(d+1)},&
+    \tloc &= \prn{\frac{\rho-\rz}{d\lambda}}^{1/(d+1)},
+  \end{aligned}
+\end{equation}
+%
+or, in three dimensions
+\begin{equation}\label{therm3d:eq}
+  \begin{aligned}
+    P &= \frac{\rho-4\rz}{3} \,,&\qquad
+    P+\rho &= \frac{4}{3}(\rho-\rz) \,,\\
+    s  &=
+    \frac{4\lambda^{1/4}}{3^{3/4}}\prn{\rho-\rz}^{3/4},&
+    \tloc &= \prn{\frac{\rho-\rz}{3\lambda}}^{1/4}.
+  \end{aligned}
+\end{equation}
+
+Note that the critical density and temperature are those for which
+the pressure is zero
+%
+\begin{equation}\label{crittherm:eq}
+    \rho_c = (d+1)\rz\,, \qquad
+    \tc = \prn{\frac{\rz}{\lambda}}^{1/(d+1)}.
+         %= \prn{\frac{\rho_c}{(d+1)\lambda}}^{1/(d+1)}
+\end{equation}
+%
+For the black-brane equation of state \eqref{equationofstate:eq}
+%
+\begin{equation}\label{braneparam:eq}
+  \rz = \frac{\pi N^2 \tc^3}{512}\,,
+  \qquad
+  \lambda = \frac{\pi N^2}{512 \tc}\,.
+\end{equation}
+%
+
+
+
+\input{5d.tex}
+
+%\pagebreak
+
+
+
+
+
+\section{Notation}\label{app:notation}
+
+We work in the $(-++)$ signature. $\mu,\nu$ denote space-time
+indices.
+
+\vp
+%\begin{table}
+  \centering
+  \begin{tabular}{||r|l||r|l||}
+    \hline
+    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    Symbol & Definition & Symbol & Definition \\
+    \hline
+    $\floc$ & Plasma free energy & $f$ & Free energy density \\
+    $\eloc$ & Plasma energy & $\rho$ & Proper density \\
+    $\sloc$ & Plasma entropy & $s$ & Proper entropy density \\
+    $\tloc$ & Plasma temperature & $P$ & Pressure \\
+    $\rz$ & Plasma vacuum energy & $\tc$ & Deconfinement temperature \\
+    $\lambda$ & see \eqref{freecnfng:eq} & $\rho_c$ & Deconfinement density \\
+    \hline
+%%break start
+%  \end{tabular}
+%
+%  \begin{tabular}{||r|l||r|l||}
+%    \hline
+%    Symbol & Definition & Symbol & Definition \\
+%    \hline
+%%break end
+    $T^{\mu\nu}$ & Stress tensor & $u^\mu$ & $\diff{x^\mu}{\tau}=\gamma(1,\vec{v})$ \\
+    $\sigma$ & Surface tension & $\gamma$ & $\prn{1-v^2}^{-1/2}$ \\
+    $f(x)$ & Surface at $f(x)=0$ & $\omega$ & Angular velocity \\
+    $f_\mu$ & $\p_\mu f / \sqrt{\p f \cdt \p f}$ & $v$ & $\omega r$ \\
+    $\theta,\sigma^{\mu\nu},a^\mu,P^{\mu\nu}$ & see \eqref{fluidtensors:eq}
+       & $\zeta,\eta$ & Bulk, shear viscosity \\
+    $q^\mu$ & Heat flux & $\kappa$ & Thermal conductivity \\
+    \hline
+%break start
+  \end{tabular}
+
+  \begin{tabular}{||r|l||r|l||}
+    \hline
+    Symbol & Definition & Symbol & Definition \\
+    \hline
+%break end
+    $\tw$ & $\sigma\omega / \rz$ & $\z$ & $\rz r / \sigma$  \\
+    $\ro$ & Outer radius & $\vo$ & $\omega \ro$ \\
+    $\ri$ & Inner radius & $\vi$ & $\omega \ri$ \\
+    $\zo$ & $\vo/\tw$ & $g_\pm(v)$ & Boundary conditions \eqref{ringsol:eq} \\
+    $\zi$ & $\vi/\tw$ &  &    \\
+    \hline
+%%break start
+%  \end{tabular}
+%
+%  \begin{tabular}{||r|l||r|l||}
+%    \hline
+%    Symbol & Definition & Symbol & Definition \\
+%    \hline
+%%break end
+   $E$ & Ball/ring energy & $S$ & Ball/ring entropy \\
+    $L$ & Angular momentum & $T$ & Ball/ring temperature \\
+    $\Omega$ & Ball/ring angular velocity
+       & $\Delta u$ & Validity criterion \eqref{validity2:eq}\\
+    $\tE,\tL,\tS,\tT,\tO$ & See \eqref{redch:eq}
+       & $\beta$ & $(\p\tS/\p\tE)_{\tL}$ \\
+    O,A,B,C & Existence regions, see fig.\ref{exist_prelim:fig}
+       & $\psi$ & $(\p\tS/\p\tL)_{\tE}$ \\
+    $\tOr,\tA,\tB,\tC$ & Existence regions, see fig.\ref{exist_final:fig}
+       & $x,y$ & Boundary scalings in \S\S\ref{sec:existcomp}  \\
+    \hline
+%%break start
+%  \end{tabular}
+%
+%  \begin{tabular}{||r|l||r|l||}
+%    \hline
+%    Symbol & Definition & Symbol & Definition \\
+%    \hline
+%%break end
+    $h$ & Surface height $z=h(r)$ & $\g$ & $\tw h$ \\
+    $H$ & Mean curvature
+      & $K,C,D$ & Integration constants in \S\ref{sec:4dim} \\
+    $\Delta\g,Q$ & Consistency conditions
+               (\ref{pballcnstr2:eq},\ref{sensecnstr:eq})
+      & $G$ & Curvature in \S\ref{sec:5dim} \\
+    \hline
+  \end{tabular}
+%  \caption{Notation}\label{tab:notation}
+%\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{utcaps}
+\bibliography{qft,string,adscft,gr,maths}
+%\bibliography{plasmaring-minimal}
+% bib files in student room
+%input "D:\Documents and Settings\lahiri\Application Data\MiKTeX\2.5\bibtex\qft.bib"
+%input "D:\Documents and Settings\lahiri\Application Data\MiKTeX\2.5\bibtex\string.bib"
+%input "D:\Documents and Settings\lahiri\Application Data\MiKTeX\2.5\bibtex\adscft.bib"
+%input "D:\Documents and Settings\lahiri\Application Data\MiKTeX\2.5\bibtex\gr.bib"
+%input "D:\Documents and Settings\lahiri\Application Data\MiKTeX\2.5\bibtex\maths.bib"
+% D:\Documents and Settings\lahiri\Application Data\MiKTeX\2.5\bibtex\
+
+\end{document}

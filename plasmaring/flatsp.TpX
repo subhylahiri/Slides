@@ -1,0 +1,152 @@
+%<TpX v="4" TeXFormat="pgf" PdfTeXFormat="pgf" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" DefaultSymbolSize="30" PicScale="0.4" Border="2" BitmapRes="20000" HatchingStep="2" DottedSize="0.5" DashSize="1" LineWidth="0.3125" TeXFigure="none">
+%  <comment>Imported from flatsp.emf 3/1/2009 6:46:31 PM</comment>
+%  <polyline lc="lime">26.7969,56.5234 27.3633,56.5234 27.7734,56.5234 28.125,56.5039 28.4375,56.5039 28.7109,56.5039 28.9648,56.4844 29.4141,56.4844 29.6094,56.4648 29.8047,56.4648 30.1758,56.4453 30.8398,56.4258 30.9961,56.4258 31.1328,56.4258 31.4258,56.4063 31.9531,56.3867 32.8906,56.3281 33.0078,56.3281 33.1055,56.3281 33.3203,56.3086 33.7305,56.2891 34.4922,56.2305 35.8203,56.1328 35.8984,56.1328 35.9961,56.1328 36.1523,56.1133 36.4844,56.0938 37.0898,56.0352 38.2227,55.918 38.3008,55.918 38.3594,55.918 38.4961,55.8984 38.7695,55.8789 39.2773,55.8203 40.2344,55.7227 40.293,55.7031 40.3516,55.7031 40.4492,55.6836 40.6641,55.6641 41.0742,55.625 41.875,55.5273 43.3594,55.332 45.918,54.9414 48.3398,54.5313 50.3711,54.1602 52.3828,53.7305 54.1992,53.3398 55.7813,52.9492 57.4023,52.5391 58.8281,52.168 60.1563,51.7773 61.543,51.3672 62.793,50.9961 64.082,50.5664 65.3125,50.1563 66.4258,49.7656 67.5977,49.3359 68.6523,48.9453 69.7852,48.5156 70.8594,48.0664 71.8555,47.6563 72.8906,47.207 73.8672,46.7773 74.8047,46.3477 75.8203,45.8594 76.7383,45.4102 77.7539,44.9023 78.7305,44.4141 79.6289,43.9258 80.625,43.3789 81.543,42.8516 82.4414,42.3242 83.4375,41.7188 84.375,41.1328 85.4102,40.4688 86.3867,39.8242 87.3633,39.1406 88.4375,38.3594 89.4922,37.5781 90.6641,36.6602 91.875,35.6641 93.0859,34.6289 94.4727,33.3398 95.8984,31.9531 97.4414,30.3125 99.4336,27.9883 99.4727,27.9492 99.4922,27.9102 99.5703,27.832
+% 99.6875,27.6563 99.9609,27.3242 100.527,26.5625 100.566,26.5234 100.605,26.4648 100.684,26.3672 100.84,26.1523 101.152,25.7227 101.816,24.7461 101.875,24.668 101.914,24.5898 102.012,24.4336 102.227,24.1211 102.676,23.418 102.734,23.3203 102.793,23.2422 102.91,23.0469 103.145,22.6172 103.691,21.6992 103.75,21.5625 103.828,21.4258 103.984,21.1523 104.297,20.5664 104.375,20.3906 104.453,20.2344 104.629,19.8828 105.02,19.082 105.117,18.8477 105.215,18.6133 105.449,18.1055 105.566,17.8125 105.684,17.5195 105.957,16.8359 106.113,16.4453 106.27,16.0156 106.445,15.5078 106.641,14.9219 106.855,14.2188 107.109,13.3008 107.461,11.9336 108.281,5.56641</polyline>
+%  <polyline lc="blue">101.576,22.9492 101.563,22.9492 101.563,22.9492 101.563,22.9492 101.563,22.9492 101.563,22.9492 101.563,22.9492 101.563,22.9688 101.563,22.9688 101.563,22.9688 101.563,22.9688 101.563,22.9688 101.563,22.9688 101.563,22.9688 101.563,22.9688 101.563,22.9688 101.563,22.9688 101.563,22.9688 101.563,22.9688 101.563,22.9688 101.563,22.9688 101.563,22.9688 101.563,22.9688 101.563,22.9688 101.563,22.9688 101.563,22.9688 101.582,22.9492 101.641,22.8906 101.797,22.7539 102.031,22.5391 102.383,22.1875 103.008,21.4844 103.008,21.4844 103.027,21.4648 103.047,21.4258 103.105,21.3672 103.203,21.25 103.418,20.957 103.438,20.9375 103.457,20.918 103.477,20.8789 103.555,20.7813 103.672,20.6055 103.984,20.1563 104.004,20.1172 104.043,20.0781 104.082,20 104.18,19.8438 104.414,19.4922 104.434,19.4531 104.473,19.3945 104.531,19.2969 104.668,19.0625 104.961,18.5352 105.02,18.457 105.059,18.3789 105.137,18.2031 105.332,17.832 105.391,17.7344 105.43,17.6172 105.547,17.4023 105.781,16.8555 105.859,16.7188 105.938,16.543 106.074,16.1914 106.152,15.9961 106.25,15.7617 106.445,15.2734 106.543,14.9609 106.66,14.6289 106.797,14.2383 106.934,13.7891 107.109,13.2227 107.305,12.4609 107.578,11.2891 108.281,5.56641</polyline>
+%  <polyline lc="red">135.762,15.1953 135.723,15.1953 135.664,15.1953 135.586,15.2148 135.41,15.2344 135.078,15.2734 134.414,15.3516 133.145,15.5078 130.605,15.8203 128.438,16.1328 126.504,16.4063 124.59,16.6992 122.949,16.9531 121.289,17.2461 119.805,17.5 118.516,17.7344 117.227,18.0078 116.094,18.2227 115.059,18.457 114.004,18.6914 113.086,18.9063 112.168,19.1211 111.309,19.3555 110.547,19.5508 109.785,19.7656 109.102,19.9414 108.418,20.1563 107.773,20.3516 107.227,20.5273 106.66,20.7227 106.152,20.8984 105.684,21.0547 105.215,21.2305 104.805,21.4063 104.375,21.5625 103.984,21.7188 103.652,21.875 103.32,22.0313 103.027,22.168 102.754,22.2852 102.5,22.4219 102.285,22.5391 102.07,22.6367 101.914,22.7344 101.777,22.8125 101.66,22.8906 101.602,22.9297 101.582,22.9297 101.582,22.9297 101.582,22.9492 101.582,22.9492 101.582,22.9492 101.576,22.9492</polyline>
+%  <polyline lw="0.19">25.625,4.60938 25.625,5.74219</polyline>
+%  <text x="23.4375" y="0.625" t="0.0" h="2.8125" lc="black">
+%    <font face="Times New Roman" charset="1"/>
+%  </text>
+%  <polyline lw="0.19">32.3633,4.60938 32.3633,5.29297</polyline>
+%  <polyline lw="0.19">39.082,4.60938 39.082,5.29297</polyline>
+%  <polyline lw="0.19">45.8203,4.60938 45.8203,5.29297</polyline>
+%  <polyline lw="0.19">52.5391,4.60938 52.5391,5.74219</polyline>
+%  <text x="50.3125" y="0.625" t="0.2" h="2.8125" lc="black">
+%    <font face="Times New Roman" charset="1"/>
+%  </text>
+%  <polyline lw="0.19">59.2773,4.60938 59.2773,5.29297</polyline>
+%  <polyline lw="0.19">65.9961,4.60938 65.9961,5.29297</polyline>
+%  <polyline lw="0.19">72.7344,4.60938 72.7344,5.29297</polyline>
+%  <polyline lw="0.19">79.4531,4.60938 79.4531,5.74219</polyline>
+%  <text x="77.1875" y="0.625" t="0.4" h="2.8125" lc="black">
+%    <font face="Times New Roman" charset="1"/>
+%  </text>
+%  <polyline lw="0.19">86.1914,4.60938 86.1914,5.29297</polyline>
+%  <polyline lw="0.19">92.9102,4.60938 92.9102,5.29297</polyline>
+%  <polyline lw="0.19">99.6484,4.60938 99.6484,5.29297</polyline>
+%  <polyline lw="0.19">106.367,4.60938 106.367,5.74219</polyline>
+%  <text x="104.063" y="0.625" t="0.6" h="2.8125" lc="black">
+%    <font face="Times New Roman" charset="1"/>
+%  </text>
+%  <polyline lw="0.19">113.105,4.60938 113.105,5.29297</polyline>
+%  <polyline lw="0.19">119.824,4.60938 119.824,5.29297</polyline>
+%  <polyline lw="0.19">126.563,4.60938 126.563,5.29297</polyline>
+%  <polyline lw="0.19">133.281,4.60938 133.281,5.74219</polyline>
+%  <text x="131.25" y="0.625" t="0.8" h="2.8125" lc="black">
+%    <font face="Times New Roman" charset="1"/>
+%  </text>
+%  <polyline lw="0.19">25.625,4.60938 133.281,4.60938</polyline>
+%  <polyline lw="0.19">25.625,4.60938 26.7773,4.60938</polyline>
+%  <text x="23.125" y="3.4375" t="0" h="2.8125" lc="black">
+%    <font face="Times New Roman" charset="1"/>
+%  </text>
+%  <polyline lw="0.19">25.625,7.28516 26.3281,7.28516</polyline>
+%  <polyline lw="0.19">25.625,9.98047 26.3281,9.98047</polyline>
+%  <polyline lw="0.19">25.625,12.6758 26.3281,12.6758</polyline>
+%  <polyline lw="0.19">25.625,15.3711 26.3281,15.3711</polyline>
+%  <polyline lw="0.19">25.625,18.0664 26.7773,18.0664</polyline>
+%  <text x="23.125" y="16.875" t="1" h="2.8125" lc="black">
+%    <font face="Times New Roman" charset="1"/>
+%  </text>
+%  <polyline lw="0.19">25.625,20.7422 26.3281,20.7422</polyline>
+%  <polyline lw="0.19">25.625,23.4375 26.3281,23.4375</polyline>
+%  <polyline lw="0.19">25.625,26.1328 26.3281,26.1328</polyline>
+%  <polyline lw="0.19">25.625,28.8281 26.3281,28.8281</polyline>
+%  <polyline lw="0.19">25.625,31.5234 26.7773,31.5234</polyline>
+%  <text x="23.125" y="30.3125" t="2" h="2.8125" lc="black">
+%    <font face="Times New Roman" charset="1"/>
+%  </text>
+%  <polyline lw="0.19">25.625,34.1992 26.3281,34.1992</polyline>
+%  <polyline lw="0.19">25.625,36.8945 26.3281,36.8945</polyline>
+%  <polyline lw="0.19">25.625,39.5898 26.3281,39.5898</polyline>
+%  <polyline lw="0.19">25.625,42.2852 26.3281,42.2852</polyline>
+%  <polyline lw="0.19">25.625,44.9805 26.7773,44.9805</polyline>
+%  <text x="23.125" y="43.75" t="3" h="2.8125" lc="black">
+%    <font face="Times New Roman" charset="1"/>
+%  </text>
+%  <polyline lw="0.19">25.625,47.6563 26.3281,47.6563</polyline>
+%  <polyline lw="0.19">25.625,50.3516 26.3281,50.3516</polyline>
+%  <polyline lw="0.19">25.625,53.0469 26.3281,53.0469</polyline>
+%  <polyline lw="0.19">25.625,55.7422 26.3281,55.7422</polyline>
+%  <polyline lw="0.19">25.625,58.4375 26.7773,58.4375</polyline>
+%  <text x="23.125" y="57.1875" t="4" h="2.8125" lc="black">
+%    <font face="Times New Roman" charset="1"/>
+%  </text>
+%  <polyline lw="0.19">25.625,4.60938 25.625,58.4375</polyline>
+%  <line x1="90" y1="60.1747" x2="100" y2="60.1747" lc="lime"/>
+%  <line x1="90" y1="52.7747" x2="100" y2="52.7747" lc="blue"/>
+%  <text x="100" y="58.7747" t="Black hole" h="5"/>
+%  <text x="100" y="50.7747" t="Small black ring" h="5"/>
+%  <text x="137.237" y="5" t="J/M" tex="$\frac{GJ}{(GM)^{3/2}}$" h="8" jv="c"/>
+%  <text x="25.2" y="61.7187" t="S/M" tex="$\frac{GS}{(GM)^{3/2}}$" h="8" jh="c" jv="b"/>
+%  <line x1="90" y1="45" x2="100" y2="45" lc="red"/>
+%  <text x="100" y="43" t="Large black ring" h="5"/>
+%</TpX>
+\begin{pgfpicture}{5.32mm}{-1.99mm}{61.87mm}{29.89mm}
+\pgfsetxvec{\pgfpoint{0.40mm}{0mm}}
+\pgfsetyvec{\pgfpoint{0mm}{0.40mm}}
+\color[rgb]{0,0,0}\pgfsetlinewidth{0.31mm}\pgfsetdash{}{0mm}
+\color[rgb]{0,1,0}\pgfmoveto{\pgfxy(26.80,56.52)}\pgflineto{\pgfxy(27.36,56.52)}\pgflineto{\pgfxy(27.77,56.52)}\pgflineto{\pgfxy(28.13,56.50)}\pgflineto{\pgfxy(28.44,56.50)}\pgflineto{\pgfxy(28.71,56.50)}\pgflineto{\pgfxy(28.96,56.48)}\pgflineto{\pgfxy(29.41,56.48)}\pgflineto{\pgfxy(29.61,56.46)}\pgflineto{\pgfxy(29.80,56.46)}\pgflineto{\pgfxy(30.18,56.45)}\pgflineto{\pgfxy(30.84,56.43)}\pgflineto{\pgfxy(31.00,56.43)}\pgflineto{\pgfxy(31.13,56.43)}\pgflineto{\pgfxy(31.43,56.41)}\pgflineto{\pgfxy(31.95,56.39)}\pgflineto{\pgfxy(32.89,56.33)}\pgflineto{\pgfxy(33.01,56.33)}\pgflineto{\pgfxy(33.11,56.33)}\pgflineto{\pgfxy(33.32,56.31)}\pgflineto{\pgfxy(33.73,56.29)}\pgflineto{\pgfxy(34.49,56.23)}\pgflineto{\pgfxy(35.82,56.13)}\pgflineto{\pgfxy(35.90,56.13)}\pgflineto{\pgfxy(36.00,56.13)}\pgflineto{\pgfxy(36.15,56.11)}\pgflineto{\pgfxy(36.48,56.09)}\pgflineto{\pgfxy(37.09,56.04)}\pgflineto{\pgfxy(38.22,55.92)}\pgflineto{\pgfxy(38.30,55.92)}\pgflineto{\pgfxy(38.36,55.92)}\pgflineto{\pgfxy(38.50,55.90)}\pgflineto{\pgfxy(38.77,55.88)}\pgflineto{\pgfxy(39.28,55.82)}\pgflineto{\pgfxy(40.23,55.72)}\pgflineto{\pgfxy(40.29,55.70)}\pgflineto{\pgfxy(40.35,55.70)}\pgflineto{\pgfxy(40.45,55.68)}\pgflineto{\pgfxy(40.66,55.66)}\pgflineto{\pgfxy(41.07,55.63)}\pgflineto{\pgfxy(41.88,55.53)}\pgflineto{\pgfxy(43.36,55.33)}\pgflineto{\pgfxy(45.92,54.94)}\pgflineto{\pgfxy(48.34,54.53)}\pgflineto{\pgfxy(50.37,54.16)}\pgflineto{\pgfxy(52.38,53.73)}\pgflineto{\pgfxy(54.20,53.34)}\pgflineto{\pgfxy(55.78,52.95)}\pgflineto{\pgfxy(57.40,52.54)}\pgflineto{\pgfxy(58.83,52.17)}\pgflineto{\pgfxy(60.16,51.78)}\pgflineto{\pgfxy(61.54,51.37)}\pgflineto{\pgfxy(62.79,51.00)}\pgflineto{\pgfxy(64.08,50.57)}\pgflineto{\pgfxy(65.31,50.16)}\pgflineto{\pgfxy(66.43,49.77)}\pgflineto{\pgfxy(67.60,49.34)}\pgflineto{\pgfxy(68.65,48.95)}\pgflineto{\pgfxy(69.79,48.52)}\pgflineto{\pgfxy(70.86,48.07)}\pgflineto{\pgfxy(71.86,47.66)}\pgflineto{\pgfxy(72.89,47.21)}\pgflineto{\pgfxy(73.87,46.78)}\pgflineto{\pgfxy(74.80,46.35)}\pgflineto{\pgfxy(75.82,45.86)}\pgflineto{\pgfxy(76.74,45.41)}\pgflineto{\pgfxy(77.75,44.90)}\pgflineto{\pgfxy(78.73,44.41)}\pgflineto{\pgfxy(79.63,43.93)}\pgflineto{\pgfxy(80.63,43.38)}\pgflineto{\pgfxy(81.54,42.85)}\pgflineto{\pgfxy(82.44,42.32)}\pgflineto{\pgfxy(83.44,41.72)}\pgflineto{\pgfxy(84.38,41.13)}\pgflineto{\pgfxy(85.41,40.47)}\pgflineto{\pgfxy(86.39,39.82)}\pgflineto{\pgfxy(87.36,39.14)}\pgflineto{\pgfxy(88.44,38.36)}\pgflineto{\pgfxy(89.49,37.58)}\pgflineto{\pgfxy(90.66,36.66)}\pgflineto{\pgfxy(91.88,35.66)}\pgflineto{\pgfxy(93.09,34.63)}\pgflineto{\pgfxy(94.47,33.34)}\pgflineto{\pgfxy(95.90,31.95)}\pgflineto{\pgfxy(97.44,30.31)}\pgflineto{\pgfxy(99.43,27.99)}\pgflineto{\pgfxy(99.47,27.95)}\pgflineto{\pgfxy(99.49,27.91)}\pgflineto{\pgfxy(99.57,27.83)}\pgflineto{\pgfxy(99.69,27.66)}\pgflineto{\pgfxy(99.96,27.32)}\pgflineto{\pgfxy(100.53,26.56)}\pgflineto{\pgfxy(100.57,26.52)}\pgflineto{\pgfxy(100.61,26.46)}\pgflineto{\pgfxy(100.68,26.37)}\pgflineto{\pgfxy(100.84,26.15)}\pgflineto{\pgfxy(101.15,25.72)}\pgflineto{\pgfxy(101.82,24.75)}\pgflineto{\pgfxy(101.88,24.67)}\pgflineto{\pgfxy(101.91,24.59)}\pgflineto{\pgfxy(102.01,24.43)}
+ \pgflineto{\pgfxy(102.23,24.12)}\pgflineto{\pgfxy(102.68,23.42)}\pgflineto{\pgfxy(102.73,23.32)}\pgflineto{\pgfxy(102.79,23.24)}\pgflineto{\pgfxy(102.91,23.05)}\pgflineto{\pgfxy(103.14,22.62)}\pgflineto{\pgfxy(103.69,21.70)}\pgflineto{\pgfxy(103.75,21.56)}\pgflineto{\pgfxy(103.83,21.43)}\pgflineto{\pgfxy(103.98,21.15)}\pgflineto{\pgfxy(104.30,20.57)}\pgflineto{\pgfxy(104.38,20.39)}\pgflineto{\pgfxy(104.45,20.23)}\pgflineto{\pgfxy(104.63,19.88)}\pgflineto{\pgfxy(105.02,19.08)}\pgflineto{\pgfxy(105.12,18.85)}\pgflineto{\pgfxy(105.21,18.61)}\pgflineto{\pgfxy(105.45,18.11)}\pgflineto{\pgfxy(105.57,17.81)}\pgflineto{\pgfxy(105.68,17.52)}\pgflineto{\pgfxy(105.96,16.84)}\pgflineto{\pgfxy(106.11,16.45)}\pgflineto{\pgfxy(106.27,16.02)}\pgflineto{\pgfxy(106.44,15.51)}\pgflineto{\pgfxy(106.64,14.92)}\pgflineto{\pgfxy(106.86,14.22)}\pgflineto{\pgfxy(107.11,13.30)}\pgflineto{\pgfxy(107.46,11.93)}\pgflineto{\pgfxy(108.28,5.57)}\pgfstroke
+\color[rgb]{0,0,1}\pgfmoveto{\pgfxy(101.58,22.95)}\pgflineto{\pgfxy(101.56,22.95)}\pgflineto{\pgfxy(101.56,22.95)}\pgflineto{\pgfxy(101.56,22.95)}\pgflineto{\pgfxy(101.56,22.95)}\pgflineto{\pgfxy(101.56,22.95)}\pgflineto{\pgfxy(101.56,22.95)}\pgflineto{\pgfxy(101.56,22.97)}\pgflineto{\pgfxy(101.56,22.97)}\pgflineto{\pgfxy(101.56,22.97)}\pgflineto{\pgfxy(101.56,22.97)}\pgflineto{\pgfxy(101.56,22.97)}\pgflineto{\pgfxy(101.56,22.97)}\pgflineto{\pgfxy(101.56,22.97)}\pgflineto{\pgfxy(101.56,22.97)}\pgflineto{\pgfxy(101.56,22.97)}\pgflineto{\pgfxy(101.56,22.97)}\pgflineto{\pgfxy(101.56,22.97)}\pgflineto{\pgfxy(101.56,22.97)}\pgflineto{\pgfxy(101.56,22.97)}\pgflineto{\pgfxy(101.56,22.97)}\pgflineto{\pgfxy(101.56,22.97)}\pgflineto{\pgfxy(101.56,22.97)}\pgflineto{\pgfxy(101.56,22.97)}\pgflineto{\pgfxy(101.56,22.97)}\pgflineto{\pgfxy(101.56,22.97)}\pgflineto{\pgfxy(101.58,22.95)}\pgflineto{\pgfxy(101.64,22.89)}\pgflineto{\pgfxy(101.80,22.75)}\pgflineto{\pgfxy(102.03,22.54)}\pgflineto{\pgfxy(102.38,22.19)}\pgflineto{\pgfxy(103.01,21.48)}\pgflineto{\pgfxy(103.01,21.48)}\pgflineto{\pgfxy(103.03,21.46)}\pgflineto{\pgfxy(103.05,21.43)}\pgflineto{\pgfxy(103.11,21.37)}\pgflineto{\pgfxy(103.20,21.25)}\pgflineto{\pgfxy(103.42,20.96)}\pgflineto{\pgfxy(103.44,20.94)}\pgflineto{\pgfxy(103.46,20.92)}\pgflineto{\pgfxy(103.48,20.88)}\pgflineto{\pgfxy(103.56,20.78)}\pgflineto{\pgfxy(103.67,20.61)}\pgflineto{\pgfxy(103.98,20.16)}\pgflineto{\pgfxy(104.00,20.12)}\pgflineto{\pgfxy(104.04,20.08)}\pgflineto{\pgfxy(104.08,20.00)}\pgflineto{\pgfxy(104.18,19.84)}\pgflineto{\pgfxy(104.41,19.49)}\pgflineto{\pgfxy(104.43,19.45)}\pgflineto{\pgfxy(104.47,19.39)}\pgflineto{\pgfxy(104.53,19.30)}\pgflineto{\pgfxy(104.67,19.06)}\pgflineto{\pgfxy(104.96,18.54)}\pgflineto{\pgfxy(105.02,18.46)}\pgflineto{\pgfxy(105.06,18.38)}\pgflineto{\pgfxy(105.14,18.20)}\pgflineto{\pgfxy(105.33,17.83)}\pgflineto{\pgfxy(105.39,17.73)}\pgflineto{\pgfxy(105.43,17.62)}\pgflineto{\pgfxy(105.55,17.40)}\pgflineto{\pgfxy(105.78,16.86)}\pgflineto{\pgfxy(105.86,16.72)}\pgflineto{\pgfxy(105.94,16.54)}\pgflineto{\pgfxy(106.07,16.19)}\pgflineto{\pgfxy(106.15,16.00)}\pgflineto{\pgfxy(106.25,15.76)}\pgflineto{\pgfxy(106.44,15.27)}\pgflineto{\pgfxy(106.54,14.96)}\pgflineto{\pgfxy(106.66,14.63)}\pgflineto{\pgfxy(106.80,14.24)}\pgflineto{\pgfxy(106.93,13.79)}\pgflineto{\pgfxy(107.11,13.22)}\pgflineto{\pgfxy(107.31,12.46)}\pgflineto{\pgfxy(107.58,11.29)}\pgflineto{\pgfxy(108.28,5.57)}\pgfstroke
+\color[rgb]{1,0,0}\pgfmoveto{\pgfxy(135.76,15.20)}\pgflineto{\pgfxy(135.72,15.20)}\pgflineto{\pgfxy(135.66,15.20)}\pgflineto{\pgfxy(135.59,15.21)}\pgflineto{\pgfxy(135.41,15.23)}\pgflineto{\pgfxy(135.08,15.27)}\pgflineto{\pgfxy(134.41,15.35)}\pgflineto{\pgfxy(133.15,15.51)}\pgflineto{\pgfxy(130.60,15.82)}\pgflineto{\pgfxy(128.44,16.13)}\pgflineto{\pgfxy(126.50,16.41)}\pgflineto{\pgfxy(124.59,16.70)}\pgflineto{\pgfxy(122.95,16.95)}\pgflineto{\pgfxy(121.29,17.25)}\pgflineto{\pgfxy(119.81,17.50)}\pgflineto{\pgfxy(118.52,17.73)}\pgflineto{\pgfxy(117.23,18.01)}\pgflineto{\pgfxy(116.09,18.22)}\pgflineto{\pgfxy(115.06,18.46)}\pgflineto{\pgfxy(114.00,18.69)}\pgflineto{\pgfxy(113.09,18.91)}\pgflineto{\pgfxy(112.17,19.12)}\pgflineto{\pgfxy(111.31,19.36)}\pgflineto{\pgfxy(110.55,19.55)}\pgflineto{\pgfxy(109.79,19.77)}\pgflineto{\pgfxy(109.10,19.94)}\pgflineto{\pgfxy(108.42,20.16)}\pgflineto{\pgfxy(107.77,20.35)}\pgflineto{\pgfxy(107.23,20.53)}\pgflineto{\pgfxy(106.66,20.72)}\pgflineto{\pgfxy(106.15,20.90)}\pgflineto{\pgfxy(105.68,21.05)}\pgflineto{\pgfxy(105.21,21.23)}\pgflineto{\pgfxy(104.81,21.41)}\pgflineto{\pgfxy(104.38,21.56)}\pgflineto{\pgfxy(103.98,21.72)}\pgflineto{\pgfxy(103.65,21.88)}\pgflineto{\pgfxy(103.32,22.03)}\pgflineto{\pgfxy(103.03,22.17)}\pgflineto{\pgfxy(102.75,22.29)}\pgflineto{\pgfxy(102.50,22.42)}\pgflineto{\pgfxy(102.29,22.54)}\pgflineto{\pgfxy(102.07,22.64)}\pgflineto{\pgfxy(101.91,22.73)}\pgflineto{\pgfxy(101.78,22.81)}\pgflineto{\pgfxy(101.66,22.89)}\pgflineto{\pgfxy(101.60,22.93)}\pgflineto{\pgfxy(101.58,22.93)}\pgflineto{\pgfxy(101.58,22.93)}\pgflineto{\pgfxy(101.58,22.95)}\pgflineto{\pgfxy(101.58,22.95)}\pgflineto{\pgfxy(101.58,22.95)}\pgflineto{\pgfxy(101.58,22.95)}\pgfstroke
+\color[rgb]{0,0,0}\pgfsetlinewidth{0.06mm}\pgfmoveto{\pgfxy(25.63,4.61)}\pgflineto{\pgfxy(25.63,5.74)}\pgfstroke
+\pgfputat{\pgfxy(23.44,0.63)}{\pgfbox[bottom,left]{\fontsize{3.20}{3.84}\selectfont \textcolor[rgb]{0, 0, 0}{0.0}}}
+\pgfmoveto{\pgfxy(32.36,4.61)}\pgflineto{\pgfxy(32.36,5.29)}\pgfstroke
+\pgfmoveto{\pgfxy(39.08,4.61)}\pgflineto{\pgfxy(39.08,5.29)}\pgfstroke
+\pgfmoveto{\pgfxy(45.82,4.61)}\pgflineto{\pgfxy(45.82,5.29)}\pgfstroke
+\pgfmoveto{\pgfxy(52.54,4.61)}\pgflineto{\pgfxy(52.54,5.74)}\pgfstroke
+\pgfputat{\pgfxy(50.31,0.63)}{\pgfbox[bottom,left]{\fontsize{3.20}{3.84}\selectfont \textcolor[rgb]{0, 0, 0}{0.2}}}
+\pgfmoveto{\pgfxy(59.28,4.61)}\pgflineto{\pgfxy(59.28,5.29)}\pgfstroke
+\pgfmoveto{\pgfxy(66.00,4.61)}\pgflineto{\pgfxy(66.00,5.29)}\pgfstroke
+\pgfmoveto{\pgfxy(72.73,4.61)}\pgflineto{\pgfxy(72.73,5.29)}\pgfstroke
+\pgfmoveto{\pgfxy(79.45,4.61)}\pgflineto{\pgfxy(79.45,5.74)}\pgfstroke
+\pgfputat{\pgfxy(77.19,0.63)}{\pgfbox[bottom,left]{\fontsize{3.20}{3.84}\selectfont \textcolor[rgb]{0, 0, 0}{0.4}}}
+\pgfmoveto{\pgfxy(86.19,4.61)}\pgflineto{\pgfxy(86.19,5.29)}\pgfstroke
+\pgfmoveto{\pgfxy(92.91,4.61)}\pgflineto{\pgfxy(92.91,5.29)}\pgfstroke
+\pgfmoveto{\pgfxy(99.65,4.61)}\pgflineto{\pgfxy(99.65,5.29)}\pgfstroke
+\pgfmoveto{\pgfxy(106.37,4.61)}\pgflineto{\pgfxy(106.37,5.74)}\pgfstroke
+\pgfputat{\pgfxy(104.06,0.63)}{\pgfbox[bottom,left]{\fontsize{3.20}{3.84}\selectfont \textcolor[rgb]{0, 0, 0}{0.6}}}
+\pgfmoveto{\pgfxy(113.11,4.61)}\pgflineto{\pgfxy(113.11,5.29)}\pgfstroke
+\pgfmoveto{\pgfxy(119.82,4.61)}\pgflineto{\pgfxy(119.82,5.29)}\pgfstroke
+\pgfmoveto{\pgfxy(126.56,4.61)}\pgflineto{\pgfxy(126.56,5.29)}\pgfstroke
+\pgfmoveto{\pgfxy(133.28,4.61)}\pgflineto{\pgfxy(133.28,5.74)}\pgfstroke
+\pgfputat{\pgfxy(131.25,0.63)}{\pgfbox[bottom,left]{\fontsize{3.20}{3.84}\selectfont \textcolor[rgb]{0, 0, 0}{0.8}}}
+\pgfmoveto{\pgfxy(25.63,4.61)}\pgflineto{\pgfxy(133.28,4.61)}\pgfstroke
+\pgfmoveto{\pgfxy(25.63,4.61)}\pgflineto{\pgfxy(26.78,4.61)}\pgfstroke
+\pgfputat{\pgfxy(23.13,3.44)}{\pgfbox[bottom,left]{\fontsize{3.20}{3.84}\selectfont \textcolor[rgb]{0, 0, 0}{0}}}
+\pgfmoveto{\pgfxy(25.63,7.29)}\pgflineto{\pgfxy(26.33,7.29)}\pgfstroke
+\pgfmoveto{\pgfxy(25.63,9.98)}\pgflineto{\pgfxy(26.33,9.98)}\pgfstroke
+\pgfmoveto{\pgfxy(25.63,12.68)}\pgflineto{\pgfxy(26.33,12.68)}\pgfstroke
+\pgfmoveto{\pgfxy(25.63,15.37)}\pgflineto{\pgfxy(26.33,15.37)}\pgfstroke
+\pgfmoveto{\pgfxy(25.63,18.07)}\pgflineto{\pgfxy(26.78,18.07)}\pgfstroke
+\pgfputat{\pgfxy(23.13,16.88)}{\pgfbox[bottom,left]{\fontsize{3.20}{3.84}\selectfont \textcolor[rgb]{0, 0, 0}{1}}}
+\pgfmoveto{\pgfxy(25.63,20.74)}\pgflineto{\pgfxy(26.33,20.74)}\pgfstroke
+\pgfmoveto{\pgfxy(25.63,23.44)}\pgflineto{\pgfxy(26.33,23.44)}\pgfstroke
+\pgfmoveto{\pgfxy(25.63,26.13)}\pgflineto{\pgfxy(26.33,26.13)}\pgfstroke
+\pgfmoveto{\pgfxy(25.63,28.83)}\pgflineto{\pgfxy(26.33,28.83)}\pgfstroke
+\pgfmoveto{\pgfxy(25.63,31.52)}\pgflineto{\pgfxy(26.78,31.52)}\pgfstroke
+\pgfputat{\pgfxy(23.13,30.31)}{\pgfbox[bottom,left]{\fontsize{3.20}{3.84}\selectfont \textcolor[rgb]{0, 0, 0}{2}}}
+\pgfmoveto{\pgfxy(25.63,34.20)}\pgflineto{\pgfxy(26.33,34.20)}\pgfstroke
+\pgfmoveto{\pgfxy(25.63,36.89)}\pgflineto{\pgfxy(26.33,36.89)}\pgfstroke
+\pgfmoveto{\pgfxy(25.63,39.59)}\pgflineto{\pgfxy(26.33,39.59)}\pgfstroke
+\pgfmoveto{\pgfxy(25.63,42.29)}\pgflineto{\pgfxy(26.33,42.29)}\pgfstroke
+\pgfmoveto{\pgfxy(25.63,44.98)}\pgflineto{\pgfxy(26.78,44.98)}\pgfstroke
+\pgfputat{\pgfxy(23.13,43.75)}{\pgfbox[bottom,left]{\fontsize{3.20}{3.84}\selectfont \textcolor[rgb]{0, 0, 0}{3}}}
+\pgfmoveto{\pgfxy(25.63,47.66)}\pgflineto{\pgfxy(26.33,47.66)}\pgfstroke
+\pgfmoveto{\pgfxy(25.63,50.35)}\pgflineto{\pgfxy(26.33,50.35)}\pgfstroke
+\pgfmoveto{\pgfxy(25.63,53.05)}\pgflineto{\pgfxy(26.33,53.05)}\pgfstroke
+\pgfmoveto{\pgfxy(25.63,55.74)}\pgflineto{\pgfxy(26.33,55.74)}\pgfstroke
+\pgfmoveto{\pgfxy(25.63,58.44)}\pgflineto{\pgfxy(26.78,58.44)}\pgfstroke
+\pgfputat{\pgfxy(23.13,57.19)}{\pgfbox[bottom,left]{\fontsize{3.20}{3.84}\selectfont \textcolor[rgb]{0, 0, 0}{4}}}
+\pgfmoveto{\pgfxy(25.63,4.61)}\pgflineto{\pgfxy(25.63,58.44)}\pgfstroke
+\color[rgb]{0,1,0}\pgfsetlinewidth{0.31mm}\pgfmoveto{\pgfxy(90.00,60.17)}\pgflineto{\pgfxy(100.00,60.17)}\pgfstroke
+\color[rgb]{0,0,1}\pgfmoveto{\pgfxy(90.00,52.77)}\pgflineto{\pgfxy(100.00,52.77)}\pgfstroke
+\color[rgb]{0,0,0}\pgfputat{\pgfxy(100.00,58.77)}{\pgfbox[bottom,left]{\fontsize{5.69}{6.83}\selectfont Black hole}}
+\pgfputat{\pgfxy(100.00,50.77)}{\pgfbox[bottom,left]{\fontsize{5.69}{6.83}\selectfont Small black ring}}
+\pgfputat{\pgfxy(137.24,5.00)}{\pgfbox[bottom,left]{\fontsize{9.10}{10.93}\selectfont \makebox(0,0)[l]{$\frac{GJ}{(GM)^{3/2}}$\strut}}}
+\pgfputat{\pgfxy(25.20,60.92)}{\pgfbox[bottom,left]{\fontsize{9.10}{10.93}\selectfont \makebox(0,0)[b]{$\frac{GS}{(GM)^{3/2}}$\strut}}}
+\color[rgb]{1,0,0}\pgfmoveto{\pgfxy(90.00,45.00)}\pgflineto{\pgfxy(100.00,45.00)}\pgfstroke
+\color[rgb]{0,0,0}\pgfputat{\pgfxy(100.00,43.00)}{\pgfbox[bottom,left]{\fontsize{5.69}{6.83}\selectfont Large black ring}}
+\end{pgfpicture}%

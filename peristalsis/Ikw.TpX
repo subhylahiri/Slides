@@ -1,0 +1,221 @@
+%<TpX v="5" TeXFormat="pgf" PdfTeXFormat="pgf" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" DefaultSymbolSize="30" ApproximationPrecision="0.01" PicScale="1" Border="2" BitmapRes="20000" HatchingStep="2" DottedSize="0.5" DashSize="1" LineWidth="0.353125" TeXCenterFigure="1" TeXFigure="none">
+%  <comment>Imported from Ikw.emf 4/4/2010 6:23:44 PM</comment>
+%  <bitmap x="11.1611" y="9.0006" w="69.4303" h="62.0244" link="IkwGraph.png"/>
+%  <bitmap x="86.7759" y="8.85605" w="3.61867" h="62.0223" link="IkwCbar.png"/>
+%  <text x="41.6298" y="72.8243" t=" |DI(k,w)|" tex="$ |\Delta I(k,\omega)|$" h="2.3557" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <text x="30.7573" y="3.05862" t="Angular wavenumber, k L" tex="Angular wavenumber, $k L$" h="2.3557" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <text x="6.88194" y="25.2103" t="Angular frequency, w (s)" tex="Angular frequency, $\omega$ (s$^{-1}$)" h="2.3557" rotdeg="90" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <text x="10.2954" y="7.9629" t=" " h="2.47588" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <text x="80.1464" y="70.1061" t=" " h="2.35572" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="10.9655" y1="9.15204" x2="80.2901" y2="9.15204"/>
+%  <line x1="80.3276" y1="9.08271" x2="80.3276" y2="71.0559"/>
+%  <line x1="10.9655" y1="9.15204" x2="80.2901" y2="9.15204"/>
+%  <line x1="12.4444" y1="9.17056" x2="12.4444" y2="9.95544"/>
+%  <text x="8.49951" y="6.00787" t="-100" h="2.5509" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="28.6589" y1="9.19535" x2="28.6589" y2="9.98023"/>
+%  <text x="26.3558" y="6.00787" t="-50" h="2.5509" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="45.9266" y1="9.19535" x2="45.9266" y2="9.98023"/>
+%  <text x="45.1933" y="6.00787" t="0" h="2.5509" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="62.9982" y1="9.19535" x2="62.9982" y2="9.98023"/>
+%  <text x="61.4798" y="6.00787" t="50" h="2.5509" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="80.2347" y1="9.12392" x2="80.2347" y2="9.87072"/>
+%  <text x="78.159" y="6.00787" t="100" h="2.5509" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="11.112" y1="9.9015" x2="11.8033" y2="9.9015"/>
+%  <line x1="80.3235" y1="9.85547" x2="79.5763" y2="9.85547"/>
+%  <text x="9.19346" y="8.85733" t="0" h="2.35572" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="11.1297" y1="16.1499" x2="11.7874" y2="16.1499"/>
+%  <line x1="80.3276" y1="16.1499" x2="79.6025" y2="16.1499"/>
+%  <text x="9.19346" y="15.1996" t="1" h="2.35572" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="11.1297" y1="22.4922" x2="11.7874" y2="22.4922"/>
+%  <line x1="80.3276" y1="22.4922" x2="79.6025" y2="22.4922"/>
+%  <text x="9.19346" y="21.5419" t="2" h="2.35572" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="11.1297" y1="28.8345" x2="11.7874" y2="28.8345"/>
+%  <line x1="80.3276" y1="28.8345" x2="79.6025" y2="28.8345"/>
+%  <text x="9.19346" y="27.8843" t="3" h="2.35572" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="11.1297" y1="35.1102" x2="11.7874" y2="35.1102"/>
+%  <line x1="80.3276" y1="35.358" x2="79.6025" y2="35.358"/>
+%  <text x="9.19346" y="34.4078" t="4" h="2.35572" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="11.1297" y1="41.5888" x2="11.7874" y2="41.5888"/>
+%  <line x1="80.3276" y1="41.7004" x2="79.6025" y2="41.7004"/>
+%  <text x="9.19346" y="40.7501" t="5" h="2.35572" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="11.1297" y1="47.8072" x2="11.7874" y2="47.8072"/>
+%  <line x1="80.3276" y1="48.0427" x2="79.6025" y2="48.0427"/>
+%  <text x="9.19346" y="47.0924" t="6" h="2.35572" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="11.1297" y1="54.1869" x2="11.7874" y2="54.1869"/>
+%  <line x1="80.3276" y1="54.385" x2="79.6025" y2="54.385"/>
+%  <text x="9.19346" y="53.4346" t="7" h="2.35572" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="11.1297" y1="60.4669" x2="11.7874" y2="60.4669"/>
+%  <line x1="80.3276" y1="60.7271" x2="79.6025" y2="60.7271"/>
+%  <text x="9.19346" y="59.7772" t="8" h="2.35572" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="11.1297" y1="66.8717" x2="11.7874" y2="66.8717"/>
+%  <line x1="80.3276" y1="67.0697" x2="79.6025" y2="67.0697"/>
+%  <text x="9.19346" y="66.1194" t="9" h="2.35572" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="11.3992" y1="9.15204" x2="80.3004" y2="9.16045"/>
+%  <line x1="80.3276" y1="9.08271" x2="80.3276" y2="71.0559"/>
+%  <line x1="11.1867" y1="9.08271" x2="11.1858" y2="70.8404"/>
+%  <line x1="90.3265" y1="8.90152" x2="90.3208" y2="70.7522"/>
+%  <line x1="90.3265" y1="16.8595" x2="89.6019" y2="16.8595"/>
+%  <line x1="86.7354" y1="16.8595" x2="87.2788" y2="16.8595"/>
+%  <text x="90.8704" y="15.9244" t="20" h="2.35572" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="90.3265" y1="24.6499" x2="89.6019" y2="24.6499"/>
+%  <line x1="86.7354" y1="24.6499" x2="87.2788" y2="24.6499"/>
+%  <text x="90.8704" y="23.8976" t="40" h="2.35572" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="90.3265" y1="32.4876" x2="89.6019" y2="32.4876"/>
+%  <line x1="86.7354" y1="32.4876" x2="87.2788" y2="32.4876"/>
+%  <text x="90.8704" y="31.6896" t="60" h="2.35572" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="90.3265" y1="40.3999" x2="89.6019" y2="40.3999"/>
+%  <line x1="86.7354" y1="40.3999" x2="87.2788" y2="40.3999"/>
+%  <text x="90.8704" y="39.6628" t="80" h="2.35572" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="90.3265" y1="48.2223" x2="89.6019" y2="48.2223"/>
+%  <line x1="86.7354" y1="48.2223" x2="87.2788" y2="48.2223"/>
+%  <text x="90.8704" y="47.4548" t="100" h="2.35572" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="90.3265" y1="56.0584" x2="89.6019" y2="56.0584"/>
+%  <line x1="86.7354" y1="56.0584" x2="87.2788" y2="56.0584"/>
+%  <text x="90.8704" y="55.4282" t="120" h="2.35572" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="90.3265" y1="63.9569" x2="89.6019" y2="63.9569"/>
+%  <line x1="86.7354" y1="63.9569" x2="87.4877" y2="63.9518"/>
+%  <text x="90.8704" y="63.22" t="140" h="2.35572" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="86.7718" y1="70.7368" x2="90.3511" y2="70.7368"/>
+%  <line x1="86.7569" y1="8.94842" x2="90.3901" y2="9.0006"/>
+%  <line x1="90.3265" y1="8.90152" x2="90.3362" y2="70.7978"/>
+%  <line x1="86.781" y1="8.90152" x2="86.7872" y2="70.7671"/>
+%</TpX>
+\centering
+\begin{pgfpicture}{3.03mm}{0.56mm}{96.80mm}{76.68mm}
+\pgfsetxvec{\pgfpoint{1.00mm}{0mm}}
+\pgfsetyvec{\pgfpoint{0mm}{1.00mm}}
+\color[rgb]{0,0,0}\pgfsetlinewidth{0.35mm}\pgfsetdash{}{0mm}
+\pgftext[bottom,left,at={\pgfxy(11.16,9.00)}]{\includegraphics[width=69.43mm]{IkwGraph}};
+\pgftext[bottom,left,at={\pgfxy(86.78,8.86)}]{\includegraphics[width=3.62mm]{IkwCbar}};
+\pgfputat{\pgfxy(41.63,72.82)}{\pgfbox[bottom,left]{\fontsize{6.70}{8.04}\selectfont \textcolor[rgb]{0, 0, 0}{$ |\Delta I(k,\omega)|$}}}
+\pgfputat{\pgfxy(30.76,3.06)}{\pgfbox[bottom,left]{\fontsize{6.70}{8.04}\selectfont \textcolor[rgb]{0, 0, 0}{Angular wavenumber, $k L$}}}
+\pgfputat{\pgfxy(6.88,25.21)}{\pgfbox[bottom,left]{\rotatebox{90.00}{\fontsize{6.70}{8.04}\selectfont \smash{\makebox[0pt][l]{\textcolor[rgb]{0, 0, 0}{Angular frequency, $\omega$ (s$^{-1}$)}}}}}}
+\pgfputat{\pgfxy(10.30,7.96)}{\pgfbox[bottom,left]{\fontsize{7.04}{8.45}\selectfont \textcolor[rgb]{0, 0, 0}{ }}}
+\pgfputat{\pgfxy(80.15,70.11)}{\pgfbox[bottom,left]{\fontsize{6.70}{8.04}\selectfont \textcolor[rgb]{0, 0, 0}{ }}}
+\pgfmoveto{\pgfxy(10.97,9.15)}\pgflineto{\pgfxy(80.29,9.15)}\pgfstroke
+\pgfmoveto{\pgfxy(80.33,9.08)}\pgflineto{\pgfxy(80.33,71.06)}\pgfstroke
+\pgfmoveto{\pgfxy(10.97,9.15)}\pgflineto{\pgfxy(80.29,9.15)}\pgfstroke
+\pgfmoveto{\pgfxy(12.44,9.17)}\pgflineto{\pgfxy(12.44,9.96)}\pgfstroke
+\pgfputat{\pgfxy(8.50,6.01)}{\pgfbox[bottom,left]{\fontsize{7.26}{8.71}\selectfont \textcolor[rgb]{0, 0, 0}{-100}}}
+\pgfmoveto{\pgfxy(28.66,9.20)}\pgflineto{\pgfxy(28.66,9.98)}\pgfstroke
+\pgfputat{\pgfxy(26.36,6.01)}{\pgfbox[bottom,left]{\fontsize{7.26}{8.71}\selectfont \textcolor[rgb]{0, 0, 0}{-50}}}
+\pgfmoveto{\pgfxy(45.93,9.20)}\pgflineto{\pgfxy(45.93,9.98)}\pgfstroke
+\pgfputat{\pgfxy(45.19,6.01)}{\pgfbox[bottom,left]{\fontsize{7.26}{8.71}\selectfont \textcolor[rgb]{0, 0, 0}{0}}}
+\pgfmoveto{\pgfxy(63.00,9.20)}\pgflineto{\pgfxy(63.00,9.98)}\pgfstroke
+\pgfputat{\pgfxy(61.48,6.01)}{\pgfbox[bottom,left]{\fontsize{7.26}{8.71}\selectfont \textcolor[rgb]{0, 0, 0}{50}}}
+\pgfmoveto{\pgfxy(80.23,9.12)}\pgflineto{\pgfxy(80.23,9.87)}\pgfstroke
+\pgfputat{\pgfxy(78.16,6.01)}{\pgfbox[bottom,left]{\fontsize{7.26}{8.71}\selectfont \textcolor[rgb]{0, 0, 0}{100}}}
+\pgfmoveto{\pgfxy(11.11,9.90)}\pgflineto{\pgfxy(11.80,9.90)}\pgfstroke
+\pgfmoveto{\pgfxy(80.32,9.86)}\pgflineto{\pgfxy(79.58,9.86)}\pgfstroke
+\pgfputat{\pgfxy(9.19,8.86)}{\pgfbox[bottom,left]{\fontsize{6.70}{8.04}\selectfont \textcolor[rgb]{0, 0, 0}{0}}}
+\pgfmoveto{\pgfxy(11.13,16.15)}\pgflineto{\pgfxy(11.79,16.15)}\pgfstroke
+\pgfmoveto{\pgfxy(80.33,16.15)}\pgflineto{\pgfxy(79.60,16.15)}\pgfstroke
+\pgfputat{\pgfxy(9.19,15.20)}{\pgfbox[bottom,left]{\fontsize{6.70}{8.04}\selectfont \textcolor[rgb]{0, 0, 0}{1}}}
+\pgfmoveto{\pgfxy(11.13,22.49)}\pgflineto{\pgfxy(11.79,22.49)}\pgfstroke
+\pgfmoveto{\pgfxy(80.33,22.49)}\pgflineto{\pgfxy(79.60,22.49)}\pgfstroke
+\pgfputat{\pgfxy(9.19,21.54)}{\pgfbox[bottom,left]{\fontsize{6.70}{8.04}\selectfont \textcolor[rgb]{0, 0, 0}{2}}}
+\pgfmoveto{\pgfxy(11.13,28.83)}\pgflineto{\pgfxy(11.79,28.83)}\pgfstroke
+\pgfmoveto{\pgfxy(80.33,28.83)}\pgflineto{\pgfxy(79.60,28.83)}\pgfstroke
+\pgfputat{\pgfxy(9.19,27.88)}{\pgfbox[bottom,left]{\fontsize{6.70}{8.04}\selectfont \textcolor[rgb]{0, 0, 0}{3}}}
+\pgfmoveto{\pgfxy(11.13,35.11)}\pgflineto{\pgfxy(11.79,35.11)}\pgfstroke
+\pgfmoveto{\pgfxy(80.33,35.36)}\pgflineto{\pgfxy(79.60,35.36)}\pgfstroke
+\pgfputat{\pgfxy(9.19,34.41)}{\pgfbox[bottom,left]{\fontsize{6.70}{8.04}\selectfont \textcolor[rgb]{0, 0, 0}{4}}}
+\pgfmoveto{\pgfxy(11.13,41.59)}\pgflineto{\pgfxy(11.79,41.59)}\pgfstroke
+\pgfmoveto{\pgfxy(80.33,41.70)}\pgflineto{\pgfxy(79.60,41.70)}\pgfstroke
+\pgfputat{\pgfxy(9.19,40.75)}{\pgfbox[bottom,left]{\fontsize{6.70}{8.04}\selectfont \textcolor[rgb]{0, 0, 0}{5}}}
+\pgfmoveto{\pgfxy(11.13,47.81)}\pgflineto{\pgfxy(11.79,47.81)}\pgfstroke
+\pgfmoveto{\pgfxy(80.33,48.04)}\pgflineto{\pgfxy(79.60,48.04)}\pgfstroke
+\pgfputat{\pgfxy(9.19,47.09)}{\pgfbox[bottom,left]{\fontsize{6.70}{8.04}\selectfont \textcolor[rgb]{0, 0, 0}{6}}}
+\pgfmoveto{\pgfxy(11.13,54.19)}\pgflineto{\pgfxy(11.79,54.19)}\pgfstroke
+\pgfmoveto{\pgfxy(80.33,54.38)}\pgflineto{\pgfxy(79.60,54.38)}\pgfstroke
+\pgfputat{\pgfxy(9.19,53.43)}{\pgfbox[bottom,left]{\fontsize{6.70}{8.04}\selectfont \textcolor[rgb]{0, 0, 0}{7}}}
+\pgfmoveto{\pgfxy(11.13,60.47)}\pgflineto{\pgfxy(11.79,60.47)}\pgfstroke
+\pgfmoveto{\pgfxy(80.33,60.73)}\pgflineto{\pgfxy(79.60,60.73)}\pgfstroke
+\pgfputat{\pgfxy(9.19,59.78)}{\pgfbox[bottom,left]{\fontsize{6.70}{8.04}\selectfont \textcolor[rgb]{0, 0, 0}{8}}}
+\pgfmoveto{\pgfxy(11.13,66.87)}\pgflineto{\pgfxy(11.79,66.87)}\pgfstroke
+\pgfmoveto{\pgfxy(80.33,67.07)}\pgflineto{\pgfxy(79.60,67.07)}\pgfstroke
+\pgfputat{\pgfxy(9.19,66.12)}{\pgfbox[bottom,left]{\fontsize{6.70}{8.04}\selectfont \textcolor[rgb]{0, 0, 0}{9}}}
+\pgfmoveto{\pgfxy(11.40,9.15)}\pgflineto{\pgfxy(80.30,9.16)}\pgfstroke
+\pgfmoveto{\pgfxy(80.33,9.08)}\pgflineto{\pgfxy(80.33,71.06)}\pgfstroke
+\pgfmoveto{\pgfxy(11.19,9.08)}\pgflineto{\pgfxy(11.19,70.84)}\pgfstroke
+\pgfmoveto{\pgfxy(90.33,8.90)}\pgflineto{\pgfxy(90.32,70.75)}\pgfstroke
+\pgfmoveto{\pgfxy(90.33,16.86)}\pgflineto{\pgfxy(89.60,16.86)}\pgfstroke
+\pgfmoveto{\pgfxy(86.74,16.86)}\pgflineto{\pgfxy(87.28,16.86)}\pgfstroke
+\pgfputat{\pgfxy(90.87,15.92)}{\pgfbox[bottom,left]{\fontsize{6.70}{8.04}\selectfont \textcolor[rgb]{0, 0, 0}{20}}}
+\pgfmoveto{\pgfxy(90.33,24.65)}\pgflineto{\pgfxy(89.60,24.65)}\pgfstroke
+\pgfmoveto{\pgfxy(86.74,24.65)}\pgflineto{\pgfxy(87.28,24.65)}\pgfstroke
+\pgfputat{\pgfxy(90.87,23.90)}{\pgfbox[bottom,left]{\fontsize{6.70}{8.04}\selectfont \textcolor[rgb]{0, 0, 0}{40}}}
+\pgfmoveto{\pgfxy(90.33,32.49)}\pgflineto{\pgfxy(89.60,32.49)}\pgfstroke
+\pgfmoveto{\pgfxy(86.74,32.49)}\pgflineto{\pgfxy(87.28,32.49)}\pgfstroke
+\pgfputat{\pgfxy(90.87,31.69)}{\pgfbox[bottom,left]{\fontsize{6.70}{8.04}\selectfont \textcolor[rgb]{0, 0, 0}{60}}}
+\pgfmoveto{\pgfxy(90.33,40.40)}\pgflineto{\pgfxy(89.60,40.40)}\pgfstroke
+\pgfmoveto{\pgfxy(86.74,40.40)}\pgflineto{\pgfxy(87.28,40.40)}\pgfstroke
+\pgfputat{\pgfxy(90.87,39.66)}{\pgfbox[bottom,left]{\fontsize{6.70}{8.04}\selectfont \textcolor[rgb]{0, 0, 0}{80}}}
+\pgfmoveto{\pgfxy(90.33,48.22)}\pgflineto{\pgfxy(89.60,48.22)}\pgfstroke
+\pgfmoveto{\pgfxy(86.74,48.22)}\pgflineto{\pgfxy(87.28,48.22)}\pgfstroke
+\pgfputat{\pgfxy(90.87,47.45)}{\pgfbox[bottom,left]{\fontsize{6.70}{8.04}\selectfont \textcolor[rgb]{0, 0, 0}{100}}}
+\pgfmoveto{\pgfxy(90.33,56.06)}\pgflineto{\pgfxy(89.60,56.06)}\pgfstroke
+\pgfmoveto{\pgfxy(86.74,56.06)}\pgflineto{\pgfxy(87.28,56.06)}\pgfstroke
+\pgfputat{\pgfxy(90.87,55.43)}{\pgfbox[bottom,left]{\fontsize{6.70}{8.04}\selectfont \textcolor[rgb]{0, 0, 0}{120}}}
+\pgfmoveto{\pgfxy(90.33,63.96)}\pgflineto{\pgfxy(89.60,63.96)}\pgfstroke
+\pgfmoveto{\pgfxy(86.74,63.96)}\pgflineto{\pgfxy(87.49,63.95)}\pgfstroke
+\pgfputat{\pgfxy(90.87,63.22)}{\pgfbox[bottom,left]{\fontsize{6.70}{8.04}\selectfont \textcolor[rgb]{0, 0, 0}{140}}}
+\pgfmoveto{\pgfxy(86.77,70.74)}\pgflineto{\pgfxy(90.35,70.74)}\pgfstroke
+\pgfmoveto{\pgfxy(86.76,8.95)}\pgflineto{\pgfxy(90.39,9.00)}\pgfstroke
+\pgfmoveto{\pgfxy(90.33,8.90)}\pgflineto{\pgfxy(90.34,70.80)}\pgfstroke
+\pgfmoveto{\pgfxy(86.78,8.90)}\pgflineto{\pgfxy(86.79,70.77)}\pgfstroke
+\end{pgfpicture}%

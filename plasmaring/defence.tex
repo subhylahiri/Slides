@@ -1,0 +1,938 @@
+% -*- TeX -*- -*- UK -*- -*- BMR -*-
+% ----------------------------------------------------------------
+% Beamer presentation ************************************************
+%
+% Subhaneil Lahiri's template
+%
+% To compile:
+%   Ctrl-Shift-P
+%
+% **** -----------------------------------------------------------
+%\documentclass[handout]{beamer}
+\documentclass{beamer}
+\usetheme[secheader]{Madrid}
+
+%---------Packages-------------------------------------------------------
+
+\usepackage{pgfpages}
+\setbeameroption{show notes on second screen=left}
+%\usepackage{xcolor}
+%\usepackage[centertags]{amsmath}
+%\usepackage{amssymb}
+\usepackage{ifpdf}
+%\usepackage{pgf}
+%\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+%\usepackage{beamerprosper}
+
+%---------Colours---------------------------------------------------------
+
+% \newrgbcolor{LemonChiffon}{1. 0.98 0.8}
+% \newrgbcolor{myellow}{.9 .8 .1}
+% \newrgbcolor{myblue}{.2 .36 .77}
+% \newrgbcolor{orange}{0.8 0.7 0.2}
+% \newrgbcolor{myred}{0.95 0.0 0.0}
+\definecolor{darkgrey}{rgb}{.5 .5 .5}
+\definecolor{darkblue}{rgb}{0.27843137 0.27058824 0.5372549}
+\definecolor{darkred}{rgb}{0.5372549 0.27843137 0.27058824}
+
+%---------Commands-------------------------------------------------------
+
+\newcommand{\rref}[1]{\hfill \small{\color{darkgrey} [#1]}}
+\newcommand{\rrref}[1]{ {\color{darkgrey} #1}}
+
+\input{mydefs.tex}
+\input{slidesymb.tex}
+\newcommand{\rz}{\rho_0}
+\newcommand{\tA}{\hat{\mathrm{A}}}
+\newcommand{\tB}{\hat{\mathrm{B}}}
+\newcommand{\tC}{\hat{\mathrm{C}}}
+\newcommand{\tOr}{\hat{\mathrm{O}}}
+\newcommand{\tE}{\widetilde{E}}
+\newcommand{\tL}{\widetilde{L}}
+\newcommand{\tS}{\widetilde{S}}
+\newcommand{\tT}{\widetilde{T}}
+\newcommand{\tO}{\widetilde{\Omega}}
+\newcommand{\tc}{\mathcal{T_\mathrm{c}}}
+\newcommand{\eos}{\alpha}
+\newcommand{\tloc}{\mathcal{T}}
+\newcommand{\floc}{\mathcal{F}}
+\newcommand{\eloc}{\mathcal{E}}
+\newcommand{\sloc}{\mathcal{S}}
+\newcommand{\ploc}{\mathcal{P}}
+\newcommand{\ri}{r_\mathrm{i}}
+\newcommand{\ro}{r_\mathrm{o}}
+\newcommand{\vi}{v_\mathrm{i}}
+\newcommand{\vo}{v_\mathrm{o}}
+\newcommand{\z}{\tilde{r}}
+\newcommand{\zi}{\z_\mathrm{i}}
+\newcommand{\zo}{\z_\mathrm{o}}
+\newcommand{\tw}{\widetilde{\omega}}
+\newcommand{\g}{\tilde h}
+\newcommand{\vot}{\tilde{v}_\mathrm{o}}
+\newcommand{\vit}{\tilde{v}_\mathrm{i}}
+\newcommand{\vm}{v_\mathrm{m}}
+\newcommand{\rads}{R_\text{AdS}}
+\newcommand{\Ra}{R_\text{avg}}
+\newcommand{\mfp}{l_{\mathrm{mfp}}}
+
+
+%---------Title-----------------------------------------------------------
+
+\title{Black rings from fluid mechanics}
+%
+%\subtitle{\small{based on \texttt{arXiv:0705.3404 [hep-th]} with Shiraz Minwalla \\ and \texttt{arXiv:0903.4734 [hep-th]} with Jyotirmoy Bhattacharya}}
+%
+\author{Subhaneil Lahiri}
+%
+\institute[Harvard]{%
+%\inst{1}Harvard University
+%\and
+%\inst{2}Tata Institute of Fundamental Research
+based on \texttt{arXiv:0705.3404 [hep-th]} with Shiraz Minwalla \\
+ and \texttt{arXiv:0903.4734 [hep-th]} with Jyotirmoy Bhattacharya
+}
+\date{May 1, 2009}
+%
+%---------Beginning--------------------------------------------------------
+
+\begin{document}
+
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}
+%
+ \titlepage
+%
+\end{frame}
+
+
+%%-------------Slide--------------------------------------------------------
+%
+%\begin{frame}{Introduction}
+%%
+% AdS/CFT maps black holes to deconfined gauge theories (quark-gluon plasmas).
+%
+% \vp In the long wavelength limit, the gauge theory can by described by fluid dynamics. Some properties of these fluids have been computed by looking at the black holes.\\ \rref{Policastro, Son, Starinets;\ldots}
+%
+% \vp We will look at the reverse -- using fluid mechanics to study higher dimensional black objects: put them in an asymptotically AdS-ish space.
+%
+% \note{Higher D gravity has a rich structure - we'll review}
+%
+%% \vp There are interesting configurations, Plasmaballs, that are metastable bubbles of plasma surrounded by the deconfined phase. The dual black holes are localised in the IR.\\ \rref{Aharony, Minwalla, Wiseman}
+%%
+%\end{frame}
+%
+%-------------Slide--------------------------------------------------------
+
+%\begin{frame}{}
+%%
+% This opens up the possibility of using fluid dynamics to study black holes (membrane paradigm?)
+%
+% \vp There are new black objects in higher dimensions (black rings etc.) and instabilities (e.g.\ Gregory-Laflamme) that can be difficult to study directly.
+%
+% \vp We will use the dynamics of the plasma to study the existence and thermodynamics of rotating black objects in Scherk-Schwarz compactified AdS.
+%%
+%\end{frame}
+
+\section{Motivation}
+\subsection{Higher dimensional gravity}
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Higher dimensional gravity}
+%
+ \note[item]{Why higher D gravity?}
+ General relativity makes sense in any \# of dimensions.
+
+ \vp $D$ is a parameter. \note[item]{1/D expansion}
+
+ \vp We vary parameters to understand the theory better: c.f.\ coupling constants, gauge groups, \ldots \note[item]{perturbation theory. SU(2), SU(infinity).}
+
+ \vp Sometimes we need extra dimensions: string theory, large extra dimensions scenarios, \ldots
+
+ \vp Is gravity the same in $D>4$?
+%
+\end{frame}
+
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Black holes in four vs.\ five dimensions}
+%
+  In four dimensions there are horizon topology and black hole uniqueness theorems.
+
+ \vp In five dimensions, we are allowed an $S^1 \times S^2$ horizon as well -- \alert{the black ring}. \rref{Emparan, Reall} \note<1>{1/2 Black holes have thermodynamics. Plot phase diag}
+
+ %
+ \begin{center}
+   \input{flatsp.TpX}
+ \end{center}
+ %
+ For a range of energies and angular momenta, it is possible to have two black ring and one black hole solutions - violating uniqueness.
+ \note{Black holes have thermodynamics. Plot phase diag}
+%
+\end{frame}
+%%-------------Slide--------------------------------------------------------
+%
+%\begin{frame}{Black holes in four dimensions}
+%%
+%  In four dimensions there are horizon topology and black hole uniqueness theorems.\note<1>{1/4}
+%
+%  \vp \onslide<2->{Only spherical ($S^2$) horizons}
+%  \begin{center}
+%    \begin{pgfpicture}%{38.00mm}{18.00mm}{64.00mm}{32.00mm}
+%     \pgfsetxvec{\pgfpoint{1.00mm}{0mm}}
+%     \pgfsetyvec{\pgfpoint{0mm}{1.00mm}}
+%     \color[rgb]{0,0,0}\pgfsetlinewidth{0.30mm}\pgfsetdash{}{0mm}
+%     \onslide<2->{
+%     \pgfellipse[stroke]{\pgfxy(51.00,25.00)}{\pgfxy(11.00,0.00)}{\pgfxy(0.00,5.00)}
+%     }
+%     \onslide<3->{
+%     \pgfmoveto{\pgfxy(45.00,25.80)}\pgfcurveto{\pgfxy(46.00,23.80)}{\pgfxy(50.00,23.80)}{\pgfxy(51.00,23.80)}\pgfcurveto{\pgfxy(52.00,23.80)}{\pgfxy(56.00,23.80)}{\pgfxy(57.00,25.80)}\pgfstroke
+%     \pgfmoveto{\pgfxy(46.00,25.00)}\pgfcurveto{\pgfxy(47.25,25.59)}{\pgfxy(50.00,26.00)}{\pgfxy(51.00,26.00)}\pgfcurveto{\pgfxy(52.00,26.00)}{\pgfxy(54.44,25.74)}{\pgfxy(56.00,25.00)}\pgfstroke
+%     }
+%  \end{pgfpicture}%
+%  \only<2>{\input{tick.TpX}}
+%  \only<3->{\input{cross.TpX}}
+%  \end{center}
+%  \note<2>{2/4 Allowed, on the other hand\ldots}
+%  \note<3>{3/4 Disallowed}
+%
+%  \onslide<4>{At fixed energy and angular momentum: unique solution.}
+%%
+%\end{frame}
+%
+%%-------------Slide--------------------------------------------------------
+%
+%\begin{frame}{Black rings}
+%%
+% In five dimensions, we are allowed an $S^1 \times S^2$ horizon as well -- \alert{the black ring}. \rref{Emparan, Reall} \note<1>{1/2 Black holes have thermodynamics. Plot phase diag}
+%
+% \onslide<2->
+% %
+% \begin{center}
+%   \input{flatsp.TpX}
+% \end{center}
+% %
+% For a range of energies and angular momenta, it is possible to have two black ring and one black hole solutions - violating uniqueness.
+% \note<2>{2/2 Black holes have thermodynamics. Plot phase diag}
+%%
+%\end{frame}
+
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Higher dimensions}
+%
+ For $D \geq 6$: no exact solutions (except Myers-Perry). Approximate solutions for $R_{S^1} \gg R_{S^3}$.
+
+ %
+ \begin{center}
+   \input{hid1.TpX}
+   \onslide<2->{\input{hid2.TpX}}
+ \end{center}
+ %
+ \rref{Emparan et al.}
+ \note<1>{1/3 One possible phase diag. $\exists$ another}
+ \note<2>{2/3 Common features: robust}
+
+ \onslide<3>Other topologies? \rref{Galloway, Sch\"on}
+ \note<3>{3/3 Positive Yamabe. Not every allowed exists: $S^3/\Gamma$}
+%
+\end{frame}
+
+%%-------------Slide--------------------------------------------------------
+%
+%\begin{frame}{Gregory-Laflamme instability}
+%%
+% Instability of black strings and branes.
+% %
+% \begin{center}
+%   \input{GL.TpX}
+% \end{center}
+% %
+% End point of instability? \rref{Horowitz,Maeda}
+% \note[item]{Naked sing. Finite time? Wavy string.}
+%
+% \vp Related to Plateau-Rayleigh instability? \rref{Caldarelli et al.}
+% \note[item]{Savart's sword}
+%%
+%\end{frame}
+
+\subsection{The AdS/CFT correspondence}
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{The AdS/CFT correspondence}
+%
+\begin{center}
+ \begin{tabular}{ccc}
+   Gravitational theory & $\Leftrightarrow$ & Non-gravitational theory \\
+   \\
+ %  AdS$_D$  &  & CFT in $D-1$ \\
+%   \\
+%   \onslide<2->IIB string theory in AdS$_5\times$S$^5$ & & $U(N)$ $\CN=4$ Yang-Mills in $d=4$ \\
+%   \\
+%   \onslide<3->$(\rads/\ell_P)^3$ & & $N^2$ \\
+%   \\
+%   $(\rads/\ell_s)^4$ & & $\lambda = g^2_\text{YM}N$ \\
+    Low curvature & & Strong coupling \\
+    \\
+    Black holes & & Deconfinement \\
+ \end{tabular}
+\end{center}\
+ \note[item]{We'll look at deformed version: confining}
+%
+\end{frame}
+
+%%-------------Slide--------------------------------------------------------
+%
+%\begin{frame}{Black holes and deconfinement}
+%%
+%%\newcommand{\temp}{}
+%%\newcommand{\PBS}[1]{\let\temp=\\ #1 \let\\=\temp}
+% \begin{center}
+% \begin{tabular}{p{5cm}p{5cm}}
+%   \onslide<1->Confined phase: quarks and gluons bound in hadrons &
+%   \onslide<2->Thermal AdS: gas of gravitons in AdS \\
+%   \\
+%   \onslide<3->Deconfined phase: plasma of free quarks and gluons &
+%   \onslide<4->AdS-Schwarzschild: black hole with Hawking radiation \\
+%   \\
+%   \onslide<5->Deconfinement transition &
+%   \onslide<5->Hawking-Page transition \\
+% \end{tabular}
+% \end{center}
+%
+% \vp Order parameters: $\mathcal{F}/N^2$, Wilson loop, Polyakov loop,\ldots
+% \note<1>{1/5}\note<2>{2/5}\note<3>{3/5}\note<4>{4/5}\note<5>{5/5}
+%%
+%\end{frame}
+
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Black holes and fluid mechanics}
+%
+ At long wavelengths, deconfined plasma described by fluid mechanics.
+
+ \vp Only input: equation of state, transport coefficients. Also works at strong coupling.
+ \note<1>{1/2}
+ \note[item]{Compute eos, trans, difficult in CFT.}
+ \note[item]{Once we know them, strong coupling doesn't matter}
+
+ \vp \onslide<2->Equation of state: black hole thermodynamics, static case.\\
+ Transport coefficients: small fluctuations, e.g.\ $\eta/s = 1/4\pi$. \rref{Son,Starinets}
+
+ \vp $\implies$ universal features of black holes at long wavelengths.
+ \note<2>{2/2}
+ \note[item]<2>{Take data from static. Predict features of non-static}
+%
+\end{frame}
+
+
+\section*{Outline}
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Outline}
+%
+  \tableofcontents[hideallsubsections]
+%
+\end{frame}
+
+%-------------Slide--------------------------------------------------------
+
+\section{Plasmaball setup}
+
+\begin{frame}{Plasmaballs in confining theories}
+%
+ Plasmaballs are a bubbles of deconfined phase, surrounded by confined phase, held together by surface tension.\note[item]{Why 1st order}
+
+ \vp Focus on theories that come from compactifying conformal theories on a Scherk-Schwarz circle.\note[item]{with gravity dual}
+
+ \vp Leads to confining theory.
+
+% \vp For concreteness: $\CN=4$ Yang-Mills on $\bR^{1,2}\times S^1$ at large $N$ and large $\lambda$. The $S^1$: $\theta\sim\theta+R_\theta$ $\implies$ confining gauge theory with scale $\Lambda \approx 1/R_\theta$.
+%
+\note[item]{$\mfp\sim R_\theta$. Reduce - $D=d+2$. $n-1$ angular momenta.}
+%
+\end{frame}
+
+\subsection{Scherk-Schwarz AdS}
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Confined phase}
+%
+ At low temperatures, gravity dual: \alert{AdS soliton}:
+ %
+ \begin{equation*}
+  \dr s^2 = \frac{\rads^2}{z^2}\left(
+       -\dr t^2 + F_{R_\theta}(z)\, \dr\theta^2 + \dr \vec{x}^2
+       + \frac{1}{F_{R_\theta}(z)}\, \dr z^2 \right),
+ \end{equation*}
+ %
+ where $ F_{a}(u) = 1 - \prn{ \frac{\pi  z}{a} }^{4}$ and $\rads^2=\sqrt{\lambda}\apm$. \rref{Witten}
+
+ \vp Small $z$: Poincar\'e AdS$_5$ with one compact direction.
+
+ \vp At $z=R_{\theta}/\pi$, the $\theta$ circle contracts: space stops.
+ %
+ \begin{center}
+   \input{cigar.TpX}
+ \end{center}
+ %
+%
+\end{frame}
+
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Deconfined phase}
+%
+ At high temperatures: \alert{the black brane}:
+ %
+ \begin{equation*}
+  \dr s^2 = \frac{\rads^2}{z^2}  \left(
+     -F_{\beta}(z)\, \dr t^2 + \dr\theta^2 + \dr \vec{x}^2
+     + \frac{1}{F_{\beta}(z)}\, \dr z^2 \right) .
+ \end{equation*}
+ %
+ Horizon at $z=\frac{\beta}{\pi}$. Temperature: $\tloc=1/\beta$.
+
+ \onslide<2>\vp Dominant phase above transition temperature,  $\tc=\frac{1}{R_\theta}$.
+ \note[item]<1>{Double Wick rotation}
+
+ \vp The equation of state of the dual plasma can be found from this gravity solution.
+ %
+ \begin{equation*}
+   \ploc = \frac{\eos}{\tc} \prn{\tloc^4-\tc^4}.
+ \end{equation*}
+ %
+ \note[item]<2>{Conformal.}
+ \note[item]<2>{Different reference.}
+ \note[item]<2>{Reduction.}
+ \note<1>{1/2}\note<2>{2/2}
+%
+\end{frame}
+
+\subsection{Properties of plasmaballs}
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Plasmaball solutions}
+%
+  On the bulk side, deep interior looks like black brane. Far from the plasmaball, it looks like the AdS soliton. There is a domain wall that interpolates between the two.
+ %
+ \begin{center}
+   \input{domainwall.TpX}
+ \end{center}
+ %
+ \note[item]{Vertical Hawking - AdS}
+ \note[item]{Horizontal Hawking - flat}
+ \note[item]{between flat and AdS. $C<0$.}
+ In the limit of infinitely large radius, a numerical domain wall solution has been found. The surface tension and thickness can be computed from this solution. \rref{Aharony, Minwalla, Wiseman}
+ \note[item]{Only $\sigma(\tc)$. Ignore temp dep}
+%
+\end{frame}
+
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Topology}
+%
+ %The bubble of plasma is the ``boundary shadow'' of the horizon of the black hole.
+
+ The Scherk-Schwarz circle does not contract in the black brane region but does contract in the AdS soliton region.
+ \begin{center}
+   \input{circlefibre.TpX}
+ \end{center}
+ %
+ Horizon topology: fibre circle over the plasmaball, contracting at surfaces.
+ %
+% \onslide<2->{Simple example: $d=1+1$:}
+% \begin{center}
+% \begin{pgfpicture}%{38.00mm}{18.00mm}{82.00mm}{42.00mm}
+%  \pgfsetxvec{\pgfpoint{1.00mm}{0mm}}
+%  \pgfsetyvec{\pgfpoint{0mm}{1.00mm}}
+%  \color[rgb]{0,0,0}\pgfsetlinewidth{0.30mm}\pgfsetdash{}{0mm}
+%  \onslide<2-3>{%
+%  \pgfsetlinewidth{1.20mm}\pgfmoveto{\pgfxy(40.00,30.00)}\pgflineto{\pgfxy(80.00,30.00)}\pgfstroke%
+%  }
+%  \pgfsetlinewidth{0.30mm}
+%  \only<3>{\pgfsetdash{{2.00mm}{1.00mm}}{0mm}}
+%  \only<4-5>{\pgfsetdash{}{0mm}}
+%  \onslide<3-5>{%
+%  \pgfellipse[stroke]{\pgfxy(60.00,30.00)}{\pgfxy(20.00,0.00)}{\pgfxy(0.00,10.00)}%
+%  }
+%  \only<2-3>{\pgfsetdash{}{0mm}}
+%  \only<4-5>{\pgfsetdash{{2.00mm}{1.00mm}}{0mm}}
+%  \onslide<3-5>{%
+%  \pgfellipse[stroke]{\pgfxy(60.00,30.00)}{\pgfxy(-2.00,0.00)}{\pgfxy(0.00,-10.00)}
+%  \pgfellipse[stroke]{\pgfxy(67.90,30.00)}{\pgfxy(-1.50,0.00)}{\pgfxy(0.00,-9.00)}
+%  \pgfellipse[stroke]{\pgfxy(74.00,30.00)}{\pgfxy(-1.00,0.00)}{\pgfxy(0.00,-7.00)}
+%  \pgfellipse[stroke]{\pgfxy(78.50,30.00)}{\pgfxy(-0.50,0.00)}{\pgfxy(0.00,-4.00)}
+%  \pgfellipse[stroke]{\pgfxy(51.50,30.00)}{\pgfxy(-1.50,0.00)}{\pgfxy(0.00,-9.00)}
+%  \pgfellipse[stroke]{\pgfxy(46.00,30.00)}{\pgfxy(-1.00,0.00)}{\pgfxy(0.00,-7.00)}
+%  \pgfellipse[stroke]{\pgfxy(41.80,30.00)}{\pgfxy(-0.50,0.00)}{\pgfxy(0.00,-4.00)}
+%  }
+% \end{pgfpicture}%
+% \onslide<5>\hspace{1cm}
+% \raisebox{1cm}{In general:
+% $  \begin{matrix}
+%    S^1  \longrightarrow & S^{n+1} \\
+%     &   \downarrow \\
+%     &   B^n \\
+%  \end{matrix}$}
+%  \end{center}
+%  \note<1>{1/5}\note<2>{2/5}\note<3>{3/5}\note<4>{4/5}\note<5>{5/5}
+%  \note[item]<2->{line interval - only sol}
+%  \note[item]<4->{$S^2$ no ang mom}
+%  \note[item]<5>{$B^1=I$}
+%
+\end{frame}
+
+%-------------Slide--------------------------------------------------------
+
+\section{Relativistic fluid mechanics}
+
+%\begin{frame}{Plasma thermodynamics}
+%%
+% A conformal theory in $d$ dimensions, with no chemical potentials, has the equation of state
+% %
+% \begin{equation*}
+%   \ploc = - \alpha \tloc^d.
+% \end{equation*}
+% %
+% The black brane solution is exactly the same as the one dual to the $\CN=4$ plasma.
+%
+% \onslide<2>\vp Here, we subtract a different reference action and we will integrate over the Scherk-Schwarz circle:
+% %
+% \begin{equation*}
+%   \ploc = \frac{\alpha}{\tc}\prn{ \tloc^{d+1} - \tc^{d+1}}.
+% \end{equation*}
+% %
+%%
+%\end{frame}
+
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Fluid mechanics}
+%
+
+ \vp The equations of motion are $\nabla_\mu T^{\mu\nu}=0$. The dynamical input is in specifying $T^{\mu\nu}$.
+
+ \vp For long wavelengths, we need only go up to one derivative terms: $T^{\mu\nu} = T^{\mu\nu}_\mathrm{perfect} + T^{\mu\nu}_\mathrm{dissipative}$.
+ \note[item]{equilibrium -> dissipative =0}
+
+ \vp Coefficients depend on $\tloc$. Determined from static black brane.\note[item]{rest frame temp}
+
+ \vp This approximation breaks down at surfaces -- but at scales $\gg$ surface thickness we can replace these regions with a $\delta$-function localised surface tension.
+ \note{Benefit of fluid pic. Know deriv exp in gravity. Surf, puzzle solved centuries ago}
+%
+\end{frame}
+
+%%-------------Slide--------------------------------------------------------
+%
+%\begin{frame}{Stress tensor}
+%%
+% The zero derivative part
+% %
+% \begin{equation*}
+%   T^{\mu\nu}_\mathrm{perfect} = \rho u^\mu u^\nu + \ploc (u^\mu u^\nu + g^{\mu\nu})\,.
+% \end{equation*}
+% %
+% \note[item]<1->{$\rho(\tloc)$ and $\ploc(\tloc)$ in rest frame from eos.}
+% \note<1>{1/3}
+% \onslide<2-> At the one derivative level
+% %
+% \begin{equation*}
+%   T^{\mu\nu}_\mathrm{dissipative} = -\zeta \vartheta P^{\mu\nu} -
+%   2\eta\sigma^{\mu\nu} + q^\mu u^\nu + u^\mu q^\nu\,,
+% \end{equation*}
+% %
+% \hfill where $  q^\mu = -\kappa P^{\mu\nu} (\p_\nu\tloc + a_\nu\tloc)$\,.
+% \note[item]<2->{Expansion - bulk visc, Shear - shear visc, $q$ heat flux}
+% \note[item]<2->{$a$ due to redshift}
+% \note[item]<2->{Dissipative - zero in equilibrium}
+% \note<2>{2/3}
+%
+% \onslide<3>The surface contribution
+% %
+% \begin{equation*}
+%   T^{\mu\nu}_\mathrm{surface} = -\sigma h^{\mu\nu}
+%                       \sqrt{\p f\cdt\p f}\delta(f)\,.
+% \end{equation*}
+% %
+% \hfill surface at $f(x)=0$.
+% \note[item]<3->{simple model}
+% \note<3>{3/3}
+%%
+%\end{frame}
+
+%-------------Slide--------------------------------------------------------
+
+\section{Three dimensional configurations}
+\subsection{Solutions}
+
+\begin{frame}{Three dimensional configurations}
+%
+ Rigid rotation: $(u^t,u^r,u^\phi)=\gamma(1,0,\Omega)$, where $\gamma=\frac{1}{\sqrt{1-v^2}}$.\\ Centripetal force provided by pressure gradient.
+ \note[item]<1->{$\theta,\eta=0$ - rotation + boost.}
+ \note[item]<1->{press grad - temp grad.}
+ \note<1>{1/4}
+
+ \onslide<2->\vp We find $T^{\mu\nu}_\mathrm{dissipative} \propto \vec{\nabla}(\tloc/\gamma)$.
+ \note[item]<2->{extra term in $q$}
+ \note<2>{2/4}
+
+ \onslide<3->\vp Interior: e.o.m. $\nabla_\mu T^{\mu\nu}_\mathrm{perfect} \propto \vec{\nabla}(\tloc/\gamma)=0$.
+ \note<3>{3/4}
+
+ \onslide<4>\vp Surfaces: $\ploc = \pm\frac{\sigma}{r}$. Relates $(\tloc/\gamma)$ to $\Omega$ and position of surface.
+ \note[item]<4->{inner / outer.}
+ \note[item]<4->{2 param.}
+ \note<4>{4/4}
+%
+\end{frame}
+
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Solutions}
+%
+ We find two types of solution:
+ \begin{center}
+ \begin{tabular}{ccc}
+   % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+   Plasmaballs &  & Plasmarings \\
+   \input{plasmaball.TpX} &\hspace{1cm}& \input{plasmaring.TpX} \\
+  $
+  \begin{matrix}
+  \onslide<2>{
+    S^1  \longrightarrow & S^3 \\
+     &   \downarrow \\}
+     &   B^2 \\
+  \end{matrix}
+  $
+  & &
+  $
+  \begin{matrix}
+  \onslide<2>{
+    S^1  \longrightarrow & S^1\times S^2 \\
+     &   \downarrow \\}
+     &   S^1\times B^1 \\
+  \end{matrix}
+  $
+ \end{tabular}
+ \end{center}
+ \note<1>{1/2}\note<2>{2/2}
+\end{frame}
+
+%-------------Slide--------------------------------------------------------
+
+%\begin{frame}{}
+%%
+% These are two parameter families of solutions. For the rings, the position of the inner and outer boundaries are related by
+% %
+% \begin{equation*}
+%   g_+(\vo,\tO) = g_-(\vi,\tO).
+% \end{equation*}
+% %
+% \begin{center}
+% \input{gpm.TpX}
+% \end{center}
+%%
+%\end{frame}
+
+\subsection{Thermodynamics}
+
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Thermodynamics}
+%
+ We compute the thermodynamic properties of the whole solution with
+ %
+ \begin{equation*}
+   \begin{split}
+     E &= \int\!\dr^2x \prn{ T^{tt}}, \\
+     L &= \int\!\dr^2x \prn{ r^2 T^{t\phi}}, \\
+     S &= \int\!\dr^2x \prn{ \gamma s }.
+   \end{split}
+ \end{equation*}
+ %
+ \note<1>{1/2}
+ \note[item]<1->{include KE. Different to $\eloc$}
+ \onslide<2>Then we compute an overall temperature and angular velocity via
+ %
+ \begin{equation*}
+   \dr E = T \dr S + \Omega \dr L\,,
+ \end{equation*}
+ %
+ we find
+ %
+ \begin{equation*}
+   T = \frac{\tloc}{\gamma}\,, \qquad \Omega \;\text{as before}\,.
+ \end{equation*}
+ %
+ \note<2>{2/2}
+ \note[item]<2->{Different to $\tloc$}
+ \note[item]<2->{Identify with Hawking temp. const on horizon.}
+ \note[item]<2->{redshift glueballs}
+%
+\end{frame}
+
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Phase diagram}
+%
+  \begin{center}
+  \input{ent.TpX}
+  \onslide<2>\input{flatsp.TpX}
+  \end{center}
+ \note<1>{1/2}\note<2>{2/2}
+ \note[item]<1->{approx break down at ext}
+ \note[item]<1->{c.f.\ flat}
+ \note[item]<2->{upper bound on L}
+ \note[item]<2->{Precise and rigorous for SSAdS. Qualitative for flat.}
+ \note[item]<2->{Left, easy. Right - hard.}
+%
+\end{frame}
+
+
+\section{Higher dimensional generalisations}
+\subsection{Six dimensional gravity}
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Topologies in six dimensions}
+%
+ \begin{tabular}{rlcrl}
+   $\begin{array}{c}
+      S^4 \\
+      \onslide<2->{\downarrow \\
+      B^3}
+    \end{array}$
+    & \onslide<2->{\input{4ball.TpX}} &
+    \hspace{1cm} &
+%
+   $\begin{array}{c}
+      S^3 \times S^1 \\
+      \onslide<2->{\downarrow \\
+      B^2 \times S^1}
+    \end{array}$
+    & \onslide<2->{\input{4ring.TpX}} \\
+%
+    &  \onslide<3>{\input{tick.TpX} &
+    & & \input{tick.TpX}}  \\
+    \\[1cm]
+%
+   $\begin{array}{c}
+      S^2 \times S^2\\
+      \onslide<2->{\downarrow \\
+      B^1 \times S^2}
+    \end{array}$
+    & \onslide<2->{\input{4hball.TpX}} & &
+%
+   $\begin{array}{c}
+      S^2 \times T^2\\
+      \onslide<2->{\downarrow \\
+      B^1 \times T^2}
+    \end{array}$
+    & \onslide<2->{\input{4hring.TpX}} \\
+    & \onslide<3>{\input{cross.TpX} &
+    & & \input{cross.TpX}}  \\
+ \end{tabular}
+ \note<1>{1/3}\note<2>{2/3}\note<3>{3/3}
+ \note[item]<1->{not full list. just ones we can imagine as fluids}
+ \note[item]<2->{cylindrical coords. Suppress $\phi$}
+%
+\end{frame}
+
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Solving equations of motion}
+%
+ Again: rigid rotation $(u^t,u^r,u^\phi,u^z) = \gamma (1,0,\Omega,0)$.
+
+ \vp Again: $\frac{\tloc}{\gamma} = T =$ constant.
+
+ \vp Now: surface satisfies $\ploc=\sigma K^\mu_\mu$.
+%
+\end{frame}
+
+\subsection{Solutions in six dimensions}
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Ordinary balls}
+%
+ \begin{center}
+ \input{obp.TpX}
+ \input{obs.TpX}
+ \end{center}
+ \note{Increase $\Omega$, $\ploc(0)\to0$}
+%
+\end{frame}
+
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Pinched balls}
+%
+ \begin{center}
+ \input{pbp.TpX}
+ \input{pbs.TpX}
+ \end{center}
+ \note[item]{Emparan, Myers, wavy BH.}
+ \note[item]{Increase $\Omega$, $h(0)\to0$}
+%
+\end{frame}
+
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Rings}
+%
+ \begin{center}
+ \input{rp.TpX}
+ \input{rs.TpX}
+ \end{center}
+%
+\end{frame}
+
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Phase diagram}
+%
+ %
+ %\begin{center}
+ \begin{tabular}{cc}
+   %\begin{overprint}[2.5cm]
+   \onslide<1->{\input{4dphase.TpX}}
+   %\end{overprint}
+   &
+   \begin{overprint}[5cm]
+   %\only<1>{}
+   \only<2>{\input{hid1.TpX}}
+   \only<3>{\input{hid2.TpX}}
+   \end{overprint}
+ \end{tabular}
+ %\end{center}
+ %
+ \rref{Bhardwaj,Bhattacharya}
+ \note<1>{1/3}\note<2>{2/3}\note<3>{3/3}
+ \note[item]<1->{compare with proposals}
+ \note[item]<2->{not good}
+ \note[item]<3->{good. Myers-Perry continues past wavy BH}
+%
+\end{frame}
+
+\subsection{Seven dimensional gravity}
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Topologies in seven dimensions}
+%
+ \begin{tabular}{rlrlrl}
+   $\begin{array}{c}
+      S^5 \\
+      \onslide<2->{\downarrow \\
+      B^4}
+    \end{array}$
+    & \onslide<2->{\input{5ball.TpX}} &
+%
+   $\begin{array}{c}
+      S^4 \times S^1 \\
+      \onslide<2->{\downarrow \\
+      B^3 \times S^1}
+    \end{array}$
+    & \onslide<2->{\input{5ring.TpX}} &
+%
+   $\begin{array}{c}
+      S^3 \times T^2 \\
+      \onslide<2->{\downarrow \\
+      B^2 \times T^2}
+    \end{array}$
+    & \onslide<2->{\input{5torus.TpX}} \\
+    \\[1cm]
+%
+   $\begin{array}{c}
+      S^3 \times S^2\\
+      \onslide<2->{\downarrow \\
+      B^1 \times S^3}
+    \end{array}$
+    & \onslide<2->{\input{5hball.TpX}} &
+%
+   $\begin{array}{c}
+      S^2 \times S^2 \times S^1\\
+      \onslide<2->{\downarrow \\
+      B^1 \times S^2 \times S^1}
+    \end{array}$
+    & \onslide<2->{\input{5hring.TpX}}  &
+%
+   $\begin{array}{c}
+      S^2 \times T^3\\
+      \onslide<2->{\downarrow \\
+      B^1 \times T^3}
+    \end{array}$
+    & \onslide<2->{\input{5htorus.TpX}} \\
+ \end{tabular}
+ \note<1>{1/2}\note<2>{2/2}
+ \note[item]<1->{again not full list}
+ \note[item]<2->{Ball, ring, torus.}
+ \note[item]<2->{hollow exist?.}
+%
+\end{frame}
+
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Approximate solutions}
+%
+ For ring, $B^3 \times S^1$, take $\epsilon = \frac{R_{B^3}}{R_{S^1}}$ small.
+
+ \vp For `torus', $B^2 \times T^2$, take $\epsilon = \frac{R_{B^2}}{R_{T^2}}$ small.
+
+ \vp Expand in $\epsilon$. At $\CO(\epsilon^0)$ -- just a tube.
+
+ \vp Similar to black-fold construction of Emparan et al.
+%
+\end{frame}
+
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Ring}
+%
+ %
+ \begin{center}
+   \input{5dring_plot.TpX}
+ \end{center}
+ %
+%
+\end{frame}
+
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Torus}
+%
+ %
+ \begin{center}
+   \input{5dtorus_plot.TpX}
+ \end{center}
+ %
+ \note{whole new topology}
+%
+\end{frame}
+
+\section{Summary}
+
+%-------------Slide--------------------------------------------------------
+
+\begin{frame}{Summary}
+%
+ We can get insight to some problems in classical gravity from fluid mechanics in AdS/CFT.
+
+ \vp In five dimensions -- qualitative agreement with flat space gravity.
+
+ \vp In six dimensions -- proposal for phase diagram.
+
+ \vp In seven dimensions -- new topology.
+
+ \vp Future: numerical solutions for $D=7$, phase diagram.
+
+ \vp Gregory-Laflamme vs.\ Plateau-Rayleigh. \rref{Caldarelli et al.}
+%
+\end{frame}
+
+% Press Ctrl-D to insert a new slide
+
+%-----End----------------------------------------------------------------
+
+\end{document}

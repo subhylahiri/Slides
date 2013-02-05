@@ -1,0 +1,11 @@
+%<TpX v="4" TeXFormat="pgf" PdfTeXFormat="pgf" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" DefaultSymbolSize="30" PicScale="0.4" Border="2" BitmapRes="20000" HatchingStep="2" DottedSize="0.5" DashSize="1" LineWidth="0.3" TeXFigure="none">
+%  <line x1="55" y1="0" x2="60" y2="10" lw="4.00" lc="green"/>
+%  <line x1="55.5" y1="0.5" x2="50.5" y2="4" lw="4.00" lc="green"/>
+%</TpX>
+\begin{pgfpicture}{18.20mm}{-2.00mm}{26.00mm}{6.00mm}
+\pgfsetxvec{\pgfpoint{0.40mm}{0mm}}
+\pgfsetyvec{\pgfpoint{0mm}{0.40mm}}
+\color[rgb]{0,0,0}\pgfsetlinewidth{0.30mm}\pgfsetdash{}{0mm}
+\color[rgb]{0,0.50196,0}\pgfsetlinewidth{1.20mm}\pgfmoveto{\pgfxy(55.00,0.00)}\pgflineto{\pgfxy(60.00,10.00)}\pgfstroke
+\pgfmoveto{\pgfxy(55.50,0.50)}\pgflineto{\pgfxy(50.50,4.00)}\pgfstroke
+\end{pgfpicture}%

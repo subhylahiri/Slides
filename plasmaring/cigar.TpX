@@ -1,0 +1,17 @@
+%<TpX v="4" TeXFormat="pgf" PdfTeXFormat="pgf" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" DefaultSymbolSize="30" PicScale="1" Border="2" BitmapRes="20000" HatchingStep="2" DottedSize="0.5" DashSize="1" LineWidth="0.3" TeXFigure="none">
+%  <ellipse x="42.5" y="5" dx="5" dy="10" lc="maroon"/>
+%  <bezier lc="maroon">43,10 70,10 100,10 100,5 100,0 70,0 43,0</bezier>
+%  <ellipse x="94" y="5" dx="2" dy="6" li="dot" lc="maroon"/>
+%  <text x="39.6" y="4" t="z=0" tex="$z=0$" h="5" jh="r"/>
+%  <text x="100.6" y="4" t="z=R" tex="$z=\frac{R_\theta}{\pi}$" h="5"/>
+%</TpX>
+\begin{pgfpicture}{30.06mm}{-2.00mm}{110.97mm}{12.00mm}
+\pgfsetxvec{\pgfpoint{1.00mm}{0mm}}
+\pgfsetyvec{\pgfpoint{0mm}{1.00mm}}
+\color[rgb]{0,0,0}\pgfsetlinewidth{0.30mm}\pgfsetdash{}{0mm}
+\color[rgb]{0.50196,0,0}\pgfellipse[stroke]{\pgfxy(42.50,5.00)}{\pgfxy(2.50,0.00)}{\pgfxy(0.00,5.00)}
+\pgfmoveto{\pgfxy(43.00,10.00)}\pgfcurveto{\pgfxy(70.00,10.00)}{\pgfxy(100.00,10.00)}{\pgfxy(100.00,5.00)}\pgfcurveto{\pgfxy(100.00,0.00)}{\pgfxy(70.00,0.00)}{\pgfxy(43.00,0.00)}\pgfstroke
+\pgfsetdash{{0.60mm}{0.50mm}}{0mm}\pgfellipse[stroke]{\pgfxy(94.00,5.00)}{\pgfxy(1.00,0.00)}{\pgfxy(0.00,3.00)}
+\color[rgb]{0,0,0}\pgfputat{\pgfxy(39.60,4.00)}{\pgfbox[bottom,left]{\fontsize{14.23}{17.07}\selectfont \makebox[0pt][r]{$z=0$}}}
+\pgfputat{\pgfxy(100.60,4.00)}{\pgfbox[bottom,left]{\fontsize{14.23}{17.07}\selectfont $z=\frac{R_\theta}{\pi}$}}
+\end{pgfpicture}%

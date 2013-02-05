@@ -1,0 +1,274 @@
+%<TpX v="5" TeXFormat="pgf" PdfTeXFormat="pgf" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" DefaultSymbolSize="30" ApproximationPrecision="0.01" PicScale="0.5" Border="2" BitmapRes="20000" HatchingStep="2" DottedSize="0.5" DashSize="1" LineWidth="0.353125" TeXFigure="none">
+%  <comment>Imported from bar.emf 11/2/2009 3:37:28 PM</comment>
+%  <polygon li="none" lw="0.50" fill="white">25.7781,16.2437 25.7781,137.012 179.034,137.012 179.034,16.2437</polygon>
+%  <polyline lw="0.50" lc="white">25.7781,16.2437 25.7781,137.012 179.034,137.012 179.034,16.2437 25.7781,16.2437</polyline>
+%  <line x1="25.7781" y1="137.012" x2="179.034" y2="137.012" lw="0.50"/>
+%  <line x1="25.7781" y1="16.2437" x2="179.034" y2="16.2437" lw="0.50"/>
+%  <line x1="179.034" y1="16.2437" x2="179.034" y2="137.012" lw="0.50"/>
+%  <line x1="25.7781" y1="16.2437" x2="25.7781" y2="137.012" lw="0.50"/>
+%  <line x1="25.7781" y1="16.2437" x2="179.034" y2="16.2437" lw="0.50"/>
+%  <line x1="25.7781" y1="16.2437" x2="25.7781" y2="137.012" lw="0.50"/>
+%  <line x1="25.7781" y1="16.2437" x2="25.7781" y2="18.0094" lw="0.50"/>
+%  <line x1="25.7781" y1="137.012" x2="25.7781" y2="135.6" lw="0.50"/>
+%  <text x="24.7188" y="10.5076" t="0" h="4.59063" lw="0.50" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="56.1469" y1="16.2437" x2="56.1469" y2="18.0094" lw="0.50"/>
+%  <line x1="56.1469" y1="137.012" x2="56.1469" y2="135.6" lw="0.50"/>
+%  <text x="55.0875" y="10.5076" t="5" h="4.59063" lw="0.50" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="86.8688" y1="16.2437" x2="86.8688" y2="18.0094" lw="0.50"/>
+%  <line x1="86.8688" y1="137.012" x2="86.8688" y2="135.6" lw="0.50"/>
+%  <text x="84.3969" y="10.5076" t="10" h="4.59063" lw="0.50" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="117.591" y1="16.2437" x2="117.591" y2="18.0094" lw="0.50"/>
+%  <line x1="117.591" y1="137.012" x2="117.591" y2="135.6" lw="0.50"/>
+%  <text x="115.119" y="10.5076" t="15" h="4.59063" lw="0.50" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="148.313" y1="16.2437" x2="148.313" y2="18.0094" lw="0.50"/>
+%  <line x1="148.313" y1="137.012" x2="148.313" y2="135.6" lw="0.50"/>
+%  <text x="145.841" y="10.5076" t="20" h="4.59063" lw="0.50" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="179.034" y1="16.2437" x2="179.034" y2="18.0094" lw="0.50"/>
+%  <line x1="179.034" y1="137.012" x2="179.034" y2="135.6" lw="0.50"/>
+%  <text x="176.563" y="10.5076" t="25" h="4.59063" lw="0.50" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="25.7781" y1="16.2437" x2="27.1906" y2="16.2437" lw="0.50"/>
+%  <line x1="179.034" y1="16.2437" x2="177.269" y2="16.2437" lw="0.50"/>
+%  <text x="21.8938" y="14.392" t="0" h="4.59063" lw="0.50" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="25.7781" y1="28.6031" x2="27.1906" y2="28.6031" lw="0.50"/>
+%  <line x1="179.034" y1="28.6031" x2="177.269" y2="28.6031" lw="0.50"/>
+%  <text x="21.8938" y="26.7513" t="2" h="4.59063" lw="0.50" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="25.7781" y1="40.6094" x2="27.1906" y2="40.6094" lw="0.50"/>
+%  <line x1="179.034" y1="40.6094" x2="177.269" y2="40.6094" lw="0.50"/>
+%  <text x="21.8938" y="38.7576" t="4" h="4.59063" lw="0.50" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="25.7781" y1="52.6156" x2="27.1906" y2="52.6156" lw="0.50"/>
+%  <line x1="179.034" y1="52.6156" x2="177.269" y2="52.6156" lw="0.50"/>
+%  <text x="21.8938" y="50.7638" t="6" h="4.59063" lw="0.50" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="25.7781" y1="64.6219" x2="27.1906" y2="64.6219" lw="0.50"/>
+%  <line x1="179.034" y1="64.6219" x2="177.269" y2="64.6219" lw="0.50"/>
+%  <text x="21.8938" y="62.7701" t="8" h="4.59063" lw="0.50" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="25.7781" y1="76.6281" x2="27.1906" y2="76.6281" lw="0.50"/>
+%  <line x1="179.034" y1="76.6281" x2="177.269" y2="76.6281" lw="0.50"/>
+%  <text x="19.4219" y="74.7763" t="10" h="4.59063" lw="0.50" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="25.7781" y1="88.9875" x2="27.1906" y2="88.9875" lw="0.50"/>
+%  <line x1="179.034" y1="88.9875" x2="177.269" y2="88.9875" lw="0.50"/>
+%  <text x="19.4219" y="87.1357" t="12" h="4.59063" lw="0.50" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="25.7781" y1="100.994" x2="27.1906" y2="100.994" lw="0.50"/>
+%  <line x1="179.034" y1="100.994" x2="177.269" y2="100.994" lw="0.50"/>
+%  <text x="19.4219" y="99.142" t="14" h="4.59063" lw="0.50" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="25.7781" y1="113" x2="27.1906" y2="113" lw="0.50"/>
+%  <line x1="179.034" y1="113" x2="177.269" y2="113" lw="0.50"/>
+%  <text x="19.4219" y="111.148" t="16" h="4.59063" lw="0.50" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="25.7781" y1="125.006" x2="27.1906" y2="125.006" lw="0.50"/>
+%  <line x1="179.034" y1="125.006" x2="177.269" y2="125.006" lw="0.50"/>
+%  <text x="19.4219" y="123.154" t="18" h="4.59063" lw="0.50" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="25.7781" y1="137.012" x2="27.1906" y2="137.012" lw="0.50"/>
+%  <line x1="179.034" y1="137.012" x2="177.269" y2="137.012" lw="0.50"/>
+%  <text x="19.4219" y="135.161" t="20" h="4.59063" lw="0.50" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <line x1="25.7781" y1="137.012" x2="179.034" y2="137.012" lw="0.50"/>
+%  <line x1="25.7781" y1="16.2437" x2="179.034" y2="16.2437" lw="0.50"/>
+%  <line x1="179.034" y1="16.2437" x2="179.034" y2="137.012" lw="0.50"/>
+%  <line x1="25.7781" y1="16.2437" x2="25.7781" y2="137.012" lw="0.50"/>
+%  <polygon li="none" lw="0.50" fill="#00008F">29.3094,16.2437 29.3094,133.834 34.2531,133.834 34.2531,16.2437</polygon>
+%  <polyline lw="0.50">29.3094,16.2437 29.3094,133.834 34.2531,133.834 34.2531,16.2437 29.3094,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">35.3125,16.2437 35.3125,94.6375 40.2563,94.6375 40.2563,16.2437</polygon>
+%  <polyline lw="0.50">35.3125,16.2437 35.3125,94.6375 40.2563,94.6375 40.2563,16.2437 35.3125,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">41.6688,16.2437 41.6688,56.1469 46.6125,56.1469 46.6125,16.2437</polygon>
+%  <polyline lw="0.50">41.6688,16.2437 41.6688,56.1469 46.6125,56.1469 46.6125,16.2437 41.6688,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">47.6719,16.2437 47.6719,48.7313 52.6156,48.7313 52.6156,16.2437</polygon>
+%  <polyline lw="0.50">47.6719,16.2437 47.6719,48.7313 52.6156,48.7313 52.6156,16.2437 47.6719,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">53.675,16.2437 53.675,42.375 58.6188,42.375 58.6188,16.2437</polygon>
+%  <polyline lw="0.50">53.675,16.2437 53.675,42.375 58.6188,42.375 58.6188,16.2437 53.675,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">60.0313,16.2437 60.0313,39.9031 64.975,39.9031 64.975,16.2437</polygon>
+%  <polyline lw="0.50">60.0313,16.2437 60.0313,39.9031 64.975,39.9031 64.975,16.2437 60.0313,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">66.0344,16.2437 66.0344,33.1938 70.9781,33.1938 70.9781,16.2437</polygon>
+%  <polyline lw="0.50">66.0344,16.2437 66.0344,33.1938 70.9781,33.1938 70.9781,16.2437 66.0344,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">72.0375,16.2437 72.0375,31.4281 76.9813,31.4281 76.9813,16.2437</polygon>
+%  <polyline lw="0.50">72.0375,16.2437 72.0375,31.4281 76.9813,31.4281 76.9813,16.2437 72.0375,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">78.3938,16.2437 78.3938,31.075 83.3375,31.075 83.3375,16.2437</polygon>
+%  <polyline lw="0.50">78.3938,16.2437 78.3938,31.075 83.3375,31.075 83.3375,16.2437 78.3938,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">84.3969,16.2437 84.3969,27.8969 89.3406,27.8969 89.3406,16.2437</polygon>
+%  <polyline lw="0.50">84.3969,16.2437 84.3969,27.8969 89.3406,27.8969 89.3406,16.2437 84.3969,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">90.7531,16.2437 90.7531,27.5438 95.3438,27.5438 95.3438,16.2437</polygon>
+%  <polyline lw="0.50">90.7531,16.2437 90.7531,27.5438 95.3438,27.5438 95.3438,16.2437 90.7531,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">96.7562,16.2437 96.7562,26.4844 101.7,26.4844 101.7,16.2437</polygon>
+%  <polyline lw="0.50">96.7562,16.2437 96.7562,26.4844 101.7,26.4844 101.7,16.2437 96.7562,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">102.759,16.2437 102.759,25.7781 107.703,25.7781 107.703,16.2437</polygon>
+%  <polyline lw="0.50">102.759,16.2437 102.759,25.7781 107.703,25.7781 107.703,16.2437 102.759,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">109.116,16.2437 109.116,24.7188 113.706,24.7188 113.706,16.2437</polygon>
+%  <polyline lw="0.50">109.116,16.2437 109.116,24.7188 113.706,24.7188 113.706,16.2437 109.116,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">115.119,16.2437 115.119,24.3656 120.063,24.3656 120.063,16.2437</polygon>
+%  <polyline lw="0.50">115.119,16.2437 115.119,24.3656 120.063,24.3656 120.063,16.2437 115.119,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">121.122,16.2437 121.122,24.0125 126.066,24.0125 126.066,16.2437</polygon>
+%  <polyline lw="0.50">121.122,16.2437 121.122,24.0125 126.066,24.0125 126.066,16.2437 121.122,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">127.478,16.2437 127.478,23.6594 132.422,23.6594 132.422,16.2437</polygon>
+%  <polyline lw="0.50">127.478,16.2437 127.478,23.6594 132.422,23.6594 132.422,16.2437 127.478,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">133.481,16.2437 133.481,23.3062 138.425,23.3062 138.425,16.2437</polygon>
+%  <polyline lw="0.50">133.481,16.2437 133.481,23.3062 138.425,23.3062 138.425,16.2437 133.481,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">139.484,16.2437 139.484,22.6 144.428,22.6 144.428,16.2437</polygon>
+%  <polyline lw="0.50">139.484,16.2437 139.484,22.6 144.428,22.6 144.428,16.2437 139.484,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">145.841,16.2437 145.841,22.2469 150.784,22.2469 150.784,16.2437</polygon>
+%  <polyline lw="0.50">145.841,16.2437 145.841,22.2469 150.784,22.2469 150.784,16.2437 145.841,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">151.844,16.2437 151.844,22.2469 156.788,22.2469 156.788,16.2437</polygon>
+%  <polyline lw="0.50">151.844,16.2437 151.844,22.2469 156.788,22.2469 156.788,16.2437 151.844,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">157.847,16.2437 157.847,21.8938 162.791,21.8938 162.791,16.2437</polygon>
+%  <polyline lw="0.50">157.847,16.2437 157.847,21.8938 162.791,21.8938 162.791,16.2437 157.847,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">164.203,16.2437 164.203,21.8938 169.147,21.8938 169.147,16.2437</polygon>
+%  <polyline lw="0.50">164.203,16.2437 164.203,21.8938 169.147,21.8938 169.147,16.2437 164.203,16.2437</polyline>
+%  <polygon li="none" lw="0.50" fill="#00008F">170.206,16.2437 170.206,21.8938 175.15,21.8938 175.15,16.2437</polygon>
+%  <polyline lw="0.50">170.206,16.2437 170.206,21.8938 175.15,21.8938 175.15,16.2437 170.206,16.2437</polyline>
+%  <polyline lw="0.50">25.7781,16.2437 179.034,16.2437</polyline>
+%  <text x="82.6312" y="4.50446" t="Eigen-larva number" h="5" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%  <text x="14.9174" y="56.8531" t="Standard deviation" h="5" rotdeg="90" lc="black">
+%    <font face="Helvetica" charset="0"/>
+%  </text>
+%</TpX>
+\begin{pgfpicture}{3.49mm}{-0.28mm}{92.83mm}{71.39mm}
+\pgfsetxvec{\pgfpoint{0.50mm}{0mm}}
+\pgfsetyvec{\pgfpoint{0mm}{0.50mm}}
+\color[rgb]{0,0,0}\pgfsetlinewidth{0.35mm}\pgfsetdash{}{0mm}
+\color[rgb]{1,1,1}\pgfmoveto{\pgfxy(25.78,16.24)}\pgflineto{\pgfxy(25.78,137.01)}\pgflineto{\pgfxy(179.03,137.01)}\pgflineto{\pgfxy(179.03,16.24)}\pgfclosepath\pgffill
+\pgfsetlinewidth{0.18mm}\pgfmoveto{\pgfxy(25.78,16.24)}\pgflineto{\pgfxy(25.78,137.01)}\pgflineto{\pgfxy(179.03,137.01)}\pgflineto{\pgfxy(179.03,16.24)}\pgflineto{\pgfxy(25.78,16.24)}\pgfstroke
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(25.78,137.01)}\pgflineto{\pgfxy(179.03,137.01)}\pgfstroke
+\pgfmoveto{\pgfxy(25.78,16.24)}\pgflineto{\pgfxy(179.03,16.24)}\pgfstroke
+\pgfmoveto{\pgfxy(179.03,16.24)}\pgflineto{\pgfxy(179.03,137.01)}\pgfstroke
+\pgfmoveto{\pgfxy(25.78,16.24)}\pgflineto{\pgfxy(25.78,137.01)}\pgfstroke
+\pgfmoveto{\pgfxy(25.78,16.24)}\pgflineto{\pgfxy(179.03,16.24)}\pgfstroke
+\pgfmoveto{\pgfxy(25.78,16.24)}\pgflineto{\pgfxy(25.78,137.01)}\pgfstroke
+\pgfmoveto{\pgfxy(25.78,16.24)}\pgflineto{\pgfxy(25.78,18.01)}\pgfstroke
+\pgfmoveto{\pgfxy(25.78,137.01)}\pgflineto{\pgfxy(25.78,135.60)}\pgfstroke
+\pgfputat{\pgfxy(24.72,10.51)}{\pgfbox[bottom,left]{\fontsize{6.53}{7.84}\selectfont \textcolor[rgb]{0, 0, 0}{0}}}
+\pgfmoveto{\pgfxy(56.15,16.24)}\pgflineto{\pgfxy(56.15,18.01)}\pgfstroke
+\pgfmoveto{\pgfxy(56.15,137.01)}\pgflineto{\pgfxy(56.15,135.60)}\pgfstroke
+\pgfputat{\pgfxy(55.09,10.51)}{\pgfbox[bottom,left]{\fontsize{6.53}{7.84}\selectfont \textcolor[rgb]{0, 0, 0}{5}}}
+\pgfmoveto{\pgfxy(86.87,16.24)}\pgflineto{\pgfxy(86.87,18.01)}\pgfstroke
+\pgfmoveto{\pgfxy(86.87,137.01)}\pgflineto{\pgfxy(86.87,135.60)}\pgfstroke
+\pgfputat{\pgfxy(84.40,10.51)}{\pgfbox[bottom,left]{\fontsize{6.53}{7.84}\selectfont \textcolor[rgb]{0, 0, 0}{10}}}
+\pgfmoveto{\pgfxy(117.59,16.24)}\pgflineto{\pgfxy(117.59,18.01)}\pgfstroke
+\pgfmoveto{\pgfxy(117.59,137.01)}\pgflineto{\pgfxy(117.59,135.60)}\pgfstroke
+\pgfputat{\pgfxy(115.12,10.51)}{\pgfbox[bottom,left]{\fontsize{6.53}{7.84}\selectfont \textcolor[rgb]{0, 0, 0}{15}}}
+\pgfmoveto{\pgfxy(148.31,16.24)}\pgflineto{\pgfxy(148.31,18.01)}\pgfstroke
+\pgfmoveto{\pgfxy(148.31,137.01)}\pgflineto{\pgfxy(148.31,135.60)}\pgfstroke
+\pgfputat{\pgfxy(145.84,10.51)}{\pgfbox[bottom,left]{\fontsize{6.53}{7.84}\selectfont \textcolor[rgb]{0, 0, 0}{20}}}
+\pgfmoveto{\pgfxy(179.03,16.24)}\pgflineto{\pgfxy(179.03,18.01)}\pgfstroke
+\pgfmoveto{\pgfxy(179.03,137.01)}\pgflineto{\pgfxy(179.03,135.60)}\pgfstroke
+\pgfputat{\pgfxy(176.56,10.51)}{\pgfbox[bottom,left]{\fontsize{6.53}{7.84}\selectfont \textcolor[rgb]{0, 0, 0}{25}}}
+\pgfmoveto{\pgfxy(25.78,16.24)}\pgflineto{\pgfxy(27.19,16.24)}\pgfstroke
+\pgfmoveto{\pgfxy(179.03,16.24)}\pgflineto{\pgfxy(177.27,16.24)}\pgfstroke
+\pgfputat{\pgfxy(21.89,14.39)}{\pgfbox[bottom,left]{\fontsize{6.53}{7.84}\selectfont \textcolor[rgb]{0, 0, 0}{0}}}
+\pgfmoveto{\pgfxy(25.78,28.60)}\pgflineto{\pgfxy(27.19,28.60)}\pgfstroke
+\pgfmoveto{\pgfxy(179.03,28.60)}\pgflineto{\pgfxy(177.27,28.60)}\pgfstroke
+\pgfputat{\pgfxy(21.89,26.75)}{\pgfbox[bottom,left]{\fontsize{6.53}{7.84}\selectfont \textcolor[rgb]{0, 0, 0}{2}}}
+\pgfmoveto{\pgfxy(25.78,40.61)}\pgflineto{\pgfxy(27.19,40.61)}\pgfstroke
+\pgfmoveto{\pgfxy(179.03,40.61)}\pgflineto{\pgfxy(177.27,40.61)}\pgfstroke
+\pgfputat{\pgfxy(21.89,38.76)}{\pgfbox[bottom,left]{\fontsize{6.53}{7.84}\selectfont \textcolor[rgb]{0, 0, 0}{4}}}
+\pgfmoveto{\pgfxy(25.78,52.62)}\pgflineto{\pgfxy(27.19,52.62)}\pgfstroke
+\pgfmoveto{\pgfxy(179.03,52.62)}\pgflineto{\pgfxy(177.27,52.62)}\pgfstroke
+\pgfputat{\pgfxy(21.89,50.76)}{\pgfbox[bottom,left]{\fontsize{6.53}{7.84}\selectfont \textcolor[rgb]{0, 0, 0}{6}}}
+\pgfmoveto{\pgfxy(25.78,64.62)}\pgflineto{\pgfxy(27.19,64.62)}\pgfstroke
+\pgfmoveto{\pgfxy(179.03,64.62)}\pgflineto{\pgfxy(177.27,64.62)}\pgfstroke
+\pgfputat{\pgfxy(21.89,62.77)}{\pgfbox[bottom,left]{\fontsize{6.53}{7.84}\selectfont \textcolor[rgb]{0, 0, 0}{8}}}
+\pgfmoveto{\pgfxy(25.78,76.63)}\pgflineto{\pgfxy(27.19,76.63)}\pgfstroke
+\pgfmoveto{\pgfxy(179.03,76.63)}\pgflineto{\pgfxy(177.27,76.63)}\pgfstroke
+\pgfputat{\pgfxy(19.42,74.78)}{\pgfbox[bottom,left]{\fontsize{6.53}{7.84}\selectfont \textcolor[rgb]{0, 0, 0}{10}}}
+\pgfmoveto{\pgfxy(25.78,88.99)}\pgflineto{\pgfxy(27.19,88.99)}\pgfstroke
+\pgfmoveto{\pgfxy(179.03,88.99)}\pgflineto{\pgfxy(177.27,88.99)}\pgfstroke
+\pgfputat{\pgfxy(19.42,87.14)}{\pgfbox[bottom,left]{\fontsize{6.53}{7.84}\selectfont \textcolor[rgb]{0, 0, 0}{12}}}
+\pgfmoveto{\pgfxy(25.78,100.99)}\pgflineto{\pgfxy(27.19,100.99)}\pgfstroke
+\pgfmoveto{\pgfxy(179.03,100.99)}\pgflineto{\pgfxy(177.27,100.99)}\pgfstroke
+\pgfputat{\pgfxy(19.42,99.14)}{\pgfbox[bottom,left]{\fontsize{6.53}{7.84}\selectfont \textcolor[rgb]{0, 0, 0}{14}}}
+\pgfmoveto{\pgfxy(25.78,113.00)}\pgflineto{\pgfxy(27.19,113.00)}\pgfstroke
+\pgfmoveto{\pgfxy(179.03,113.00)}\pgflineto{\pgfxy(177.27,113.00)}\pgfstroke
+\pgfputat{\pgfxy(19.42,111.15)}{\pgfbox[bottom,left]{\fontsize{6.53}{7.84}\selectfont \textcolor[rgb]{0, 0, 0}{16}}}
+\pgfmoveto{\pgfxy(25.78,125.01)}\pgflineto{\pgfxy(27.19,125.01)}\pgfstroke
+\pgfmoveto{\pgfxy(179.03,125.01)}\pgflineto{\pgfxy(177.27,125.01)}\pgfstroke
+\pgfputat{\pgfxy(19.42,123.15)}{\pgfbox[bottom,left]{\fontsize{6.53}{7.84}\selectfont \textcolor[rgb]{0, 0, 0}{18}}}
+\pgfmoveto{\pgfxy(25.78,137.01)}\pgflineto{\pgfxy(27.19,137.01)}\pgfstroke
+\pgfmoveto{\pgfxy(179.03,137.01)}\pgflineto{\pgfxy(177.27,137.01)}\pgfstroke
+\pgfputat{\pgfxy(19.42,135.16)}{\pgfbox[bottom,left]{\fontsize{6.53}{7.84}\selectfont \textcolor[rgb]{0, 0, 0}{20}}}
+\pgfmoveto{\pgfxy(25.78,137.01)}\pgflineto{\pgfxy(179.03,137.01)}\pgfstroke
+\pgfmoveto{\pgfxy(25.78,16.24)}\pgflineto{\pgfxy(179.03,16.24)}\pgfstroke
+\pgfmoveto{\pgfxy(179.03,16.24)}\pgflineto{\pgfxy(179.03,137.01)}\pgfstroke
+\pgfmoveto{\pgfxy(25.78,16.24)}\pgflineto{\pgfxy(25.78,137.01)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(29.31,16.24)}\pgflineto{\pgfxy(29.31,133.83)}\pgflineto{\pgfxy(34.25,133.83)}\pgflineto{\pgfxy(34.25,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(29.31,16.24)}\pgflineto{\pgfxy(29.31,133.83)}\pgflineto{\pgfxy(34.25,133.83)}\pgflineto{\pgfxy(34.25,16.24)}\pgflineto{\pgfxy(29.31,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(35.31,16.24)}\pgflineto{\pgfxy(35.31,94.64)}\pgflineto{\pgfxy(40.26,94.64)}\pgflineto{\pgfxy(40.26,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(35.31,16.24)}\pgflineto{\pgfxy(35.31,94.64)}\pgflineto{\pgfxy(40.26,94.64)}\pgflineto{\pgfxy(40.26,16.24)}\pgflineto{\pgfxy(35.31,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(41.67,16.24)}\pgflineto{\pgfxy(41.67,56.15)}\pgflineto{\pgfxy(46.61,56.15)}\pgflineto{\pgfxy(46.61,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(41.67,16.24)}\pgflineto{\pgfxy(41.67,56.15)}\pgflineto{\pgfxy(46.61,56.15)}\pgflineto{\pgfxy(46.61,16.24)}\pgflineto{\pgfxy(41.67,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(47.67,16.24)}\pgflineto{\pgfxy(47.67,48.73)}\pgflineto{\pgfxy(52.62,48.73)}\pgflineto{\pgfxy(52.62,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(47.67,16.24)}\pgflineto{\pgfxy(47.67,48.73)}\pgflineto{\pgfxy(52.62,48.73)}\pgflineto{\pgfxy(52.62,16.24)}\pgflineto{\pgfxy(47.67,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(53.67,16.24)}\pgflineto{\pgfxy(53.67,42.38)}\pgflineto{\pgfxy(58.62,42.38)}\pgflineto{\pgfxy(58.62,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(53.67,16.24)}\pgflineto{\pgfxy(53.67,42.38)}\pgflineto{\pgfxy(58.62,42.38)}\pgflineto{\pgfxy(58.62,16.24)}\pgflineto{\pgfxy(53.67,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(60.03,16.24)}\pgflineto{\pgfxy(60.03,39.90)}\pgflineto{\pgfxy(64.97,39.90)}\pgflineto{\pgfxy(64.97,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(60.03,16.24)}\pgflineto{\pgfxy(60.03,39.90)}\pgflineto{\pgfxy(64.97,39.90)}\pgflineto{\pgfxy(64.97,16.24)}\pgflineto{\pgfxy(60.03,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(66.03,16.24)}\pgflineto{\pgfxy(66.03,33.19)}\pgflineto{\pgfxy(70.98,33.19)}\pgflineto{\pgfxy(70.98,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(66.03,16.24)}\pgflineto{\pgfxy(66.03,33.19)}\pgflineto{\pgfxy(70.98,33.19)}\pgflineto{\pgfxy(70.98,16.24)}\pgflineto{\pgfxy(66.03,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(72.04,16.24)}\pgflineto{\pgfxy(72.04,31.43)}\pgflineto{\pgfxy(76.98,31.43)}\pgflineto{\pgfxy(76.98,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(72.04,16.24)}\pgflineto{\pgfxy(72.04,31.43)}\pgflineto{\pgfxy(76.98,31.43)}\pgflineto{\pgfxy(76.98,16.24)}\pgflineto{\pgfxy(72.04,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(78.39,16.24)}\pgflineto{\pgfxy(78.39,31.08)}\pgflineto{\pgfxy(83.34,31.08)}\pgflineto{\pgfxy(83.34,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(78.39,16.24)}\pgflineto{\pgfxy(78.39,31.08)}\pgflineto{\pgfxy(83.34,31.08)}\pgflineto{\pgfxy(83.34,16.24)}\pgflineto{\pgfxy(78.39,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(84.40,16.24)}\pgflineto{\pgfxy(84.40,27.90)}\pgflineto{\pgfxy(89.34,27.90)}\pgflineto{\pgfxy(89.34,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(84.40,16.24)}\pgflineto{\pgfxy(84.40,27.90)}\pgflineto{\pgfxy(89.34,27.90)}\pgflineto{\pgfxy(89.34,16.24)}\pgflineto{\pgfxy(84.40,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(90.75,16.24)}\pgflineto{\pgfxy(90.75,27.54)}\pgflineto{\pgfxy(95.34,27.54)}\pgflineto{\pgfxy(95.34,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(90.75,16.24)}\pgflineto{\pgfxy(90.75,27.54)}\pgflineto{\pgfxy(95.34,27.54)}\pgflineto{\pgfxy(95.34,16.24)}\pgflineto{\pgfxy(90.75,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(96.76,16.24)}\pgflineto{\pgfxy(96.76,26.48)}\pgflineto{\pgfxy(101.70,26.48)}\pgflineto{\pgfxy(101.70,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(96.76,16.24)}\pgflineto{\pgfxy(96.76,26.48)}\pgflineto{\pgfxy(101.70,26.48)}\pgflineto{\pgfxy(101.70,16.24)}\pgflineto{\pgfxy(96.76,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(102.76,16.24)}\pgflineto{\pgfxy(102.76,25.78)}\pgflineto{\pgfxy(107.70,25.78)}\pgflineto{\pgfxy(107.70,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(102.76,16.24)}\pgflineto{\pgfxy(102.76,25.78)}\pgflineto{\pgfxy(107.70,25.78)}\pgflineto{\pgfxy(107.70,16.24)}\pgflineto{\pgfxy(102.76,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(109.12,16.24)}\pgflineto{\pgfxy(109.12,24.72)}\pgflineto{\pgfxy(113.71,24.72)}\pgflineto{\pgfxy(113.71,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(109.12,16.24)}\pgflineto{\pgfxy(109.12,24.72)}\pgflineto{\pgfxy(113.71,24.72)}\pgflineto{\pgfxy(113.71,16.24)}\pgflineto{\pgfxy(109.12,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(115.12,16.24)}\pgflineto{\pgfxy(115.12,24.37)}\pgflineto{\pgfxy(120.06,24.37)}\pgflineto{\pgfxy(120.06,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(115.12,16.24)}\pgflineto{\pgfxy(115.12,24.37)}\pgflineto{\pgfxy(120.06,24.37)}\pgflineto{\pgfxy(120.06,16.24)}\pgflineto{\pgfxy(115.12,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(121.12,16.24)}\pgflineto{\pgfxy(121.12,24.01)}\pgflineto{\pgfxy(126.07,24.01)}\pgflineto{\pgfxy(126.07,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(121.12,16.24)}\pgflineto{\pgfxy(121.12,24.01)}\pgflineto{\pgfxy(126.07,24.01)}\pgflineto{\pgfxy(126.07,16.24)}\pgflineto{\pgfxy(121.12,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(127.48,16.24)}\pgflineto{\pgfxy(127.48,23.66)}\pgflineto{\pgfxy(132.42,23.66)}\pgflineto{\pgfxy(132.42,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(127.48,16.24)}\pgflineto{\pgfxy(127.48,23.66)}\pgflineto{\pgfxy(132.42,23.66)}\pgflineto{\pgfxy(132.42,16.24)}\pgflineto{\pgfxy(127.48,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(133.48,16.24)}\pgflineto{\pgfxy(133.48,23.31)}\pgflineto{\pgfxy(138.43,23.31)}\pgflineto{\pgfxy(138.43,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(133.48,16.24)}\pgflineto{\pgfxy(133.48,23.31)}\pgflineto{\pgfxy(138.43,23.31)}\pgflineto{\pgfxy(138.43,16.24)}\pgflineto{\pgfxy(133.48,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(139.48,16.24)}\pgflineto{\pgfxy(139.48,22.60)}\pgflineto{\pgfxy(144.43,22.60)}\pgflineto{\pgfxy(144.43,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(139.48,16.24)}\pgflineto{\pgfxy(139.48,22.60)}\pgflineto{\pgfxy(144.43,22.60)}\pgflineto{\pgfxy(144.43,16.24)}\pgflineto{\pgfxy(139.48,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(145.84,16.24)}\pgflineto{\pgfxy(145.84,22.25)}\pgflineto{\pgfxy(150.78,22.25)}\pgflineto{\pgfxy(150.78,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(145.84,16.24)}\pgflineto{\pgfxy(145.84,22.25)}\pgflineto{\pgfxy(150.78,22.25)}\pgflineto{\pgfxy(150.78,16.24)}\pgflineto{\pgfxy(145.84,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(151.84,16.24)}\pgflineto{\pgfxy(151.84,22.25)}\pgflineto{\pgfxy(156.79,22.25)}\pgflineto{\pgfxy(156.79,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(151.84,16.24)}\pgflineto{\pgfxy(151.84,22.25)}\pgflineto{\pgfxy(156.79,22.25)}\pgflineto{\pgfxy(156.79,16.24)}\pgflineto{\pgfxy(151.84,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(157.85,16.24)}\pgflineto{\pgfxy(157.85,21.89)}\pgflineto{\pgfxy(162.79,21.89)}\pgflineto{\pgfxy(162.79,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(157.85,16.24)}\pgflineto{\pgfxy(157.85,21.89)}\pgflineto{\pgfxy(162.79,21.89)}\pgflineto{\pgfxy(162.79,16.24)}\pgflineto{\pgfxy(157.85,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(164.20,16.24)}\pgflineto{\pgfxy(164.20,21.89)}\pgflineto{\pgfxy(169.15,21.89)}\pgflineto{\pgfxy(169.15,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(164.20,16.24)}\pgflineto{\pgfxy(164.20,21.89)}\pgflineto{\pgfxy(169.15,21.89)}\pgflineto{\pgfxy(169.15,16.24)}\pgflineto{\pgfxy(164.20,16.24)}\pgfstroke
+\color[rgb]{0,0,0.56078}\pgfmoveto{\pgfxy(170.21,16.24)}\pgflineto{\pgfxy(170.21,21.89)}\pgflineto{\pgfxy(175.15,21.89)}\pgflineto{\pgfxy(175.15,16.24)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(170.21,16.24)}\pgflineto{\pgfxy(170.21,21.89)}\pgflineto{\pgfxy(175.15,21.89)}\pgflineto{\pgfxy(175.15,16.24)}\pgflineto{\pgfxy(170.21,16.24)}\pgfstroke
+\pgfmoveto{\pgfxy(25.78,16.24)}\pgflineto{\pgfxy(179.03,16.24)}\pgfstroke
+\pgfputat{\pgfxy(82.63,4.50)}{\pgfbox[bottom,left]{\fontsize{7.11}{8.54}\selectfont \textcolor[rgb]{0, 0, 0}{Eigen-larva number}}}
+\pgfputat{\pgfxy(14.92,56.85)}{\pgfbox[bottom,left]{\rotatebox{90.00}{\fontsize{7.11}{8.54}\selectfont \smash{\makebox[0pt][l]{\textcolor[rgb]{0, 0, 0}{Standard deviation}}}}}}
+\end{pgfpicture}%

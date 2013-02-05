@@ -1,0 +1,292 @@
+% -*- TeX -*- -*- UK -*-
+
+\section{Introduction}\label{sec:intro}
+
+A particularly interesting entry in the dictionary between gauge
+theory and gravity links deconfined or `gluon plasma' phase of Yang
+Mills theory to black branes and black holes in gravity. In this
+paper we study aspects of this connection in the context of specific
+examples. In most of this paper we study  $d=4$, $SU(N)$, $\CN=4$
+Yang-Mills at 't~Hooft coupling $g^2_{YM}N=\lambda$, compactified on
+a Scherk-Schwarz $S^1$ (the remaining $2+1$ dimensions are non
+compact). The low energy dynamics of this theory is that of a $2+1$
+dimensional Yang-Mills system that undergoes deconfining phase
+transition at a finite temperature \cite{Witten:1998zw}. At large
+$N$ and strong 't~Hooft coupling this system admits supergravity
+dual description; the low temperature confining phase is dual to a
+gas of IIB supergravitons on the so called AdS soliton background
+\cite{Witten:1998zw}
+%
+\begin{equation}\label{deconfmet:eq}
+  \dr s^2 = L^2 \apm \left( \e^{2u}
+       \left( -\dr t^2 + T_{2 \pi}(u)\, \dr\theta^2 + \dr w_i^2 \right)
+       + \frac{1}{T_{2 \pi}(u)}\, \dr u^2 \right),
+\end{equation}
+%
+where $i= 1,\cdots, 2$, $\theta\sim\theta+2\pi$, $L^2=
+\sqrt{4\pi\lambda}$ and\footnote{Notice that, at large $u$,
+$T_x(u)\simeq 1$, so \eqref{deconfmet:eq} reduces to AdS$_{d+2}$ in
+Poincar\'e-patch coordinates, with $u$ as the radial scale
+coordinate, and with one of the spatial boundary coordinates,
+$\theta$, compactified on a circle (the remaining boundary
+coordinates, $w_i$ and $t$, remain non-compact).}
+%
+\begin{equation}\label{AdSSchII:eq}
+ T_{x}(u) = 1 - \left( \frac{x}{\pi} \,\e^u \right)^{-4}.
+\end{equation}
+%
+
+
+The high temperature phase of the same system (at temperature
+$\tloc=1/\beta$) is dual to the the black brane
+%
+\begin{equation} \label{AdSSchIb:eq}
+  \dr s^2 = L^2 \apm \left( \e^{2 u}
+     \left( -T_{\beta}(u)\, \dr t^2 + \dr\theta^2 + \dr w_i^2 \right)
+     + \frac{1}{T_{\beta}(u)}\, \dr u^2 \right) .
+\end{equation}
+%
+The thermodynamics of the high temperature phase are determined in
+the bulk description by the usual constitutive equations of black
+brane thermodynamics \cite{Aharony:2005bm}
+%
+\begin{equation}\label{equationofstate:eq}
+P=-f=\frac{N^2} {2^{130} \pi^3 \tc}\left( (2 \pi \tloc)^4-(2 \pi
+\tc)^4 \right).
+\end{equation}
+%
+For $\tloc>\tc$ this free energy is negative, and so (in the large
+$N$ limit) is smaller than the $\CO(1)$ free energy of the
+`confined' gas of gravitons. Consequently, the system undergoes a
+deconfinement phase transition at temperature $\tc$.\footnote{$\tc =
+1/2 \pi$ in the dimensionless units of \eqref{AdSSchIb:eq}}
+
+Just as the mean equilibrium properties of the deconfined phase are
+well described by the equations of thermodynamics, the statistically
+averaged near-equilibrium dynamics of this phase is governed by the
+equations of fluid dynamics - the relativistic generalisation of the
+Navier-Stokes equations. These equations accurately describe the
+time evolution of fluid configurations whose space time derivatives
+are all small in units of the mean free path, which is of the same
+order as the mass gap of the theory \cite{Son:2007vk,
+Aharony:2005bm}. The same equations, augmented by appropriate
+surface terms, may also be used to study the dynamics of large lumps
+of plasma localised in the gauge theory vacuum.
+
+The properties of the surface that separates the plasma from the
+vacuum, may be studied in the context of the simplest plasma profile
+with a surface; a configuration in which half of space, $x<0$, is
+filled with the plasma. The surface at $x=0$ is a domain wall that
+separates the plasma from the vacuum. The net force on this domain
+wall vanishes (and so the system is in equilibrium)  when the plasma
+that fills $x<0$ has vanishing pressure, i.e. at $\tloc=\tc$ in the
+large $N$ limit. The bulk gravity dual of this solution was
+constructed numerically in \cite{Aharony:2005bm}; this configuration
+interpolates between the black brane at $\tloc=\tc$ for $x<0$ and
+the vacuum at $x>0$, via a domain wall. The thickness and surface
+tension of this domain wall may be read off from this gravitational
+solutions, and  were estimated, in \cite{Aharony:2005bm} at
+approximately $6\times \frac{1}{2\pi \tc}$ and $\sigma=2.0 \times
+\frac{\pi N^2 \tc^2}{128}$ .
+
+More generally, one would expect a finite lump of plasma that
+evolves according to the relativistic Navier-Stokes equations map in
+the bulk to a `black hole' that evolves according to the Einstein
+equations. Provided all length scales in the plasma solution are
+small compared to the gauge theory mass gap (which is of the same
+order as the domain wall thickness), the dual bulk solution is well
+approximated by a superposition of patches of the black brane
+solution (with temperature varying across the patches) in the bulk
+and patches of the domain wall solution described in the previous
+paragraph. It follows (at least for stationary solutions) that the 3
+dimensional black hole horizon topology (at any given time) is given
+by an $S^1$ (physically this is the $\theta$ circle) fibred over the
+two dimensional fluid configuration at the same time, subject to the
+condition that the $S^1$ contracts at all fluid boundaries.
+Consequently, fluid configurations with different topologies yield
+bulk dual black hole configurations with distinct horizon
+topologies. We will return to this point below.
+
+This paper is devoted to a detailed study of certain `stationary'
+configurations of the plasma fluid; i.e. time independent, steady
+state solutions to the relativistic Navier-Stokes equations. The
+simplest configurations of this sort was studied already in
+\cite{Aharony:2005bm}; the plasmaball is a static, spherically
+symmetric lump of fluid at constant local pressure $P$ with $P=
+\sigma /R$ where $R$ is the radius of the lump and $\sigma$ its
+surface tension. In this paper we study the more intricate spinning
+lumps of stationary fluid. These lumps carry angular momentum in
+addition to their mass.
+
+It turns out that the relativistic Navier-Stokes equations admit two
+distinct classes of solutions of these sort. The first class of
+solution is a simple deformation of the static plasmaball; it is
+given by plasmaballs that spin at a constant angular velocity. The
+centripetal force needed to keep the configuration rotating in this
+solution is provided by a pressure gradient. The local plasma
+pressure (and hence local temperature and density) decreases from
+the edge (where it is a positive number set by the radius, surface
+tension and rotation speed) to the centre. As large enough angular
+velocity the pressure goes sufficiently negative in the core of the
+solution to allow for a second kind of solution of these equations;
+an annulus of plasma fluid rotating at constant angular velocity
+$\omega$. The local plasma pressure is positive on the outer surface
+and negative at the inner surface; the numerical value of the
+pressure in each case precisely balances the surface tensions at
+these boundaries.
+
+We now describe the moduli space of spinning plasmaball and plasma
+ring solutions in a little more detail. In
+fig.\ref{exist_intro:fig}(a) we have plotted the energy-angular
+momentum plane, which we have divided up into 4 regions. In region
+$\tC$ (low angular momentum at fixed energy) the only rigidly
+rotating solution to the equations of fluid dynamics is the rotating
+plasmaball. At higher angular momentum (region $\tB$) in addition to
+the rotating plasmaball there exist two new annulus type solutions
+which we call large and small ring solutions. As their names makes
+clear, the solutions are distinguished by their size; the large ring
+has a larger outer radius than the small one. On further raising
+angular momentum (region $\tA$), the small ring and the ball cease
+to exist; in this region the large ring is the only solution.
+Finally, at still larger angular momentum (region $\tOr$) there
+exist no solutions.
+
+\begin{figure}
+%
+ \begin{center}
+  \small{$\tOr$ - no solutions, $\tA$ - large ring, $\tB$ - large ring, small ring
+  and ball, $\tC$ - ball.}\\
+%  \small{Green - ball, Red - large ring, Blue - small ring.} \\
+   \small{(a)}%\includegraphics[width=4cm]{allreg.eps}
+   \input{allreg.tpx}
+   \hspace{2.5cm}
+   \small{(b)}%\includegraphics[width=6cm]{ent.eps}
+   \input{ent.tpx}
+ \caption{(a) Regions where ball and ring solutions
+exist, (b) their entropy as a function of angular momentum at fixed
+energy.}\label{exist_intro:fig}
+ \end{center}
+\end{figure}
+
+In fig.\ref{exist_intro:fig}(b) we have plotted the entropy of the
+three different kinds of solutions as a function of their angular
+momentum at a particular fixed energy. At angular momenta for which
+all three solutions coexist (region $\tB$) the entropy of the small
+ring is always smaller than the entropy of either the large ring or
+the black hole. Upon raising the angular momentum, the solution with
+dominant entropy switches from being the ball to the large ring; the
+first order transition between these solutions occurs at an angular
+momentum that lies on a `phase transition line' in the bulk of
+region $\tB$. This picture suggests - and we conjecture - that the
+ball and the large ring are locally stable with respect to
+axisymmetric fluctuations, while the small ring is locally unstable
+to such fluctuations. \footnote{It is possible that the large ring
+exhibits Rayleigh-Plateau type instabilities that break rotational
+invariance; such modes would map to Gregory-Laflamme type
+instabilities of the bulk solution (see also \cite{Cardoso:2006ks}).
+We thank T. Wiseman for suggesting this possibility.} In
+\S\S\ref{sec:turn} we perform a `turning point' analysis of our
+solutions, to find some evidence for this guess.
+
+Let us now turn to the bulk dual interpretation of our solutions.
+The fluid for the spinning  plasmaball is topologically a disk;
+consequently the horizon topology for the dual bulk solution - the
+$S^1$ fibration over this disk - yields an $S^3$. The bulk dual of
+the spinning plasmaball is simply a rotating 5 dimensional black
+hole. On the other hand the fluid configuration of the plasmaring
+has the topology of $S^1\times$ interval; the $S^1$ fibration over
+this configuration yields $S^1 \times S^2$; i.e. a five dimensional
+black ring! Notice that in addition to the isometry along the $S^1$, 
+these ring solutions all have a isometry on the $S^2$ corresponding to translations 
+along the Scherk-Schwarz circle. This additional isometry, that does not appear 
+to be required by symmetry considerations, appears to be a feature of all known black ring solutions in flat space as well.
+
+Using the gauge theory / gravity duality, the quantitative versions
+of the fig.\ref{exist_intro:fig} give precise quantitative
+predictions for the existence, thermodynamic properties and
+stability of sufficiently big  black holes and black rings in
+Scherk-Schwarz compactified AdS$_5$ spaces. While these
+gravitational solutions have not yet been constructed, their
+analogues in flat 5 dimensional space are known, and have been well
+studied. The general qualitative features (and some quantitative
+features) of fig.\ref{exist_intro:fig} are in remarkably good
+agreement with the analogous plots for black holes and black rings
+in flat 5 dimensional space (see \S\S\ref{sec:existcomp} for a
+detailed discussion).
+
+The constructions we have described above admit simple
+generalisations to plasma solutions dual to black holes and black
+rings in Scherk-Schwarz compactified AdS$_6$ space.\footnote{Note
+that the spinning plasmaring has no analogue in 1+1 dimensional
+fluid dynamics, for the excellent reason that there is no spin. This
+tallies with the fact that there are no black rings in four
+dimensions (at least in flat space).} As the qualitative nature of
+the moduli space of black hole like solutions in six dimensional
+gravity is poorly understood, this study is of interest. The
+boundary duals of these objects, in the long wavelength limit, are
+stationary solutions to the equations of fluid dynamics of a 4
+dimensional field theory. In \S\ref{sec:4dim} we construct such
+solutions. It turns out that these solutions occur in two
+qualitatively distinct classes. The simplest solutions are simply
+spinning balls of plasma; the fact that these balls spin causes them
+to flatten out near the `poles'. As these balls are spun up, their
+profile begins to `dip' near the poles (see fig.\ref{4d:fig}). As
+these balls are further spun up, they pinch off at the centre and
+turn into doughnut shaped rings (see fig.\ref{4d:fig}).
+
+\begin{figure}
+%
+\begin{center}
+  \input{obs.tpx}
+  \input{pbs.tpx}
+  \input{rs.tpx}
+  \caption{Spinning ball and ring solutions.}\label{4d:fig}
+\end{center}
+%
+\end{figure}
+
+As in the 3 dimensional case, the horizon topology of the black
+objects dual to the rotating plasmaballs and plasmarings described
+above, is obtained by fibering the fluid configuration with an $S^1$
+that shrinks to zero at the fluid edges. This procedure yields a
+horizon topology $S^4$ for the dual to the rotating plasmaball, and
+topology $S^3\times S^1$ for the dual to the plasmaring. As
+plasmaball and plasmaring configurations appear to exhaust the set
+of stationary fluid solutions to the equations of fluid dynamics, it
+follows that arbitrarily large stationary black objects in
+Scherk-Schwarz compactified AdS$_6$ all have one of these two
+horizon topologies. $S^2 \times S^2$ is an example of another
+topology one could have imagined for black objects in this space;
+these would have been dual to hollow shells of rotating fluid;
+however, there are no such stationary solutions to the equations of
+fluid dynamics.
+
+The analysis of 4 dimensional fluid configurations, described above,
+demonstrates the power of the fluid dynamical method. In simple
+contexts, the Navier-Stokes equations are much easier to solve than
+the full set of Einstein's equations, and rather easily reveal
+interesting and nontrivial information. It would be interesting to
+extend our analysis of fluid dynamical models in various directions
+to obtain information about the moduli space and stability of
+classes of black solutions in AdS spaces. An obvious extension would
+be to move to higher dimensions. As a first step in this direction,
+we have obtained and partially solved the fluid flow equations in 5
+dimensional spaces. A complete analysis of these equations would
+yield the spectrum of black holes in Scherk-Schwarz compactified
+AdS$_7$ spaces, in terms of the fluid dynamics of the deconfined
+phase of the M5 brane theory on a Scherk-Schwarz circle.
+
+Finally, we should point out that there has been a long history
+within the General Relativity literature of treating black hole
+horizons as surfaces associated with fluids. In one of the most
+recent discussion within this framework, the authors of
+\cite{Cardoso:2007ka} have modelled spinning black holes in $d+1$
+dimensional (flat space) gravity by $d+1$ dimensional lumps of
+incompressible fluid; here the fluid surface represents the black
+hole horizon. Within this framework the 4+1 dimensional black ring,
+for instance, is modelled by a 4+1 dimensional stationary fluid lump
+of topology $B^3\times S^1$ \cite{Cardoso:2006sj}. This description
+is rather different from the AdS/CFT induced description of black
+rings in Scherk Schwarz compactified AdS$_5$ as a 2+1 dimensional
+annulus of fluid. It would be interesting to better understand the
+interconnections between these approaches.

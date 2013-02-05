@@ -1,0 +1,20 @@
+%<TpX v="4" TeXFormat="pgf" PdfTeXFormat="pgf" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" DefaultSymbolSize="30" PicScale="0.4" Border="2" BitmapRes="20000" HatchingStep="2" DottedSize="0.5" DashSize="1" LineWidth="0.3" TeXFigure="none">
+%  <line x1="25" y1="55" x2="120" y2="55"/>
+%  <text x="98.1371" y="22.911" t="AdS soliton" h="5"/>
+%  <text x="60.787" y="24.0949" t="Black brane" h="5"/>
+%  <text x="61.4657" y="50.2818" t="Boundary" h="5"/>
+%  <bezier closed="1" ha="4" hc="black">59.8116,31.4807 65.1778,31.4807 64.8116,31.4807 67.8116,31.4807 73.1189,31.4807 75.3619,31.4807 78.8116,31.4807 88.8116,31.4807 87.3623,29.4839 92.5073,23.893 94.0687,22.1962 95.1011,20.895 95.8827,19.7227 96.2125,19.228 97.8615,19.8876 97.8615,19.8876 100.17,19.8876 104.478,19.893 107.507,19.893 109.507,19.893 113.507,19.893 118.507,19.893 120.613,19.893 113.699,19.893 111.507,19.893 85.5073,19.893 56.5073,19.893 33.5073,19.893 30.8964,19.893 22.9401,19.893 25.5073,19.893 29.5073,19.893 31.6987,19.893 37.5073,19.893 41.6821,19.893 43.7704,19.8876 47.7314,19.8876 47.8963,19.8876 49.3805,20.0525 49.3805,20.0525 49.2156,19.8876 51.0295,22.526 51.042,22.8784 51.1328,25.4313 55.8116,31.4807</bezier>
+%  <text x="47.4558" y="23.1008" t="AdS soliton" h="5" jh="r"/>
+%</TpX>
+\begin{pgfpicture}{7.48mm}{5.82mm}{50.76mm}{24.00mm}
+\pgfsetxvec{\pgfpoint{0.40mm}{0mm}}
+\pgfsetyvec{\pgfpoint{0mm}{0.40mm}}
+\color[rgb]{0,0,0}\pgfsetlinewidth{0.30mm}\pgfsetdash{}{0mm}
+\pgfmoveto{\pgfxy(25.00,55.00)}\pgflineto{\pgfxy(120.00,55.00)}\pgfstroke
+\pgfputat{\pgfxy(98.14,22.91)}{\pgfbox[bottom,left]{\fontsize{5.69}{6.83}\selectfont AdS soliton}}
+\pgfputat{\pgfxy(60.79,24.09)}{\pgfbox[bottom,left]{\fontsize{5.69}{6.83}\selectfont Black brane}}
+\pgfputat{\pgfxy(61.47,50.28)}{\pgfbox[bottom,left]{\fontsize{5.69}{6.83}\selectfont Boundary}}
+\pgfsetlinewidth{0.15mm}\pgfline{\pgfxy(26.96,19.89)}{\pgfxy(26.96,19.89)}\pgfline{\pgfxy(34.04,19.89)}{\pgfxy(34.04,19.89)}\pgfline{\pgfxy(41.10,19.89)}{\pgfxy(41.11,19.89)}\pgfline{\pgfxy(48.18,19.89)}{\pgfxy(48.21,19.93)}\pgfline{\pgfxy(50.98,22.70)}{\pgfxy(59.76,31.48)}\pgfline{\pgfxy(55.25,19.89)}{\pgfxy(66.84,31.48)}\pgfline{\pgfxy(62.32,19.89)}{\pgfxy(73.91,31.48)}\pgfline{\pgfxy(69.39,19.89)}{\pgfxy(80.94,31.44)}\pgfline{\pgfxy(76.46,19.89)}{\pgfxy(86.81,30.24)}\pgfline{\pgfxy(83.53,19.89)}{\pgfxy(90.24,26.60)}\pgfline{\pgfxy(90.60,19.89)}{\pgfxy(93.50,22.79)}\pgfline{\pgfxy(97.56,19.78)}{\pgfxy(97.67,19.89)}\pgfline{\pgfxy(104.74,19.89)}{\pgfxy(104.75,19.89)}\pgfline{\pgfxy(111.82,19.89)}{\pgfxy(111.82,19.89)}\pgfline{\pgfxy(118.89,19.89)}{\pgfxy(118.89,19.89)}
+\pgfsetlinewidth{0.30mm}\pgfmoveto{\pgfxy(59.81,31.48)}\pgfcurveto{\pgfxy(65.18,31.48)}{\pgfxy(64.81,31.48)}{\pgfxy(67.81,31.48)}\pgfcurveto{\pgfxy(73.12,31.48)}{\pgfxy(75.36,31.48)}{\pgfxy(78.81,31.48)}\pgfcurveto{\pgfxy(88.81,31.48)}{\pgfxy(87.36,29.48)}{\pgfxy(92.51,23.89)}\pgfcurveto{\pgfxy(94.07,22.20)}{\pgfxy(95.10,20.89)}{\pgfxy(95.88,19.72)}\pgfcurveto{\pgfxy(96.21,19.23)}{\pgfxy(97.86,19.89)}{\pgfxy(97.86,19.89)}\pgfcurveto{\pgfxy(100.17,19.89)}{\pgfxy(104.48,19.89)}{\pgfxy(107.51,19.89)}\pgfcurveto{\pgfxy(109.51,19.89)}{\pgfxy(113.51,19.89)}{\pgfxy(118.51,19.89)}\pgfcurveto{\pgfxy(120.61,19.89)}{\pgfxy(113.70,19.89)}{\pgfxy(111.51,19.89)}\pgfcurveto{\pgfxy(85.51,19.89)}{\pgfxy(56.51,19.89)}{\pgfxy(33.51,19.89)}\pgfcurveto{\pgfxy(30.90,19.89)}{\pgfxy(22.94,19.89)}{\pgfxy(25.51,19.89)}\pgfcurveto{\pgfxy(29.51,19.89)}{\pgfxy(31.70,19.89)}{\pgfxy(37.51,19.89)}\pgfcurveto{\pgfxy(41.68,19.89)}{\pgfxy(43.77,19.89)}{\pgfxy(47.73,19.89)}\pgfcurveto{\pgfxy(47.90,19.89)}{\pgfxy(49.38,20.05)}{\pgfxy(49.38,20.05)}\pgfcurveto{\pgfxy(49.22,19.89)}{\pgfxy(51.03,22.53)}{\pgfxy(51.04,22.88)}\pgfcurveto{\pgfxy(51.13,25.43)}{\pgfxy(55.81,31.48)}{\pgfxy(59.81,31.48)}\pgfclosepath\pgfstroke
+\pgfputat{\pgfxy(47.46,23.10)}{\pgfbox[bottom,left]{\fontsize{5.69}{6.83}\selectfont \makebox[0pt][r]{AdS soliton}}}
+\end{pgfpicture}%

@@ -1,0 +1,25 @@
+%<TpX v="4" TeXFormat="pgf" PdfTeXFormat="pgf" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" DefaultSymbolSize="30" PicScale="0.3" Border="2" BitmapRes="20000" HatchingStep="2" DottedSize="0.5" DashSize="1" LineWidth="0.3" TeXFigure="none">
+%  <line x1="10" y1="10" x2="10" y2="40" arr2="h44"/>
+%  <line x1="10" y1="10" x2="40" y2="10" arr2="h44"/>
+%  <text x="32" y="5" t="r1" tex="$r_1$" h="5"/>
+%  <text x="4" y="37" t="r2" tex="$r_2$" h="5" fill="darkgoldenrod"/>
+%  <sector x="10" y="10" d="38" a1="0" a2="1.5708" fill="darkgoldenrod"/>
+%  <sector x="9.97464" y="9.98422" d="24.5649" a1="0" a2="1.5708" fill="white"/>
+%</TpX>
+\begin{pgfpicture}5{-0.80mm}{-0.82mm}{14.00mm}{14.28mm}
+\pgfsetxvec{\pgfpoint{0.30mm}{0mm}}
+\pgfsetyvec{\pgfpoint{0mm}{0.30mm}}
+\color[rgb]{0,0,0}\pgfsetlinewidth{0.30mm}\pgfsetdash{}{0mm}
+\pgfmoveto{\pgfxy(10.00,10.00)}\pgflineto{\pgfxy(10.00,40.00)}\pgfstroke
+\pgfmoveto{\pgfxy(10.00,40.00)}\pgflineto{\pgfxy(9.30,37.20)}\pgflineto{\pgfxy(10.70,37.20)}\pgflineto{\pgfxy(10.00,40.00)}\pgfclosepath\pgffill
+\pgfmoveto{\pgfxy(10.00,40.00)}\pgflineto{\pgfxy(9.30,37.20)}\pgflineto{\pgfxy(10.70,37.20)}\pgflineto{\pgfxy(10.00,40.00)}\pgfclosepath\pgfstroke
+\pgfmoveto{\pgfxy(10.00,10.00)}\pgflineto{\pgfxy(40.00,10.00)}\pgfstroke
+\pgfmoveto{\pgfxy(40.00,10.00)}\pgflineto{\pgfxy(37.20,10.70)}\pgflineto{\pgfxy(37.20,9.30)}\pgflineto{\pgfxy(40.00,10.00)}\pgfclosepath\pgffill
+\pgfmoveto{\pgfxy(40.00,10.00)}\pgflineto{\pgfxy(37.20,10.70)}\pgflineto{\pgfxy(37.20,9.30)}\pgflineto{\pgfxy(40.00,10.00)}\pgfclosepath\pgfstroke
+\pgfputat{\pgfxy(32.00,5.00)}{\pgfbox[bottom,left]{\fontsize{4.27}{5.12}\selectfont $r_1$}}
+\pgfputat{\pgfxy(4.00,37.00)}{\pgfbox[bottom,left]{\fontsize{4.27}{5.12}\selectfont $r_2$}}
+\color[rgb]{0.72157,0.52549,0.043137}\pgfmoveto{\pgfxy(29.00,10.00)}\pgfcurveto{\pgfxy(29.00,13.34)}{\pgfxy(28.12,16.61)}{\pgfxy(26.45,19.50)}\pgfcurveto{\pgfxy(24.79,22.39)}{\pgfxy(22.39,24.79)}{\pgfxy(19.50,26.45)}\pgfcurveto{\pgfxy(16.61,28.12)}{\pgfxy(13.34,29.00)}{\pgfxy(10.00,29.00)}\pgfcurveto{\pgfxy(10.00,24.25)}{\pgfxy(10.00,14.75)}{\pgfxy(10.00,10.00)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(29.00,10.00)}\pgfcurveto{\pgfxy(29.00,13.34)}{\pgfxy(28.12,16.61)}{\pgfxy(26.45,19.50)}\pgfcurveto{\pgfxy(24.79,22.39)}{\pgfxy(22.39,24.79)}{\pgfxy(19.50,26.45)}\pgfcurveto{\pgfxy(16.61,28.12)}{\pgfxy(13.34,29.00)}{\pgfxy(10.00,29.00)}\pgfcurveto{\pgfxy(10.00,24.25)}{\pgfxy(10.00,14.75)}{\pgfxy(10.00,10.00)}\pgfclosepath\pgfstroke
+\color[rgb]{1,1,1}\pgfmoveto{\pgfxy(22.26,9.98)}\pgfcurveto{\pgfxy(22.26,12.14)}{\pgfxy(21.69,14.26)}{\pgfxy(20.61,16.13)}\pgfcurveto{\pgfxy(19.53,17.99)}{\pgfxy(17.98,19.54)}{\pgfxy(16.12,20.62)}\pgfcurveto{\pgfxy(14.25,21.70)}{\pgfxy(12.13,22.27)}{\pgfxy(9.97,22.27)}\pgfcurveto{\pgfxy(9.97,19.20)}{\pgfxy(9.97,13.05)}{\pgfxy(9.97,9.98)}\pgfclosepath\pgffill
+\color[rgb]{0,0,0}\pgfmoveto{\pgfxy(22.26,9.98)}\pgfcurveto{\pgfxy(22.26,12.14)}{\pgfxy(21.69,14.26)}{\pgfxy(20.61,16.13)}\pgfcurveto{\pgfxy(19.53,17.99)}{\pgfxy(17.98,19.54)}{\pgfxy(16.12,20.62)}\pgfcurveto{\pgfxy(14.25,21.70)}{\pgfxy(12.13,22.27)}{\pgfxy(9.97,22.27)}\pgfcurveto{\pgfxy(9.97,19.20)}{\pgfxy(9.97,13.05)}{\pgfxy(9.97,9.98)}\pgfclosepath\pgfstroke
+\end{pgfpicture}%

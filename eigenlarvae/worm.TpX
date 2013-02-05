@@ -1,0 +1,23 @@
+%<TpX v="5" TeXFormat="pgf" PdfTeXFormat="pgf" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" DefaultSymbolSize="30" ApproximationPrecision="0.01" PicScale="1" Border="2" BitmapRes="20000" HatchingStep="2" DottedSize="0.5" DashSize="1" LineWidth="0.3" TeXFigure="none">
+%  <bitmap x="-1.03059" y="0.309109" w="70.7148" h="60.0066" link="CelegansGoldsteinLabUNC.png"/>
+%  <bezier lw="4.00">22.3532,44.2569 25.1669,48.9739 31.9234,53.3369 37.285,52.1455 42.3562,51.0185 43.1322,44.6921 44.6101,40.8762 46.1019,37.0241 48.1754,33.3562 51.3716,30.7338 55.009,27.7494 60.1235,25.8492 60.9505,21.1549 61.6361,17.2634 58.9123,13.7726 55.3159,11.8577 52.6378,10.4318 49.5961,9.81855 46.5822,10.1673 43.9209,10.4753 41.3763,11.5325 38.6937,11.576 36.2816,11.6151 33.9632,10.8369 31.6504,10.1673 29.0632,9.41835 26.4364,8.79953 23.7619,8.47693 20.647,8.10122 17.4706,8.13341 14.4647,9.0404 11.9324,9.8045 9.62201,11.1643 7.70312,12.9847 5.65087,14.9315 4.10371,17.349 3.1954,20.028</bezier>
+%  <text x="18.1272" y="25.0991" t="centre-line" h="5"/>
+%  <line x1="25.1705" y1="24.8174" x2="31.9321" y2="10.7308" lw="2.00"/>
+%  <line x1="27.9878" y1="59.1888" x2="55.0341" y2="41.4396" lw="2.00"/>
+%  <line x1="45.4552" y1="44.8204" x2="69.1208" y2="44.5387" lw="2.00"/>
+%  <arc x="50.2447" y="44.8204" d="10.158" a1="6.22769" a2="8.89456"/>
+%  <text x="50.5264" y="50.4551" t="q(s)" tex="$\theta(s)$" h="5"/>
+%</TpX>
+\begin{pgfpicture}{-3.03mm}{-1.69mm}{71.68mm}{62.32mm}
+\pgfsetxvec{\pgfpoint{1.00mm}{0mm}}
+\pgfsetyvec{\pgfpoint{0mm}{1.00mm}}
+\color[rgb]{0,0,0}\pgfsetlinewidth{0.30mm}\pgfsetdash{}{0mm}
+\pgftext[bottom,left,at={\pgfxy(-1.03,0.31)}]{\includegraphics[width=70.71mm]{CelegansGoldsteinLabUNC}};
+\pgfsetlinewidth{1.20mm}\pgfmoveto{\pgfxy(22.35,44.26)}\pgfcurveto{\pgfxy(25.17,48.97)}{\pgfxy(31.92,53.34)}{\pgfxy(37.29,52.15)}\pgfcurveto{\pgfxy(42.36,51.02)}{\pgfxy(43.13,44.69)}{\pgfxy(44.61,40.88)}\pgfcurveto{\pgfxy(46.10,37.02)}{\pgfxy(48.18,33.36)}{\pgfxy(51.37,30.73)}\pgfcurveto{\pgfxy(55.01,27.75)}{\pgfxy(60.12,25.85)}{\pgfxy(60.95,21.15)}\pgfcurveto{\pgfxy(61.64,17.26)}{\pgfxy(58.91,13.77)}{\pgfxy(55.32,11.86)}\pgfcurveto{\pgfxy(52.64,10.43)}{\pgfxy(49.60,9.82)}{\pgfxy(46.58,10.17)}\pgfcurveto{\pgfxy(43.92,10.48)}{\pgfxy(41.38,11.53)}{\pgfxy(38.69,11.58)}\pgfcurveto{\pgfxy(36.28,11.62)}{\pgfxy(33.96,10.84)}{\pgfxy(31.65,10.17)}\pgfcurveto{\pgfxy(29.06,9.42)}{\pgfxy(26.44,8.80)}{\pgfxy(23.76,8.48)}\pgfcurveto{\pgfxy(20.65,8.10)}{\pgfxy(17.47,8.13)}{\pgfxy(14.46,9.04)}\pgfcurveto{\pgfxy(11.93,9.80)}{\pgfxy(9.62,11.16)}{\pgfxy(7.70,12.98)}\pgfcurveto{\pgfxy(5.65,14.93)}{\pgfxy(4.10,17.35)}{\pgfxy(3.20,20.03)}\pgfstroke
+\pgfputat{\pgfxy(18.13,25.10)}{\pgfbox[bottom,left]{\fontsize{14.23}{17.07}\selectfont centre-line}}
+\pgfsetlinewidth{0.60mm}\pgfmoveto{\pgfxy(25.17,24.82)}\pgflineto{\pgfxy(31.93,10.73)}\pgfstroke
+\pgfmoveto{\pgfxy(27.99,59.19)}\pgflineto{\pgfxy(55.03,41.44)}\pgfstroke
+\pgfmoveto{\pgfxy(45.46,44.82)}\pgflineto{\pgfxy(69.12,44.54)}\pgfstroke
+\pgfsetlinewidth{0.30mm}\pgfmoveto{\pgfxy(55.32,44.54)}\pgfcurveto{\pgfxy(55.38,45.68)}{\pgfxy(55.06,46.80)}{\pgfxy(54.40,47.74)}\pgfcurveto{\pgfxy(53.75,48.67)}{\pgfxy(52.80,49.35)}{\pgfxy(51.71,49.68)}\pgfcurveto{\pgfxy(50.62,50.01)}{\pgfxy(49.45,49.96)}{\pgfxy(48.39,49.55)}\pgfcurveto{\pgfxy(47.33,49.13)}{\pgfxy(46.44,48.37)}{\pgfxy(45.86,47.39)}\pgfstroke
+\pgfputat{\pgfxy(50.53,50.46)}{\pgfbox[bottom,left]{\fontsize{14.23}{17.07}\selectfont $\theta(s)$}}
+\end{pgfpicture}%

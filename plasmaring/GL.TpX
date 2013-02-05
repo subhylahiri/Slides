@@ -1,0 +1,41 @@
+%<TpX v="4" TeXFormat="pgf" PdfTeXFormat="pgf" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" DefaultSymbolSize="30" PicScale="0.5" Border="2" BitmapRes="20000" HatchingStep="2" DottedSize="0.5" DashSize="1" LineWidth="0.3" TeXFigure="none">
+%  <ellipse x="19.308" y="80.2455" dx="5.35714" dy="20.0893"/>
+%  <ellipse x="104.129" y="80.2455" dx="5.35714" dy="20.0893"/>
+%  <line x1="19.308" y1="90.2902" x2="103.906" y2="90.2902"/>
+%  <line x1="19.308" y1="69.9777" x2="103.906" y2="69.9777"/>
+%  <ellipse x="19.308" y="40.067" dx="5.35714" dy="20.0893"/>
+%  <ellipse x="104.129" y="40.067" dx="5.35714" dy="20.0893"/>
+%  <bezier>19.0848,50.1116 25.3348,49.6652 35.1563,45.2009 40.067,44.9777 44.7496,44.7648 53.0686,49.6386 59.933,49.6652 66.8939,49.6921 74.8942,44.5103 80.0223,44.7545 84.7098,44.9777 97.2098,50.1116 104.129,50.1116</bezier>
+%  <bezier>19.0848,30.014 25.3348,30.4604 35.1563,34.9247 40.067,35.1479 44.7496,35.3607 53.0686,30.4869 59.933,30.4604 66.8939,30.4335 74.8942,35.6153 80.0223,35.3711 84.7098,35.1479 97.2098,30.014 104.129,30.014</bezier>
+%  <ellipse x="19.308" y="0.111593" dx="5.35714" dy="20.0893"/>
+%  <ellipse x="104.129" y="0.111593" dx="5.35714" dy="20.0893"/>
+%  <bezier>19.0848,10.1563 26.4509,9.93304 35.3427,8.46046 35.3795,0.111612 35.4154,-8.06284 26.8973,-9.93303 19.5313,-10.1562</bezier>
+%  <bezier>104.13,10.1563 96.7635,9.93304 87.8717,8.46046 87.8349,0.111612 87.799,-8.06284 96.3171,-9.93303 103.683,-10.1562</bezier>
+%  <ellipse x="60.0446" y="0.223219" dx="29.2411" dy="19.4196"/>
+%  <line x1="60.0671" y1="67.6734" x2="60.0671" y2="57.83" arr2="h44" lw="4.00"/>
+%  <line x1="60.0671" y1="27.4049" x2="60.0671" y2="17.5615" arr2="h44" lw="4.00"/>
+%</TpX>
+\begin{pgfpicture}{6.31mm}{-7.08mm}{55.40mm}{47.15mm}
+\pgfsetxvec{\pgfpoint{0.50mm}{0mm}}
+\pgfsetyvec{\pgfpoint{0mm}{0.50mm}}
+\color[rgb]{0,0,0}\pgfsetlinewidth{0.30mm}\pgfsetdash{}{0mm}
+\pgfellipse[stroke]{\pgfxy(19.31,80.25)}{\pgfxy(2.68,0.00)}{\pgfxy(0.00,10.04)}
+\pgfellipse[stroke]{\pgfxy(104.13,80.25)}{\pgfxy(2.68,0.00)}{\pgfxy(0.00,10.04)}
+\pgfmoveto{\pgfxy(19.31,90.29)}\pgflineto{\pgfxy(103.91,90.29)}\pgfstroke
+\pgfmoveto{\pgfxy(19.31,69.98)}\pgflineto{\pgfxy(103.91,69.98)}\pgfstroke
+\pgfellipse[stroke]{\pgfxy(19.31,40.07)}{\pgfxy(2.68,0.00)}{\pgfxy(0.00,10.04)}
+\pgfellipse[stroke]{\pgfxy(104.13,40.07)}{\pgfxy(2.68,0.00)}{\pgfxy(0.00,10.04)}
+\pgfmoveto{\pgfxy(19.08,50.11)}\pgfcurveto{\pgfxy(25.33,49.67)}{\pgfxy(35.16,45.20)}{\pgfxy(40.07,44.98)}\pgfcurveto{\pgfxy(44.75,44.76)}{\pgfxy(53.07,49.64)}{\pgfxy(59.93,49.67)}\pgfcurveto{\pgfxy(66.89,49.69)}{\pgfxy(74.89,44.51)}{\pgfxy(80.02,44.75)}\pgfcurveto{\pgfxy(84.71,44.98)}{\pgfxy(97.21,50.11)}{\pgfxy(104.13,50.11)}\pgfstroke
+\pgfmoveto{\pgfxy(19.08,30.01)}\pgfcurveto{\pgfxy(25.33,30.46)}{\pgfxy(35.16,34.92)}{\pgfxy(40.07,35.15)}\pgfcurveto{\pgfxy(44.75,35.36)}{\pgfxy(53.07,30.49)}{\pgfxy(59.93,30.46)}\pgfcurveto{\pgfxy(66.89,30.43)}{\pgfxy(74.89,35.62)}{\pgfxy(80.02,35.37)}\pgfcurveto{\pgfxy(84.71,35.15)}{\pgfxy(97.21,30.01)}{\pgfxy(104.13,30.01)}\pgfstroke
+\pgfellipse[stroke]{\pgfxy(19.31,0.11)}{\pgfxy(2.68,0.00)}{\pgfxy(0.00,10.04)}
+\pgfellipse[stroke]{\pgfxy(104.13,0.11)}{\pgfxy(2.68,0.00)}{\pgfxy(0.00,10.04)}
+\pgfmoveto{\pgfxy(19.08,10.16)}\pgfcurveto{\pgfxy(26.45,9.93)}{\pgfxy(35.34,8.46)}{\pgfxy(35.38,0.11)}\pgfcurveto{\pgfxy(35.42,-8.06)}{\pgfxy(26.90,-9.93)}{\pgfxy(19.53,-10.16)}\pgfstroke
+\pgfmoveto{\pgfxy(104.13,10.16)}\pgfcurveto{\pgfxy(96.76,9.93)}{\pgfxy(87.87,8.46)}{\pgfxy(87.83,0.11)}\pgfcurveto{\pgfxy(87.80,-8.06)}{\pgfxy(96.32,-9.93)}{\pgfxy(103.68,-10.16)}\pgfstroke
+\pgfellipse[stroke]{\pgfxy(60.04,0.22)}{\pgfxy(14.62,0.00)}{\pgfxy(0.00,9.71)}
+\pgfsetlinewidth{1.20mm}\pgfmoveto{\pgfxy(60.07,67.67)}\pgflineto{\pgfxy(60.07,57.83)}\pgfstroke
+\pgfmoveto{\pgfxy(60.07,57.83)}\pgflineto{\pgfxy(60.77,60.63)}\pgflineto{\pgfxy(59.37,60.63)}\pgflineto{\pgfxy(60.07,57.83)}\pgfclosepath\pgffill
+\pgfmoveto{\pgfxy(60.07,57.83)}\pgflineto{\pgfxy(60.77,60.63)}\pgflineto{\pgfxy(59.37,60.63)}\pgflineto{\pgfxy(60.07,57.83)}\pgfclosepath\pgfstroke
+\pgfmoveto{\pgfxy(60.07,27.40)}\pgflineto{\pgfxy(60.07,17.56)}\pgfstroke
+\pgfmoveto{\pgfxy(60.07,17.56)}\pgflineto{\pgfxy(60.77,20.36)}\pgflineto{\pgfxy(59.37,20.36)}\pgflineto{\pgfxy(60.07,17.56)}\pgfclosepath\pgffill
+\pgfmoveto{\pgfxy(60.07,17.56)}\pgflineto{\pgfxy(60.77,20.36)}\pgflineto{\pgfxy(59.37,20.36)}\pgflineto{\pgfxy(60.07,17.56)}\pgfclosepath\pgfstroke
+\end{pgfpicture}%

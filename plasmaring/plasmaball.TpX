@@ -1,0 +1,16 @@
+%<TpX v="4" TeXFormat="pgf" PdfTeXFormat="pgf" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" DefaultSymbolSize="30" PicScale="1" Border="2" BitmapRes="20000" HatchingStep="2" DottedSize="0.5" DashSize="1" LineWidth="0.3" TeXFigure="none">
+%  <circle x="30" y="80" d="32" lw="2.00" fill="darkorange"/>
+%  <arc arr2="h43" x="30" y="80" d="18" a1="0" a2="1.5708"/>
+%  <text x="34" y="89" t="O" tex="$\Omega$" h="5"/>
+%</TpX>
+\begin{pgfpicture}{12.00mm}{62.00mm}{48.00mm}{98.00mm}
+\pgfsetxvec{\pgfpoint{1.00mm}{0mm}}
+\pgfsetyvec{\pgfpoint{0mm}{1.00mm}}
+\color[rgb]{0,0,0}\pgfsetlinewidth{0.30mm}\pgfsetdash{}{0mm}
+\color[rgb]{1,0.54902,0}\pgfcircle[fill]{\pgfxy(30.00,80.00)}{16.00mm}
+\color[rgb]{0,0,0}\pgfsetlinewidth{0.60mm}\pgfcircle[stroke]{\pgfxy(30.00,80.00)}{16.00mm}
+\pgfsetlinewidth{0.30mm}\pgfmoveto{\pgfxy(39.00,80.00)}\pgfcurveto{\pgfxy(39.00,81.58)}{\pgfxy(38.58,83.13)}{\pgfxy(37.79,84.50)}\pgfcurveto{\pgfxy(37.00,85.87)}{\pgfxy(35.87,87.00)}{\pgfxy(34.50,87.79)}\pgfcurveto{\pgfxy(33.13,88.58)}{\pgfxy(31.58,89.00)}{\pgfxy(30.00,89.00)}\pgfstroke
+\pgfmoveto{\pgfxy(30.00,89.00)}\pgflineto{\pgfxy(32.66,87.87)}\pgflineto{\pgfxy(32.07,88.67)}\pgflineto{\pgfxy(32.87,89.25)}\pgflineto{\pgfxy(30.00,89.00)}\pgfclosepath\pgffill
+\pgfmoveto{\pgfxy(30.00,89.00)}\pgflineto{\pgfxy(32.66,87.87)}\pgflineto{\pgfxy(32.07,88.67)}\pgflineto{\pgfxy(32.87,89.25)}\pgflineto{\pgfxy(30.00,89.00)}\pgfclosepath\pgfstroke
+\pgfputat{\pgfxy(34.00,89.00)}{\pgfbox[bottom,left]{\fontsize{14.23}{17.07}\selectfont $\Omega$}}
+\end{pgfpicture}%

@@ -1,0 +1,80 @@
+%<TpX v="5" TeXFormat="pgf" PdfTeXFormat="pgf" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" DefaultSymbolSize="30" ApproximationPrecision="0.01" PicScale="1" Border="2" BitmapRes="20000" HatchingStep="2" DottedSize="0.5" DashSize="1" LineWidth="0.3" TeXFigure="none">
+%  <bitmap x="0.0236731" y="0.167007" w="74.6024" h="74.6024" link="larva.png"/>
+%  <circle x="55.6835" y="52.8062" d="1.62761" lc="lime" fill="lime"/>
+%  <circle x="51.122" y="54.0998" d="1.62761" lc="yellow" fill="yellow"/>
+%  <circle x="46.666" y="52.6425" d="1.62761" lc="yellow" fill="yellow"/>
+%  <circle x="41.7957" y="50.4437" d="1.62761" lc="yellow" fill="yellow"/>
+%  <circle x="37.5431" y="47.9992" d="1.62761" lc="yellow" fill="yellow"/>
+%  <circle x="33.8659" y="45.4332" d="1.62761" lc="yellow" fill="yellow"/>
+%  <circle x="29.4657" y="40.7688" d="1.62761" lc="yellow" fill="yellow"/>
+%  <circle x="26.8949" y="35.0776" d="1.62761" lc="yellow" fill="yellow"/>
+%  <circle x="26.8316" y="30.0461" d="1.62761" lc="yellow" fill="yellow"/>
+%  <circle x="44.3373" y="37.6849" d="1.6276" lc="yellow" fill="yellow"/>
+%  <circle x="28.6188" y="24.6215" d="1.62761" lc="yellow" fill="yellow"/>
+%  <circle x="48.6711" y="40.7389" d="1.62761" lc="yellow" fill="yellow"/>
+%  <circle x="52.2665" y="43.8593" d="1.62761" lc="yellow" fill="yellow"/>
+%  <circle x="55.7775" y="47.1061" d="1.62761" lc="yellow" fill="yellow"/>
+%  <circle x="40.7209" y="28.1802" d="1.62761" lc="yellow" fill="yellow"/>
+%  <circle x="31.3299" y="19.2974" d="1.62761" lc="yellow" fill="yellow"/>
+%  <circle x="34.4713" y="15.0026" d="1.62761" lc="yellow" fill="yellow"/>
+%  <circle x="39.6714" y="13.8022" d="1.62761" lc="yellow" fill="yellow"/>
+%  <circle x="42.2236" y="17.2711" d="1.62761" lc="yellow" fill="yellow"/>
+%  <circle x="42.1864" y="22.4688" d="1.62761" lc="yellow" fill="yellow"/>
+%  <text x="56.9554" y="54.1162" t="tail" h="5" lc="lime"/>
+%  <text x="31.0164" y="45.0828" t="Drn" tex="$\Delta\vec{r}_n$" h="5" halign="r" lc="red"/>
+%  <line x1="34.0434" y1="45.344" x2="29.7275" y2="41.3159" arr2="h40" lc="red"/>
+%  <circle x="40.5151" y="33.7386" d="1.62761" lc="yellow" fill="yellow"/>
+%</TpX>
+\begin{pgfpicture}%{-1.98mm}{-1.83mm}{76.63mm}{76.77mm}
+\pgfsetxvec{\pgfpoint{1.00mm}{0mm}}
+\pgfsetyvec{\pgfpoint{0mm}{1.00mm}}
+\color[rgb]{0,0,0}\pgfsetlinewidth{0.30mm}\pgfsetdash{}{0mm}
+\pgftext[bottom,left,at={\pgfxy(0.02,0.17)}]{\includegraphics[width=74.60mm]{larva}};
+\visible<2->{\color[rgb]{0,1,0}\pgfcircle[fill]{\pgfxy(55.68,52.81)}{0.81mm}
+\pgfcircle[stroke]{\pgfxy(55.68,52.81)}{0.81mm}}
+\visible<3->{\color[rgb]{1,1,0}\pgfcircle[fill]{\pgfxy(51.12,54.10)}{0.81mm}
+\pgfcircle[stroke]{\pgfxy(51.12,54.10)}{0.81mm}
+\pgfcircle[fill]{\pgfxy(46.67,52.64)}{0.81mm}
+\pgfcircle[stroke]{\pgfxy(46.67,52.64)}{0.81mm}
+\pgfcircle[fill]{\pgfxy(41.80,50.44)}{0.81mm}
+\pgfcircle[stroke]{\pgfxy(41.80,50.44)}{0.81mm}
+\pgfcircle[fill]{\pgfxy(37.54,48.00)}{0.81mm}
+\pgfcircle[stroke]{\pgfxy(37.54,48.00)}{0.81mm}
+\pgfcircle[fill]{\pgfxy(33.87,45.43)}{0.81mm}
+\pgfcircle[stroke]{\pgfxy(33.87,45.43)}{0.81mm}
+\pgfcircle[fill]{\pgfxy(29.47,40.77)}{0.81mm}
+\pgfcircle[stroke]{\pgfxy(29.47,40.77)}{0.81mm}
+\pgfcircle[fill]{\pgfxy(26.89,35.08)}{0.81mm}
+\pgfcircle[stroke]{\pgfxy(26.89,35.08)}{0.81mm}
+\pgfcircle[fill]{\pgfxy(26.83,30.05)}{0.81mm}
+\pgfcircle[stroke]{\pgfxy(26.83,30.05)}{0.81mm}
+\pgfcircle[fill]{\pgfxy(44.34,37.68)}{0.81mm}
+\pgfcircle[stroke]{\pgfxy(44.34,37.68)}{0.81mm}
+\pgfcircle[fill]{\pgfxy(28.62,24.62)}{0.81mm}
+\pgfcircle[stroke]{\pgfxy(28.62,24.62)}{0.81mm}
+\pgfcircle[fill]{\pgfxy(48.67,40.74)}{0.81mm}
+\pgfcircle[stroke]{\pgfxy(48.67,40.74)}{0.81mm}
+\pgfcircle[fill]{\pgfxy(52.27,43.86)}{0.81mm}
+\pgfcircle[stroke]{\pgfxy(52.27,43.86)}{0.81mm}
+\pgfcircle[fill]{\pgfxy(55.78,47.11)}{0.81mm}
+\pgfcircle[stroke]{\pgfxy(55.78,47.11)}{0.81mm}
+\pgfcircle[fill]{\pgfxy(40.72,28.18)}{0.81mm}
+\pgfcircle[stroke]{\pgfxy(40.72,28.18)}{0.81mm}
+\pgfcircle[fill]{\pgfxy(31.33,19.30)}{0.81mm}
+\pgfcircle[stroke]{\pgfxy(31.33,19.30)}{0.81mm}
+\pgfcircle[fill]{\pgfxy(34.47,15.00)}{0.81mm}
+\pgfcircle[stroke]{\pgfxy(34.47,15.00)}{0.81mm}
+\pgfcircle[fill]{\pgfxy(39.67,13.80)}{0.81mm}
+\pgfcircle[stroke]{\pgfxy(39.67,13.80)}{0.81mm}
+\pgfcircle[fill]{\pgfxy(42.22,17.27)}{0.81mm}
+\pgfcircle[stroke]{\pgfxy(42.22,17.27)}{0.81mm}
+\pgfcircle[fill]{\pgfxy(42.19,22.47)}{0.81mm}
+\pgfcircle[stroke]{\pgfxy(42.19,22.47)}{0.81mm}}
+\visible<2->{\pgfputat{\pgfxy(56.96,54.12)}{\pgfbox[bottom,left]{\fontsize{14.23}{17.07}\selectfont \textcolor[rgb]{0, 1, 0}{tail}}}}
+\visible<4->{\pgfputat{\pgfxy(31.02,45.08)}{\pgfbox[bottom,left]{\fontsize{14.23}{17.07}\selectfont \makebox[0pt][r]{\textcolor[rgb]{1, 0, 0}{$\Delta\vec{r}_n$}}}}}
+\visible<4->{\color[rgb]{1,0,0}\pgfmoveto{\pgfxy(34.04,45.34)}\pgflineto{\pgfxy(29.73,41.32)}\pgfstroke
+\pgfmoveto{\pgfxy(29.73,41.32)}\pgflineto{\pgfxy(32.25,42.71)}\pgflineto{\pgfxy(29.73,41.32)}\pgflineto{\pgfxy(31.30,43.74)}\pgflineto{\pgfxy(29.73,41.32)}\pgfclosepath\pgffill
+\pgfmoveto{\pgfxy(29.73,41.32)}\pgflineto{\pgfxy(32.25,42.71)}\pgflineto{\pgfxy(29.73,41.32)}\pgflineto{\pgfxy(31.30,43.74)}\pgflineto{\pgfxy(29.73,41.32)}\pgfclosepath\pgfstroke}
+\visible<3->{\color[rgb]{1,1,0}\pgfcircle[fill]{\pgfxy(40.52,33.74)}{0.81mm}
+\pgfcircle[stroke]{\pgfxy(40.52,33.74)}{0.81mm}}
+\end{pgfpicture}%

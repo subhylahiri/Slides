@@ -1,0 +1,25 @@
+%<TpX v="4" TeXFormat="pgf" PdfTeXFormat="pgf" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" DefaultSymbolSize="30" PicScale="0.3" Border="2" BitmapRes="20000" HatchingStep="2" DottedSize="0.5" DashSize="1" LineWidth="0.3" TeXFigure="none">
+%  <line x1="10" y1="10" x2="10" y2="40" arr2="h44"/>
+%  <line x1="10" y1="10" x2="40" y2="10" arr2="h44"/>
+%  <text x="32" y="5" t="r1" tex="$r_1$" h="5"/>
+%  <text x="4" y="37" t="r2" tex="$r_2$" h="5" fill="darkgoldenrod"/>
+%  <ellipse x="28.2" y="27.1327" dx="10.2654" dy="14.4" rotdeg="270" fill="darkgoldenrod"/>
+%  <ellipse x="28.1903" y="27.0494" dx="7.42631" dy="4.34004" fill="white"/>
+%</TpX>
+\begin{pgfpicture}%{-0.80mm}{-0.82mm}{14.00mm}{14.28mm}
+\pgfsetxvec{\pgfpoint{0.30mm}{0mm}}
+\pgfsetyvec{\pgfpoint{0mm}{0.30mm}}
+\color[rgb]{0,0,0}\pgfsetlinewidth{0.30mm}\pgfsetdash{}{0mm}
+\pgfmoveto{\pgfxy(10.00,10.00)}\pgflineto{\pgfxy(10.00,40.00)}\pgfstroke
+\pgfmoveto{\pgfxy(10.00,40.00)}\pgflineto{\pgfxy(9.30,37.20)}\pgflineto{\pgfxy(10.70,37.20)}\pgflineto{\pgfxy(10.00,40.00)}\pgfclosepath\pgffill
+\pgfmoveto{\pgfxy(10.00,40.00)}\pgflineto{\pgfxy(9.30,37.20)}\pgflineto{\pgfxy(10.70,37.20)}\pgflineto{\pgfxy(10.00,40.00)}\pgfclosepath\pgfstroke
+\pgfmoveto{\pgfxy(10.00,10.00)}\pgflineto{\pgfxy(40.00,10.00)}\pgfstroke
+\pgfmoveto{\pgfxy(40.00,10.00)}\pgflineto{\pgfxy(37.20,10.70)}\pgflineto{\pgfxy(37.20,9.30)}\pgflineto{\pgfxy(40.00,10.00)}\pgfclosepath\pgffill
+\pgfmoveto{\pgfxy(40.00,10.00)}\pgflineto{\pgfxy(37.20,10.70)}\pgflineto{\pgfxy(37.20,9.30)}\pgflineto{\pgfxy(40.00,10.00)}\pgfclosepath\pgfstroke
+\pgfputat{\pgfxy(32.00,5.00)}{\pgfbox[bottom,left]{\fontsize{4.27}{5.12}\selectfont $r_1$}}
+\pgfputat{\pgfxy(4.00,37.00)}{\pgfbox[bottom,left]{\fontsize{4.27}{5.12}\selectfont $r_2$}}
+\color[rgb]{0.72157,0.52549,0.043137}\pgfellipse[fill]{\pgfxy(28.20,27.13)}{\pgfxy(0.00,-5.13)}{\pgfxy(7.20,0.00)}
+\color[rgb]{0,0,0}\pgfellipse[stroke]{\pgfxy(28.20,27.13)}{\pgfxy(0.00,-5.13)}{\pgfxy(7.20,0.00)}
+\color[rgb]{1,1,1}\pgfellipse[fill]{\pgfxy(28.19,27.05)}{\pgfxy(3.71,0.00)}{\pgfxy(0.00,2.17)}
+\color[rgb]{0,0,0}\pgfellipse[stroke]{\pgfxy(28.19,27.05)}{\pgfxy(3.71,0.00)}{\pgfxy(0.00,2.17)}
+\end{pgfpicture}%

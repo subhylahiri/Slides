@@ -1,0 +1,25 @@
+%<TpX v="4" TeXFormat="pgf" PdfTeXFormat="pgf" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" DefaultSymbolSize="30" PicScale="0.5" Border="2" BitmapRes="20000" HatchingStep="2" DottedSize="0.5" DashSize="1" LineWidth="0.3" TeXFigure="none">
+%  <text x="60" y="20" t="z" tex="$z$" h="5" jh="c" jv="b"/>
+%  <text x="82.2" y="9.8" t="r" tex="$r$" h="5" jv="c"/>
+%  <line x1="60.0793" y1="-0.146999" x2="60.0793" y2="19.858" arr2="h40"/>
+%  <ellipse x="71" y="10" dx="8" dy="6" fill="darkorange"/>
+%  <line x1="60" y1="10" x2="80" y2="10" arr2="h40"/>
+%  <ellipse x="49" y="10" dx="8" dy="6" fill="darkorange"/>
+%</TpX>
+\begin{pgfpicture}%{20.50mm}{-2.07mm}{43.93mm}{14.50mm}
+\pgfsetxvec{\pgfpoint{0.50mm}{0mm}}
+\pgfsetyvec{\pgfpoint{0mm}{0.50mm}}
+\color[rgb]{0,0,0}\pgfsetlinewidth{0.30mm}\pgfsetdash{}{0mm}
+\pgfputat{\pgfxy(60.00,19.50)}{\pgfbox[bottom,left]{\fontsize{7.11}{8.54}\selectfont \makebox(0,0)[b]{$z$\strut}}}
+\pgfputat{\pgfxy(82.20,9.80)}{\pgfbox[bottom,left]{\fontsize{7.11}{8.54}\selectfont \makebox(0,0)[l]{$r$\strut}}}
+\pgfmoveto{\pgfxy(60.08,-0.15)}\pgflineto{\pgfxy(60.08,19.86)}\pgfstroke
+\pgfmoveto{\pgfxy(60.08,19.86)}\pgflineto{\pgfxy(59.38,17.06)}\pgflineto{\pgfxy(60.08,19.86)}\pgflineto{\pgfxy(60.78,17.06)}\pgflineto{\pgfxy(60.08,19.86)}\pgfclosepath\pgffill
+\pgfmoveto{\pgfxy(60.08,19.86)}\pgflineto{\pgfxy(59.38,17.06)}\pgflineto{\pgfxy(60.08,19.86)}\pgflineto{\pgfxy(60.78,17.06)}\pgflineto{\pgfxy(60.08,19.86)}\pgfclosepath\pgfstroke
+\color[rgb]{1,0.54902,0}\pgfellipse[fill]{\pgfxy(71.00,10.00)}{\pgfxy(4.00,0.00)}{\pgfxy(0.00,3.00)}
+\color[rgb]{0,0,0}\pgfellipse[stroke]{\pgfxy(71.00,10.00)}{\pgfxy(4.00,0.00)}{\pgfxy(0.00,3.00)}
+\pgfmoveto{\pgfxy(60.00,10.00)}\pgflineto{\pgfxy(80.00,10.00)}\pgfstroke
+\pgfmoveto{\pgfxy(80.00,10.00)}\pgflineto{\pgfxy(77.20,10.70)}\pgflineto{\pgfxy(80.00,10.00)}\pgflineto{\pgfxy(77.20,9.30)}\pgflineto{\pgfxy(80.00,10.00)}\pgfclosepath\pgffill
+\pgfmoveto{\pgfxy(80.00,10.00)}\pgflineto{\pgfxy(77.20,10.70)}\pgflineto{\pgfxy(80.00,10.00)}\pgflineto{\pgfxy(77.20,9.30)}\pgflineto{\pgfxy(80.00,10.00)}\pgfclosepath\pgfstroke
+\color[rgb]{1,0.54902,0}\pgfellipse[fill]{\pgfxy(49.00,10.00)}{\pgfxy(4.00,0.00)}{\pgfxy(0.00,3.00)}
+\color[rgb]{0,0,0}\pgfellipse[stroke]{\pgfxy(49.00,10.00)}{\pgfxy(4.00,0.00)}{\pgfxy(0.00,3.00)}
+\end{pgfpicture}%

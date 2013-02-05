@@ -1,0 +1,667 @@
+% -*- TeX -*- -*- UK -*-
+
+\section{Four dimensional plasmarings}\label{sec:4dim}
+
+In the rest of this paper we turn to a consideration of localised
+plasma configurations in certain massive 4 and 5 dimensional field
+theories obtained by compactifying related 5 and 6 dimensional CFTs
+on a Scherk-Schwarz circle. Although the field theories in question
+are not gauge theories (e.g. the 5 dimensional massive theory could
+be obtained by compactifying the (0,2) theory on the world volume of
+an M5 brane on a Scherk-Schwarz circle) they undergo first order
+`deconfining' transitions and the high temperature phase of these
+theories admits a fluid dynamical description. The fluid
+configurations we will construct are dual to localised black holes
+and black rings in Scherk-Schwarz compactified AdS$_6$ and AdS$_7$
+respectively.
+
+In this section we study stationary solutions of fluid dynamics in 3+1
+dimensional field theories. Our study will be less thorough than our 3 dimensional
+analysis above; we find solutions analogous to those in 3 dimensions, but we postpone the
+complete parameterisation and study of the thermodynamic properties
+of these solutions to future work. In Appendix \ref{sec:5dim}
+we have derived the equations relevant to stationary fluid flow in 5 dimensions, but
+we leave the study of their solutions (and their higher dimensional counterparts)
+to future work.
+
+
+
+%\subsection{Thermodynamics}\label{sec:therm4d}
+%
+%The relevant equations are
+%%
+%\begin{equation}\label{therm4d:eq}
+%  \begin{split}
+%    P &= \frac{\rho-5\rz}{4} \,,\\
+%    T &= \prn{\frac{\rho-\rz}{4\lambda}}^{1/5}.
+%  \end{split}
+%\end{equation}
+
+\subsection{Stress tensor and equations of motion}\label{sec:eom4d}
+
+In this section we set up the equations of motion of our fluid. We
+proceed in direct imitation of our analysis of $d=3$ above. We use
+the metric
+%
+\begin{equation}\label{metric4d:eq}
+  \dr s^2 = -\dr t^2 + \dr r^2 + r^2 \dr \phi^2 + \dr z^2\,.
+\end{equation}
+%
+This gives the same non-zero Christoffel symbols as before
+\eqref{chrst:eq}. We choose the origin so that $r=0$ is the axis of
+rotation and there is a reflection symmetry in the plane $z=0$.
+
+%The equations of motion come from \eqref{Epconsv:eq} again. We will
+%be looking at stationary, axially symmetric configurations, so $\p_t
+%T = \p_\phi T = 0$. Using \eqref{chrst:eq}, \eqref{Epconsv:eq}
+%becomes
+%%
+%\begin{equation}\label{Epconsv4d:eq}
+%  \begin{split}
+%    0 &= \nabla_\mu T^{\mu t}
+%       = \p_r T^{rt} + \p_z T^{zt} + \frac{1}{r}T^{rt}, \\
+%    0 &= \nabla_\mu T^{\mu r}
+%       = \p_r T^{rr} + \p_z T^{zr} + \frac{1}{r}T^{rr} - r T^{\phi\phi}, \\
+%    0 &= \nabla_\mu T^{\mu \phi}
+%       = \p_r T^{r\phi} + \p_z T^{z\phi} + \frac{3}{r}T^{r\phi}, \\
+%    0 &= \nabla_\mu T^{\mu z}
+%       = \p_r T^{rz} + \p_z T^{zz} + \frac{1}{r}T^{rz}.
+%  \end{split}
+%\end{equation}
+%%
+
+For our configurations, $u^\mu = \gamma(1,0,\omega,0)$ with
+$\gamma=\prn{1-\omega^2r^2}^{-1/2}$. We assume that the surface can
+be described by $f(r,z) = z- h(r)$. In the interior of the
+fluid,This leads to the stress tensor
+%
+\begin{equation}\label{blkstr4d:eq}
+ T^{\mu\nu}_\mathrm{perfect} =
+ \begin{pmatrix}
+  \gamma^2(\rho+\omega^2r^2P) & 0 & \gamma^2\omega(\rho+P)                  & 0 \\
+  0                           & P & 0                                       & 0 \\
+  \gamma^2\omega(\rho+P)      & 0 & \frac{\gamma^2}{r^2}(\omega^2r^2\rho+P) & 0 \\
+  0                           & 0 & 0                                       & P \\
+ \end{pmatrix}
+\end{equation}
+%
+and the surface stress tensor
+%
+\begin{equation}\label{srfstr4d:eq}
+ T^{\mu\nu}_\mathrm{surface} =
+   \frac{\sigma \delta(z- h(r))}{\sqrt{1+h'(r)^2}}
+ \begin{pmatrix}
+  1+h'(r)^2 & 0      & 0                      & 0        \\
+  0         & -1     & 0                      & -h'(r)   \\
+  0         & 0      & -\frac{1+h'(r)^2}{r^2} & 0        \\
+  0         & -h'(r) & 0                      & -h'(r)^2 \\
+ \end{pmatrix}
+\end{equation}
+%
+
+Just as in $d=3$, the only potentially nonzero term in
+$T_\mathrm{dissipative}^{\mu \nu}$ is proportional to
+$\diff{}{r}\brk{\frac{\tloc}{\gamma}}$. As in $d=3$, it will turn
+out that this quantity vanishes on our solutions, so we simply
+proceed setting $T^{\mu \nu}_{dissipative}$ to zero.
+
+%All the other tensors that appear in \S\S\ref{sec:visc} are the
+%same, maybe with an extra row/column of zeroes, except for the
+%projection tensor, $P^{\mu\nu}$, that has a 1 in the lower right
+%corner. So there are no contributions to the stress tensor, provided
+%that $\diff{}{r}\brk{\frac{\tloc}{\gamma}} = 0$.
+
+The equations of motion, $\nabla_\mu T^{\mu\nu}=0$, reduce to
+%
+\begin{equation}\label{eom4d:eq}
+ \begin{split}
+   0 &= \pdiff{P}{r} -\frac{\omega^2r}{1-\omega^2r^2}\,(\rho+P)
+              \mp 2\sigma H h'(r)\, \delta(z-h(r))\,,\\
+   0 &= \pdiff{P}{z} \pm 2\sigma H\, \delta(z-h(r))\,,
+ \end{split}
+\end{equation}
+%
+where the upper sign refers to the upper ($z>0$) surface and
+%
+\begin{equation}\label{meancurv:eq}
+  H = \mp\frac{rh''+ h'(1+h'^2)}{2r(1+h'^2)^{3/2}}
+\end{equation}
+%
+is the mean curvature of the surface \cite{Weisstein-SurfRevo:99}.
+
+\subsection{Solutions}\label{sec:sol4d}
+
+Our analysis so far has been rather general; to proceed further we
+use the equations of state \eqref{thermint:eq}. We define
+dimensionless variables as before
+%
+\begin{equation}\label{newvars4d:eq}
+    \tw = \frac{\sigma\omega}{\rz} \,,   \qquad
+    v = \omega r  \,,  \qquad
+    \g(v) = \omega h(r)\,.
+\end{equation}
+
+Using the equation of state \eqref{thermint:eq}, we can rewrite
+\eqref{eom4d:eq} in the bulkinterior of the fluid as
+%
+\begin{equation}\label{eombulk4d:eq}
+ \begin{split}
+  \frac{1}{\rho-\rz}\diff{\rho}{v} &=
+                        \frac{5v}{1-v^2}\,,\\
+                        \implies&
+  \prn{\rho(v)-\rz}\prn{1-v^2}^{5/2} = 4K\rz\,,
+ \end{split}
+\end{equation}
+%
+where $K$ is an integration constant. This means that the pressure
+and temperature are
+%
+\begin{equation}\label{PT4d:eq}
+    P = \rz \prn{\frac{K}{(1-v^2)^{5/2}}-1}\,, \qquad
+    T = \gamma \prn{\frac{K\rz}{\lambda}}^{1/5}\,,
+\end{equation}
+%
+(notice that this justifies our neglect of heat flow).
+
+Integrating \eqref{eom4d:eq} across an outer surface gives
+%
+\begin{equation}\label{bcnd4d:eq}
+%\begin{split}
+  P = 2\sigma H \quad \text{or} \quad
+  \frac{K}{(1-v^2)^{5/2}}-1  =
+    -\tw \frac{v\g''+ \g'(1+\g'^2)}{v(1+\g'^2)^{3/2}}\,.
+%\end{split}
+\end{equation}
+%
+%We can determine the appropriate branch of the square root on the
+%RHS of the equation above as follows: at the outermost radius, the
+%mean curvature - and hence the pressure - is positive and
+%$\g'=-\infty$, so we should choose the positive square root.
+
+This can be integrated once to give
+%Let
+%%
+%\begin{equation*}
+%  y = \frac{v\g'}{\sqrt{1+\g'^2}}\,, \qquad x = \sqrt{1-v^2}\,.
+%\end{equation*}
+%%
+%Then \eqref{bcnd4d:eq} becomes
+%%
+%\begin{equation}\label{bcyx4d:eq}
+%\begin{split}
+%  \diff{y}{x} &= \frac{K x^{-5/2} -1}{2\tw} \\ \implies
+%  y &= -\frac{K}{3\tw(1-v^2)^{3/2}} + \frac{v^2}{2\tw} +
+%  \frac{C}{\tw}\,,
+%\end{split}
+%\end{equation}
+\begin{equation}\label{bcyx4d:eq}
+  \frac{v\g'}{\sqrt{1+\g'^2}} =
+    -\frac{K}{3\tw(1-v^2)^{3/2}} + \frac{v^2}{2\tw}
+     + \frac{C}{\tw}\,,
+\end{equation}
+%
+where $C$ is another integration constant.
+
+If we introduce a parameter $l$ equal to the distance along the
+surface, measured from $(v,\g)=(\vo,0)$, we have
+$\diff{l}{v}=-\sqrt{1+\g'^2}$. Then \eqref{bcyx4d:eq} can be written
+as
+%
+\begin{equation}\label{intrinsic:eq}
+\begin{split}
+  \diff{\g}{l} &= \frac{2K-3(v^2+2C)(1-v^2)^{3/2}}
+                            {6\tw v(1-v^2)^{3/2}}\,,\\
+  \diff{v}{l} &= -\frac{\sqrt{36\tw^2v^2(1-v^2)^3
+                           - \brk{2K - 3(v^2+2C)(1-v^2)^{3/2}}^2}}
+                     {6\tw v (1-v^2)^{3/2}}\,,\\
+  \diff{\g}{v} &= -\frac{2K-3(v^2+2C)(1-v^2)^{3/2}}
+                     {\sqrt{36\tw^2v^2(1-v^2)^3
+                           - \brk{2K - 3(v^2+2C)(1-v^2)^{3/2}}^2}}\,.\\
+\end{split}
+\end{equation}
+%
+It follows that the outer surface of our plasma configuration is
+given by
+%
+\begin{equation}\label{profile:eq}
+  \g(v)= \int_{\vo}^v \!\dr x \left(  -\frac{2K-3(x^2+2C)(1-x^2)^{3/2}}
+                     {\sqrt{36\tw^2x^2(1-x^2)^3
+                           - \brk{2K - 3(x^2+2C)(1-x^2)^{3/2}}^2}}
+                           \right)
+\end{equation}
+%
+Of course this only makes sense provided
+%
+\begin{equation}\label{sense:eq}
+  6\tw x(1-x^2)^{3/2} \geq \abs{2K - 3(x^2+2C)(1-x^2)^{3/2}}
+  \quad \forall\; x \in (v, v_0).
+\end{equation}
+%
+Note also the conditions $\rho>\rz \implies K>0$ and, of course,
+$0<\vi<\vo$.
+
+
+Inner boundaries to the plasma configuration (if they exist) obey
+the equation $P=-2\sigma H$. The equivalent of \eqref{intrinsic:eq},
+with a new integration constant $D$ replacing $C$ (the integration
+constant $K$ is a property of the plasma, not the surfaces), is
+%
+\begin{equation}\label{innerbnd:eq}
+\begin{split}
+  \diff{\g}{l} &= -\frac{2K-3(v^2+2D)(1-v^2)^{3/2}}
+                            {6\tw v(1-v^2)^{3/2}}\,,\\
+  \diff{v}{l} &= -\frac{\sqrt{36\tw^2v^2(1-v^2)^3
+                           - \brk{2K - 3(v^2+2D)(1-v^2)^{3/2}}^2}}
+                     {6\tw v (1-v^2)^{3/2}}\,,\\
+  \diff{\g}{v} &= \frac{2K-3(v^2+2D)(1-v^2)^{3/2}}
+                     {\sqrt{36\tw^2v^2(1-v^2)^3
+                           - \brk{2K - 3(v^2+2D)(1-v^2)^{3/2}}^2}}\,.\\
+\end{split}
+\end{equation}
+%
+The profiles of such boundaries may be obtained by integrating the
+equation above.
+
+%The shapes we study below will have `turning points'; points of
+%local maxima and minima of $\g(v)$ at which $\g'(v)=0$ and points of
+%local maxima and minima of $v(\g)$ (at which $\g'(v)$ diverges).
+%Horizontal tangents that are points of inflection rather than
+%extrema occur only if $\g''(v)=\g'(v)=0$. This highly non generic
+%situation can occur only at special values of integration constants;
+%we will ignore this possibility below. A similar statement is true
+%of vertical tangents - generically these are turning points of our
+%solutions.
+
+Even before doing any analysis, we will find it useful to give names
+to several easily visualised, topologically distinct fluid
+configurations.
+
+
+%
+%\begin{description}
+%  \item[Ordinary ball:] $\g'(v)$ is 0 at $v=0$, negative for
+%  $0<v<\vo$ and $-\infty$ at $v=\vo$. $\g(v)$ is zero at $v=\vo$.
+%  \item[Pinched ball:] $\g'(v)$ is 0 at $v=0$, positive for
+%  $0<v<\vm$, 0 at $v=\vm$, negative for $\vm<v<\vo$ and $-\infty$ at
+%  $v=\vo$. $\g$ is zero at $v=\vo$ and continuous at $v=\vm$.
+%  \item[Ring:] $\g'(l)=v$  is $+\infty$ at $v=\vi$, is positive for
+%  $\vi<v<\vm$, 0 at $v=\vm$, negative for $\vm<v<\vo$ and $-\infty$ at
+%  $v=\vo$. $\g(v)$ is zero at $v=\vi,\vo$ and continuous at $v=\vm$.
+%\end{description}
+%
+\begin{description}
+  \item[Ordinary ball:] $v'(l)=\g(l)=0$ at $v=\vo$. $\g'(l)>0$ for
+  $0<v<\vo$. $\g'(l)=0$ at $v=0$.
+  \item[Pinched ball:] $v'(l)=\g(l)=0$ at $v=\vo$. $\g'(l)>0$ for
+  $0<v<\vm$. $\g'(l)=0$ at $v=\vm$. $\g'(l)<0$ for $0<v<\vm$.
+  $\g'(l)=0$ at $v=0$.
+  \item[Ring:] $v'(l)=\g(l)=0$ at $v=\vo$. $\g'(l)>0$ for $\vm<v<\vo$.
+  $\g'(l)=0$ at $v=\vm$. $\g'(l)<0$ for $\vi<v<\vm$. $v'(l)=\g(l)=0$
+  at $v=\vi$, where $\vi<\vm<\vo$.
+\end{description}
+%
+Examples of these surfaces can be seen in
+figs.\ref{prof:fig}-\ref{surf:fig}. Each of these solutions could
+have lumps of fluid eaten out of them. We will use the terms
+%
+\begin{description}
+  \item[Hollow ball:] A ball (pinched or ordinary) with a ball cut out from its inside.
+  \item[Hollow ring:] A ring with a ring cut out from its inside.
+  \item[Toroidally hollowed ball:] A ball with a ring cut out from its inside.
+\end{description}
+
+It is easy to work out the horizon topology of the gravitational
+solutions dual to the plasma topologies listed above.
+\cite{Galloway:2005mf} have obtained a restriction on the topologies
+of horizons of stationary black holes in any theory of gravity that
+obeys the dominant energy condition; any product of spheres obeys
+the conditions from their analysis.  Although the dominant energy
+condition is violated in AdS space, in table \ref{topology:tab}, we
+have listed all 4 dimensional horizons that are topologically
+products of lower dimensional spheres, and note that all but one of
+these configurations is obtained from the dual to plasma objects
+named above ($B^3$ is a ball, $B^2$ is a disc and $B^1$ is an
+interval). The last one, $T^4 = S^1\times S^1\times S^1\times S^1$,
+is a marginal case of the theorem.
+
+In the rest of this section we will determine all stationary,
+rigidly spinning solutions of the equations of fluid dynamics
+described above.
+
+\begin{table}
+  \begin{center}
+  \begin{tabular}{|l|l|l|}
+    \hline
+    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    Horizon topology & Plasma topology & Object \\
+    \hline
+    $S^4$                     & $B^3$                     & Ball \\
+    $S^3\times S^1$           & $B^2\times S^1$           & Ring \\
+    $S^2\times S^2$           & $B^1\times S^2$           & Hollow ball \\
+    $S^2\times S^1\times S^1$ & $B^1\times S^1\times S^1$ & Hollow ring \\
+    $S^1\times S^1\times S^1\times S^1$
+                              & None                      & None \\
+    \hline
+  \end{tabular}
+  \end{center}
+  \caption{Topologies of gravity and plasma solutions}\label{topology:tab}
+\end{table}
+
+
+
+\subsubsection{Ordinary ball}\label{sec:oball4d}
+
+We search for solutions of \eqref{profile:eq} for which $\g'(v)$
+vanishes at $v=0$ and blows up at the outermost point of the surface
+$v_0$; we also require that $\g$ decrease monotonically from $0$ to
+$\vo$. The first condition sets $K=3C$.  The condition that $v'(l)$
+is zero at $\vo$ may be used to determine $\tw$ as a function of
+$\vo$ and $K$ from the linear equation
+\begin{equation}\label{oballcnstr:eq}
+  2K - (3\vo^2+2K)(1-\vo^2)^{3/2} = 6\tw\vo(1-\vo^2)^{3/2} \,,
+\end{equation}
+%
+(the choice of positive square root comes from the fact that the LHS
+above is positive).
+
+%Near $v=0$ $\g'(v) \propto 3(K-1)v^2+\CO(v^4)$; thus our
+%monotonicity condition requires $K>1$. It is not difficult to verify
+%that these conditions are sufficient to guarantee our monotonicity
+%requirement $\g'(v)>0$ in $(0,\vo)$. In order to see this
+Note that the numerator of the formula for $\g'(v)$ be written as
+%
+\begin{equation*}
+  2\brk{1-(1-v^2)^{3/2}}\prn{K-\frac{3v^2(1-v^2)^{3/2}}{2\brk{1-(1-v^2)^{3/2}}}}
+\end{equation*}
+%
+and $2\prn{1-(1-v^2)^{3/2}}\geq3v^2(1-v^2)^{3/2}$. Thus, $K>1$
+guarantees our monotonicity requirement. From \eqref{PT4d:eq}, we
+see that this also ensures that the pressure is positive throughout
+the ball.
+
+In summary, the full set of ordinary ball solution is obtained by
+substituting $C=K/3$ and $\omega= \omega(K, \vo)$ (obtained by
+solving \eqref{oballcnstr:eq}) into \eqref{profile:eq}. This
+procedure gives us a ball solution for any choice of $K>1$ and
+$\vo>0$.
+
+In figs.\ref{prof:fig},\ref{surf:fig} we present a plot of the profile $\g(v)$ for
+the ball solution at $\vo=0.8$, $K=1.5$.
+
+
+\subsubsection{Pinched ball}\label{sec:pball4d}
+
+The pinched ball satisfies all the conditions of the ordinary ball
+except for the monotonicity requirement on $\g(v)$; in fact the
+function $\g(v)$ is required to first increase and then decrease as
+$v$ runs from $0$ to $\vo$. It follows that $C$ and $\tw$ for these
+solutions are determined as in the previous subsubsection ($C=K/3$
+and $\omega $ from \eqref{oballcnstr:eq}) however the requirement
+$\g''(v)>0$ at $v=0$ forces $K<1$. This ensures that $\g'(v)>0$ at
+small $v$ and $\g'(v)<0$ at larger $v$. It also ensures that the
+solution has negative pressure at the origin and positive pressure
+at the outermost radius.
+
+Not every choice of $(K,\vo)\in[0,1]$, however, yields an acceptable
+pinched ball solution. As we decrease $\vo$ from 1, at fixed $K$, it
+turns out that $\g(0)$ decreases, and in fact vanishes at a critical
+value of $\vo$. Solutions at smaller $\vo$ are unphysical. The
+physical domain,in $(K, \vo)$ space is given by the inequality
+%
+\begin{equation}\label{pballcnstr2:eq}
+  \Delta \g \equiv -\!\!\int_0^{\vo} \diff{\g}{v}\,\dr v  =
+  \int_0^{\vo}\!\!\!
+      \frac{2K-(3v^2+2K)(1-v^2)^{3/2}}
+           {\sqrt{36\tw^2v^2(1-v^2)^3-\brk{2K-(3v^2+2K)(1-v^2)^{3/2}}^2}}
+      \,\dr v
+  \geq 0\,.
+\end{equation}
+%
+We should also ensure that \eqref{sense:eq} is not violated, i.e.
+%
+\begin{equation}\label{sensecnstr:eq}
+  Q(\vo,K) \equiv \inf_{v \in (0,\vo)}\!
+    \brc{36\tw^2 v^2(1-v^2)^{3} - \brk{2K - (3v^2+2K)(1-v^2)^{3/2}}^2}
+    \geq 0\,.
+\end{equation}
+%
+The boundary of the domain permitted by \eqref{pballcnstr2:eq}
+is plotted in fig.\ref{pbreg:fig}. We have also plotted the boundary
+of the region where \eqref{sensecnstr:eq} is violated. We see that
+\eqref{pballcnstr2:eq} is the stricter constraint, and that
+\eqref{sensecnstr:eq} is not violated for ordinary balls either. The
+full set of pinched ball solutions is parameterised by values of
+$\vo$ and $K$ in the region indiated in fig.\ref{pbreg:fig}.
+
+\begin{figure}[tbh]
+%
+\begin{center}
+  \input{pballreg.tpx}
+  \caption{Domain of ball solutions.}\label{pbreg:fig}
+\end{center}
+%
+\end{figure}
+
+
+In figs.\ref{prof:fig},\ref{surf:fig} we present an example of the profile $\g(v)$
+for the pinched ball solution at parameters $\vo=0.8$, $K=0.55$.
+
+
+\subsubsection{Ring}\label{sec:ring4d}
+
+The plasma of the ring configuration excludes the region $v<\vi$; as
+this region omits $v=0$,  $K$ and $C$ are not constrained as before.
+
+As $v'(l)$ vanishes at $\vi,\vo$ we have the following constraints
+%
+\begin{equation}\label{ringcnstr:eq}
+\begin{split}
+  2K - 3(\vi^2+2C)(1-\vi^2)^{3/2} &= -6\tw\vi(1-\vi^2)^{3/2} \,, \\
+  2K - 3(\vo^2+2C)(1-\vo^2)^{3/2} &= 6\tw\vo(1-\vo^2)^{3/2} \,.
+\end{split}
+\end{equation}
+%
+the choice of negative/positive square roots comes from the
+requirements that $\g'(l)<0$ at $v=\vi$ and $\g'(l)>0$ at $v=\vo$.
+These equations may be used to solve for $C$ and $\tw$ as a function
+of $K, \vi, \vo$. $K(\vo,\vi)$ may then be determined from the
+requirement that $\g(\vi)=\g(\vo)=0$, i.e.
+%
+\begin{equation}\label{ringcnstr2:eq}
+  \int_{\vi}^{\vo} \diff{\g}{v} \, \dr v =
+  -\int_{\vi}^{\vo}\!\!\!\frac{2K-3(v^2+2C)(1-v^2)^{3/2}}
+    {\sqrt{36\tw^2v^2(1-v^2)^3-\brk{2K - 3(v^2+2C)(1-v^2)^{3/2}}^2}}
+  \, \dr v
+  = 0\,.
+\end{equation}
+%
+In practice, it is easier to first eliminate $K$ and $C$ using
+\eqref{ringcnstr:eq}, then substitute $\vi=\tw\zi$, $\vo=\tw\ro$ and
+use \eqref{ringcnstr2:eq} to solve for $\tw$ at fixed $\zi$ and
+$\zo$. after this, one can determine $K$, $\vi$ and $\vo$ from
+$\tw$, $\zi$ and $\zo$. We present a 3 dimensional plot of $K$ as a
+function of $\vi$ and $\vo$ for $1<\zo<10$, $0.1<\zi/\zo<0.9$ in
+fig.\ref{wplot:fig}. All of these solutions have $K>0$, as required.
+Unfortunately, with this method, one cannot see if there is a
+physically acceptable solution for the whole range of $0<\vi<\vo<1$.
+It appears that there is a solution for every value of $\zi<\zo$.
+
+\begin{figure}
+%
+\begin{center}
+  \input{wplot.tpx}
+  \caption{$K$ as a function of $\vi$ and $\vo$ for ring solutions.}\label{wplot:fig}
+\end{center}
+%
+\end{figure}
+
+
+
+In figs.\ref{prof:fig},\ref{surf:fig} we plot the profile function $\g(v)$ for the
+ring solution at parameters
+%$\vi=0.124$, $\vo=0.248$.
+$\zi=10$, $\zo=20$.
+
+%%
+%\begin{equation*}
+%  \frac{
+%    3(1-v^2)^{3/2}
+%    (
+%      ((1-\vi^2)^{3/2}-(1-\vo^2)^{3/2})v^2
+%      +\vi(2\tw-\vi) (1-\vi^2)^{3/2}
+%      +\vo(2\tw+\vo) (1-\vo^2)^{3/2}
+%    )
+%    -3(\vi+\vo)(2\tw-\vi+\vo) (1-\vi^2)^{3/2} (1-\vo^2)^{3/2}
+%   }
+%   {\sqrt{
+%    36 v^2 (1-v^2)^3 ((1-\vi^2)^{3/2}-(1-\vo^2)^{3/2})^2 \tw^2
+%    -(
+%      3(\vi+\vo)(2\tw-\vi+\vo) (1-\vi^2)^{3/2} (1-\vo^2)^{3/2}
+%      -3(1-v^2)^{3/2} (
+%                       ((1-\vi^2)^{3/2}-(1-\vo^2)^{3/2})v^2
+%                       +\vi(2\tw-\vi) (1-\vi^2)^{3/2}
+%                       +\vo(2\tw+\vo) (1-\vo^2)^{3/2}
+%                      )
+%      )^2
+%   }}
+%\end{equation*}
+%%
+
+
+\subsubsection{Hollow ball}\label{sec:hball}
+
+
+In this subsection we will demonstrate the non-existence of rigidly
+rotating hollow ball solutions to the equations of fluid dynamics.
+Let us suppose such a solution did exist. The inner surface must
+have vanishing gradient at $v=0$; this sets $D=K/3$. Now let the
+outermost point of the eaten out region be $v=\vot$. The inner
+surface must have a vertical tangent at $\vot$. This also implies
+that the outer surface also has a vertical tangent at $\vot$ (the
+condition for a vertical tangent is identical for an outer or inner
+surface). However, such points saturate the inequality
+\eqref{sense:eq} and, as discussed in \S\S\S\ref{sec:pball4d}, this
+never happens in the interior of a ball. It follows that hollow ball
+solutions do not exist.
+
+
+
+\subsubsection{Hollow ring and toroidally hollowed ball}\label{sec:hring}
+
+Let us first consider the possibility of the existence of a toridally hollowed ball
+solution. Let the innermost and outermost part of the hollowed out region occur at
+$v=\vit$ and  $v=\vot$ respectively. Let us define $a(v)= 6 \tw v(1-v^2)^{{3/2}}$
+and $b(v)=-2K+3(v^2+2D)(1-v^2)^{{3/2}}$ where $D$ is the integration constant for
+the hollow. From \eqref{innerbnd:eq} it must be that
+%
+\begin{equation*}
+  a(\vot)=b(\vot)\qquad
+  a(\vit)=-b(\vit)\qquad
+  |b(v)|<|a(v)|\; \forall   v \in (\vit, \vot)
+\end{equation*}
+%
+For these conditions to apply, $b(v)$ must start out negative at $v=\vit$, increase, turn positive, and cut the $a(v)$ curve from below at $v=\vot$. We have performed a rough numerical scan of allowed values of parameters $(K, \tw, D)$; it appears that this behaviour never occurs 
+(although we do not, however, have a rigorous proof for this claim). For all physically 
+acceptable values of parameters, the curve $b(v)$ appears to either stay entirely below 
+$a(v)$ or to cut it from above. \footnote{We emphasise that this behaviour appears to be true only for $\tw>\tw_{min}(K)$ where $\tw_{min}(K)$ is the smallest allowed value of $\tw$ at fixed
+$K$ (see fig.\ref{pbreg:fig}).  It is easy to arrange for $b(v)$ to cut $a(v)$ from below 
+when $\tw$ is taken to be arbitrarily small at fixed $K$ and $D$, but this is unphysical.}
+
+These considerations, which could presumably be converted into a proof with enough effort, 
+lead us to believe that the existence of hollow balls is highly unlikely.
+We believe that similar reasoning is likely to rule out the existence of hollow rings, although this is more difficult to explicitly verify, as our understanding of the parameter ranges for
+acceptable ring solutions is incomplete.
+
+In order to understand intuitively why hollow rings and toroidally hollow balls are unlikely,
+note that the pressure at the inner and outermost parts of the hollowed out region is given by
+%
+\begin{equation*}
+  P(\vit) = \rz\tw\prn{-|v''_{v=\vit}|+\frac{1}{\vit}}, \qquad
+  P(\vot) = \rz\tw\prn{-|v''_{v=\vot}|-\frac{1}{\vot}},
+\end{equation*}
+%
+where $v''_{v=\vit}$ is positive and $v''_{v=\vot}$ is negative.
+Provided that $|v''_{v=\vit}|$ and $|v''_{v=\vot}|$ are  not
+drastically different, we would require $P(\vit)>P(\vot)$. However,
+the pressure increases monotonically with radius.
+
+%Note that the innermost part of a ring surface has negative mean
+%curvature whereas the outermost part has positive mean curvature.
+%This means that they cannot form inner surfaces, as the pressure
+%would have to be positive at the innermost part and negative at the
+%outermost part, but pressure increases monotonically with radius.
+%Thus, hollow rings are impossible.
+
+
+In conclusion, we strongly suspect, but have not yet fully proved,
+that the full set of rigidly rotating solutions to the equations of fluid dynamics
+in $d=4$ is exhausted by ordinary balls, pinched balls and rings.
+
+
+\begin{figure}
+%
+\begin{center}
+  \input{obp.tpx}
+  \input{pbp.tpx}
+  \input{rp.tpx}
+  \caption{Profile of the surface of an ordinary
+ball, pinched ball and ring.}\label{prof:fig}
+\end{center}
+%
+\end{figure}
+
+\begin{figure}
+%
+\begin{center}
+  \input{obs.tpx}
+  \input{pbs.tpx}
+  \input{rs.tpx}
+  \caption{3D plot of the surface of an ordinary
+ball, pinched ball and ring.}\label{surf:fig}
+\end{center}
+%
+\end{figure}
+
+
+
+
+%\begin{figure}[p]
+%%
+%\begin{center}
+%  \input{obp.tpx}
+%  \qquad
+%  \input{obs.tpx}
+%  \caption{Profile and 3D plot of the surface of an ordinary
+%ball.}\label{obps:fig}
+%\end{center}
+%%
+%\end{figure}
+%
+%
+%
+%\begin{figure}[p]
+%%
+%\begin{center}
+%  \input{pbp.tpx}
+%  \qquad
+%  \input{pbs.tpx}
+%  \caption{Profile and 3D plot of the surface of a pinched
+%ball.}\label{pbps:fig}
+%\end{center}
+%%
+%\end{figure}
+%
+%
+%\begin{figure}[p]
+%%
+%\begin{center}
+%  \input{rp.tpx}
+%  \qquad
+%  \input{rs.tpx}
+%  \caption{Profile and 3D plot of the surface of a
+%ring.}\label{rps:fig}
+%\end{center}
+%%
+%\end{figure}
+
+%\clearpage
