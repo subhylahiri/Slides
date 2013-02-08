@@ -9,85 +9,11 @@
 %
 % **** -----------------------------------------------------------
 \documentclass{beamer}%[hyperref={backref=slide}]
-\usetheme{Madrid}
 
-%---------Packages-------------------------------------------------------
-
-\AtBeginSection[]{\frame{\sectionpage}}
-
-% For double screen:
-\usepackage{pgfpages}
-\setbeameroption{show notes on second screen=right}
-%
-% For finding documentation:
-%\usepackage[centertags]{amsmath}
-%\usepackage{amssymb}
-%\usepackage{xcolor}
-%\usepackage{pgf}
-%\usepackage{graphicx}
-%\usepackage{hyperref}
-%
-%\usepackage{ifpdf}
-\ifpdf
-\else
- \DeclareGraphicsRule{.png}{eps}{.bb}{}
-\fi
-\usepackage{multimedia}
-%\usepackage{epspdfconversion}
-\usepackage{epstopdf}
-\epstopdfsetup{update,suffix=-generated}
-%---------------------------------------
-\usepackage{bookmark}
-\usepackage{etoolbox}
-\makeatletter
-\apptocmd{\beamer@@frametitle}{\only<1>{\bookmark[page=\the\c@page,level=3]{#1}}}%
-{\message{** patching of \string\beamer@@frametitle succeeded **}}%
-{\message{** patching of \string\beamer@@frametitle failed **}}%
-\makeatother
-%%%% begin patch
-%\makeatletter
-%\patchcmd\beamer@framenotesend{\global\setbox\beamer@frameboxcopy=\copy\beamer@framebox}{%
-%\global\setbox\beamer@frameboxcopy=\copy\beamer@framebox
-%\global\setbox\beamer@frameboxcopy=\hbox{\leaders\copy\beamer@frameboxcopy\hskip\wd\beamer@frameboxcopy}%from Stephan Lehmke's comment on http://tex.stackexchange.com/q/82250/17427
-%}{}{\showtokens{failed to patch \beamer@framenotesend}}
-%\makeatother
-%%%% end patch
-%---Back references---------------------
-\usepackage[hyperpageref]{backref}
-\renewcommand*{\backref}[1]{}
-\renewcommand*{\backrefalt}[4]{%
- \ifcase #1 %
-  %
- \or
-  #2
- \else
-  #2
- \fi
-}
-\renewcommand*{\backrefentrycount}[2]{\beamerbutton{#1}}
-\renewcommand*{\backrefsep}{ }
-\renewcommand*{\backreftwosep}{ }
-\renewcommand*{\backreflastsep}{ }
-
-%---------Colours---------------------------------------------------------
-
-% \newrgbcolor{LemonChiffon}{1. 0.98 0.8}
-% \newrgbcolor{myellow}{.9 .8 .1}
-% \newrgbcolor{myblue}{.2 .36 .77}
-% \newrgbcolor{orange}{0.8 0.7 0.2}
-% \newrgbcolor{myred}{0.95 0.0 0.0}
-\definecolor{darkgrey}{rgb}{.5 .5 .5}
-\definecolor{darkblue}{rgb}{0.27843137 0.27058824 0.5372549}
-\definecolor{darkred}{rgb}{0.5372549 0.27843137 0.27058824}
-
-%---------Commands-------------------------------------------------------
-
-\newcommand{\rref}[1]{\hfill {\small{\color{darkgrey} [#1]}}}
-\newcommand{\rrref}[1]{ {\color{darkgrey} #1}}
-\newcommand{\citerr}[1]{\hfill {\footnotesize{\color{darkgrey}\cite{#1}}}}
-
-\input{mydefs.tex}
-\input{slidesymb.tex}
+\input{sl_slide_preamble.tex}
+\input{sl_slide_graphics_preamble.tex}
+\input{sl_definitions.tex}
+\input{sl_slide_symbols.tex}
 \input{units.tex}
 
 \newcommand{\hs}{head-sweep}
@@ -257,7 +183,7 @@ Harvard University
 
 %-------------Slide--------------------------------------------------------
 
-\begin{frame}{Locomotion and sensory feedback}\label{fr_loco}%[label=fr_loco]
+\begin{frame}[label=fr_loco]{Locomotion and sensory feedback}%\label{fr_loco}
 %
  Crawl using peristaltic waves from posterior to anterior that lift and push the body forwards.
  \note[item]{We'll see lots of videos of this later.}
