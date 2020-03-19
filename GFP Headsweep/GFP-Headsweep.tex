@@ -5,7 +5,7 @@
 % Subhaneil Lahiri's template
 %
 % To compile:
-%   Ctrl-Shift-P
+%   Ctrl-Shift-P 
 %
 % **** -----------------------------------------------------------
 \documentclass{beamer}%[hyperref={backref=slide}]
@@ -15,6 +15,8 @@
 \input{sl_definitions.tex}
 \input{sl_slide_symbols.tex}
 \input{units.tex}
+\usepackage[type=pdf,controls=none,poster=first]{animate}
+% controls={play,step,stop}
 
 \newcommand{\hs}{head-sweep}
 \newcommand{\Hs}{Head-sweep}
@@ -26,7 +28,7 @@
 %
 \subtitle{\small{based on \href{http://dx.doi.org/10.1371/journal.pone.0023180}{\emph{PLoS
   ONE}, 6:\penalty0e23180 (2011)},
-  with  K.~Shen, M.~Klein, A.~Tang, E.~Kane, M.~Gershow, P.~Garrity, and A.D.T.~Samuel}\nocite{Lahiri2011}}
+  with  K.~Shen, M.~Klein, A.~Tang, E.~Kane, M.~Gershow, P.~Garrity, and A.D.T.~Samuel}\nocite{Lahiri2011larvamotor}}
 %
 \author{Subhaneil Lahiri%\inst{1}
 }
@@ -36,7 +38,7 @@
 Harvard University
 }
 %
-%\slideCaption{}
+\date{Dec.\ 13, 2011}
 
 %---------Beginning--------------------------------------------------------
 
@@ -137,14 +139,18 @@ Harvard University
 
 \begin{frame}{\Hs s}
 %
- \begin{center}
- \movie[width=131px,height=98px,showcontrols=true,loop]
- {\includegraphics[width=131px,height=98px]{Firstframe/hsa.png}}
- {Vids/hsa.avi}\note[item]{accepted}
- \movie[width=131px,height=98px,showcontrols=true,loop]
- {\includegraphics[width=131px,height=98px]{Firstframe/hsr.png}}
- {Vids/hsr.avi}\note[item]{rejected}
- \end{center}
+  \begin{center}
+    \animategraphics[width=131px,height=98px,loop]
+      {10}{Vids/hsa}{}{}\note[item]{accepted}
+    \animategraphics[width=131px,height=98px,loop]
+      {10}{Vids/hsr}{}{}\note[item]{rejected}
+    % \movie[width=131px,height=98px,showcontrols=true,loop]
+    %   {\includegraphics[width=131px,height=98px]{Firstframe/hsa.png}}
+    %   {Vids/hsa.avi}\note[item]{accepted}
+    % \movie[width=131px,height=98px,showcontrols=true,loop]
+    %   {\includegraphics[width=131px,height=98px]{Firstframe/hsr.png}}
+    %   {Vids/hsr.avi}\note[item]{rejected}
+  \end{center}
  Moves head from side-to-side to sample environment and pick a direction to travel.
 %
 \end{frame}
@@ -236,12 +242,14 @@ Harvard University
 
 \begin{frame}{Intensity pattern}
 %
- \begin{center}
- % divide width/height by 8.
- \movie[width=162px,height=162px,showcontrols=true,loop]
- {\includegraphics[width=162px,height=162px]{Firstframe/Peristalsis_scaled.png}}
- {Vids/Peristalsis_scaled.avi}
- \end{center}
+  \begin{center}
+  % divide width/height by 8.
+    \animategraphics[width=162px,height=162px,loop]
+      {4}{Vids/Peristalsis_scaled}{}{}
+    % \movie[width=162px,height=162px,showcontrols=true,loop]
+    %   {\includegraphics[width=162px,height=162px]{Firstframe/Peristalsis_scaled.png}}
+    %   {Vids/Peristalsis_scaled.avi}
+  \end{center}
 
  Muscles contract $\rightarrow$ same GFP in smaller volume $\rightarrow$ increase
  concentration $\rightarrow$ increase brightness.\note[item]{another measure of contraction. less noisy}
@@ -367,11 +375,13 @@ Harvard University
 
 \begin{frame}{Forward motion}
 %
- \begin{center}
-   \movie[width=315px,height=188px,showcontrols=true,loop]
-   {\includegraphics[width=315px,height=188px]{Firstframe/Peristalsis_video.png}}
-   {Vids/Peristalsis_video.avi}
- \end{center}
+  \begin{center}
+    \animategraphics[width=315px,height=188px,loop]
+      {4}{Vids/Peristalsis_video}{}{}
+    % \movie[width=315px,height=188px,showcontrols=true,loop]
+    %   {\includegraphics[width=315px,height=188px]{Firstframe/Peristalsis_video.png}}
+    %   {Vids/Peristalsis_video.avi}
+  \end{center}
  Pulse travels from tail to head.
  New pulse starts after previous reaches head.
  \note[item]{Mouth hooks drown out all else (ratio) in T1,T2.}
@@ -383,11 +393,13 @@ Harvard University
 
 \begin{frame}{Small accepted \hs}
 %
- \begin{center}
-   \movie[width=315px,height=188px,showcontrols=true,loop]
-   {\includegraphics[width=315px,height=188px]{Firstframe/warm_small_left_video.png}}
-   {Vids/warm_small_left_video.avi}
- \end{center}
+  \begin{center}
+    \animategraphics[width=315px,height=188px,loop]
+      {4}{Vids/warm_small_left_video}{}{}
+    % \movie[width=315px,height=188px,showcontrols=true,loop]
+    %   {\includegraphics[width=315px,height=188px]{Firstframe/warm_small_left_video.png}}
+    %   {Vids/warm_small_left_video.avi}
+  \end{center}
 
  Basic pattern: Kink starts around (T3,A1,A2) and propagates back.
  Subsequent peristalsis starts before kink reaches tail.
@@ -400,11 +412,13 @@ Harvard University
 
 \begin{frame}{Large accepted \hs}
 %
- \begin{center}
-   \movie[width=315px,height=188px,showcontrols=true,loop]
-   {\includegraphics[width=315px,height=188px]{Firstframe/cool_large_right_video.png}}
-   {Vids/cool_large_right_video.avi}
- \end{center}
+  \begin{center}
+    \animategraphics[width=315px,height=188px,loop]
+      {4}{Vids/cool_large_right_video}{}{}
+    % \movie[width=315px,height=188px,showcontrols=true,loop]
+    %   {\includegraphics[width=315px,height=188px]{Firstframe/cool_large_right_video.png}}
+    %   {Vids/cool_large_right_video.avi}
+  \end{center}
 
  Basic pattern: Kink starts around (T3,A1,A2) and propagates back.\note[item]{same as small, statistics later}
  Subsequent peristalsis starts from kink, \alert{not} tail.
@@ -415,11 +429,13 @@ Harvard University
 
 \begin{frame}{Rejected \hs}
 %
- \begin{center}
-   \movie[width=315px,height=188px,showcontrols=true,loop]
-   {\includegraphics[width=315px,height=188px]{Firstframe/rejected_video.png}}
-   {Vids/rejected_video.avi}
- \end{center}
+  \begin{center}
+    \animategraphics[width=315px,height=188px,loop]
+      {4}{Vids/rejected_video}{}{}
+    % \movie[width=315px,height=188px,showcontrols=true,loop]
+    %   {\includegraphics[width=315px,height=188px]{Firstframe/rejected_video.png}}
+    %   {Vids/rejected_video.avi}
+  \end{center}
  Rejected \hs\ not undone until next one.\note[item]{no unbending program}
 %
 \end{frame}
@@ -647,6 +663,7 @@ Harvard University
 \end{frame}
 
 %-------------Slide--------------------------------------------------------
+\appendix
 
 \begin{frame}[allowframebreaks]{References}
 %
@@ -663,12 +680,9 @@ Harvard University
 \begin{frame}[label=fr_toothpaste]{Toothpasting}
 %
  %
- \begin{center}
-   %\hypertarget{fr:toothpaste}{
-   \movie[width=180px,height=180px,showcontrols=true,loop]
-   {\includegraphics[width=180px,height=180px]{Firstframe/toothpaste.png}}
-   {Vids/toothpaste.avi}
-   %}
+  \begin{center}
+    \animategraphics[width=180px,height=180px,loop]
+      {8}{Vids/toothpaste}{}{}
  \end{center}
  %
  \hyperlink{fr_loco}{\beamerbutton{back}}
